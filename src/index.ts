@@ -10,14 +10,15 @@ const prisma = new PrismaClient();
 const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin: 'https://arbitragemds.vercel.app',
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  preflightContinue: false,
-  optionsSuccessStatus: 204
+  origin: "https://arbitragemds.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
 
-// Configuração do CORS para múltiplas origens
-const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001'];
+// Habilita o pre-flight para todas as rotas
+app.options('*', cors(corsOptions));
+
+// Usa o middleware CORS para todas as outras requisições
 app.use(cors(corsOptions));
 
 // Middleware
