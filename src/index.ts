@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { PrismaClient } from '../generated/prisma';
+import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import authMiddleware from './authMiddleware';
@@ -92,16 +92,24 @@ casasRouter.delete('/:id', authMiddleware, async (req, res) => {
 });
 
 casasRouter.get('/:id/saldo', authMiddleware, async (req, res) => {
+  const { id } = req.params;
+  const usuarioId = req.usuarioId;
+
   try {
-    const casaId = parseInt(req.params.id);
-    // Saldo apenas pelas movimentações
-    const movimentacoes = await prisma.movimentacao.findMany({ where: { casaId } });
-    const saldo = movimentacoes.reduce((acc, mov) => {
-      if (mov.tipo === 'deposito' || mov.tipo === 'premio') return acc + mov.valor;
-      if (mov.tipo === 'saque' || mov.tipo === 'aposta') return acc - mov.valor;
-      return acc;
+    const movimentacoes = await prisma.movimentacao.findMany({
+      where: {
+        casaId: parseInt(id),
+        usuarioId: usuarioId
+      }
+    });
+
+    const saldo = movimentacoes.reduce((acc: number, mov: { tipo: string; valor: number }) => {
+      if (mov.tipo === 'deposito' || mov.tipo === 'lucro') {
+        return acc + mov.valor;
+      }
+      return acc - mov.valor;
     }, 0);
-    res.json({ casaId, saldo });
+    res.json({ casaId: parseInt(id), saldo });
   } catch (error) {
     res.status(500).json({ error: 'Erro ao calcular saldo' });
   }

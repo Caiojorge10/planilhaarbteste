@@ -14,11 +14,11 @@ function authMiddleware(req, res, next) {
     const token = authHeader.split(' ')[1];
     try {
         const decoded = jsonwebtoken_1.default.verify(token, process.env.JWT_SECRET || 'segredo');
-        // @ts-ignore
         req.usuarioId = decoded.id;
         next();
     }
     catch (err) {
         res.status(401).json({ error: 'Token inválido' });
+        return;
     }
 }
