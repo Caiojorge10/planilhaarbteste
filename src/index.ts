@@ -9,18 +9,14 @@ const app = express();
 const prisma = new PrismaClient();
 const PORT = process.env.PORT || 3000;
 
+const corsOptions = {
+  origin: 'https://arbitragemds.vercel.app',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
 // Configuração do CORS para múltiplas origens
 const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001'];
-app.use(cors({
-  origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true
-}));
+app.use(cors(corsOptions));
 
 // Middleware
 app.use(express.json());
