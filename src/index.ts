@@ -268,13 +268,13 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
         premios.push({ casaId: arbitragem.casa5Id, valor: arbitragem.stake5 * arbitragem.odd5, lado });
       }
     });
-    // Atualizar arbitragem com lados vencedores, status, lucroEsperado e valorTotalInvestir
+    // Atualizar arbitragem com lados vencedores, status, lucroReal e valorTotalInvestir
     const arbitragemAtualizada = await prisma.arbitragem.update({
       where: { id: arbitragemId },
       data: {
         ladoVencedor: lados.join(','),
         status: 'executada',
-        lucroEsperado: lucroReal,
+        
         valorTotalInvestir
       },
       include: {
@@ -393,7 +393,7 @@ app.post('/api/freespins', async (req, res) => {
     const freespin = await prisma.freeSpin.create({
       data: {
         casaId: Number(casaId),
-        valorGanho: Number(valorGanho),
+        valor: Number(valorGanho),
         usuarioId: req.usuarioId!
       },
       include: { casa: true }
