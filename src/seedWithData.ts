@@ -1,12 +1,25 @@
 import { PrismaClient } from '../generated/prisma'
 import sqlite3 from 'sqlite3'
 import { promisify } from 'util'
+import bcrypt from 'bcryptjs'
 
 const prisma = new PrismaClient()
 
 // Conectar ao SQLite
 const db = new sqlite3.Database('./dev.db')
 const dbAll = promisify(db.all.bind(db))
+
+// Função para parsear datas com segurança
+function parseDate(dateString: any): Date {
+  if (!dateString) return new Date()
+  
+  const date = new Date(dateString)
+  if (isNaN(date.getTime())) {
+    console.warn(`⚠️ Data inválida: "${dateString}". Usando data atual.`)
+    return new Date()
+  }
+  return date
+}
 
 async function main() {
   console.log('🌱 Iniciando importação de dados...')
@@ -20,7 +33,7 @@ async function main() {
         data: {
           nome: 'Usuário Padrão',
           email: 'usuario@exemplo.com',
-          senha: 'senha123'
+          senha: await bcrypt.hash('senha123', 10)
         }
       })
       usuarioId = novoUsuario.id
@@ -53,10 +66,8 @@ async function main() {
     for (const casa of casas) {
       await prisma.casa.create({
         data: {
-          nome: casa.nome,
-          usuarioId: usuarioId,
-          createdAt: new Date(casa.createdAt),
-          updatedAt: new Date(casa.updatedAt)
+          nome: casa.nome || 'Casa sem nome',
+          usuarioId: usuarioId
         }
       })
     }
@@ -66,7 +77,7 @@ async function main() {
     for (const arb of arbitragens) {
       await prisma.arbitragem.create({
         data: {
-          tipo: arb.tipo,
+          tipo: arb.tipo || '2_resultados',
           casa1Id: arb.casa1Id || null,
           casa2Id: arb.casa2Id || null,
           casa3Id: arb.casa3Id || null,
@@ -89,9 +100,7 @@ async function main() {
           freebet5: arb.freebet5 || false,
           ladoVencedor: arb.ladoVencedor || null,
           lucroReal: arb.lucroReal || null,
-          usuarioId: usuarioId,
-          createdAt: new Date(arb.createdAt),
-          updatedAt: new Date(arb.updatedAt)
+          usuarioId: usuarioId
         }
       })
     }
@@ -101,28 +110,26 @@ async function main() {
     for (const fs of freespins) {
       await prisma.freeSpin.create({
         data: {
-          valor: fs.valor,
-          data: new Date(fs.data),
-          casaId: fs.casaId,
-          usuarioId: usuarioId,
-          createdAt: new Date(fs.createdAt),
-          updatedAt: new Date(fs.updatedAt)
+          valor: fs.valor || 0,
+          data: parseDate(fs.data),
+          casaId: fs.casaId || 1,
+          usuarioId: usuarioId
         }
       })
       
-      // Criar movimentação de prêmio
-      await prisma.movimentacao.create({
-        data: {
-          casaId: fs.casaId,
-          tipo: 'premio',
-          valor: fs.valorGanho,
-          observacao: `Prêmio de rodada grátis #${fs.id}`,
-          data: new Date(fs.data),
-          usuarioId: usuarioId,
-          createdAt: new Date(fs.createdAt),
-          updatedAt: new Date(fs.updatedAt)
-        }
-      })
+      // Criar movimentação de prêmio se houver valorGanho
+      if (fs.valorGanho && fs.valorGanho > 0) {
+        await prisma.movimentacao.create({
+          data: {
+            casaId: fs.casaId || 1,
+            tipo: 'premio',
+            valor: fs.valorGanho,
+            observacao: `Prêmio de rodada grátis`,
+            data: parseDate(fs.data),
+            usuarioId: usuarioId
+          }
+        })
+      }
     }
     
     // Importar freebets
@@ -130,12 +137,10 @@ async function main() {
     for (const fb of freebets) {
       await prisma.freebet.create({
         data: {
-          valor: fb.valor,
-          data: new Date(fb.data),
-          casaId: fb.casaId,
-          usuarioId: usuarioId,
-          createdAt: new Date(fb.createdAt),
-          updatedAt: new Date(fb.updatedAt)
+          valor: fb.valor || 0,
+          data: parseDate(fb.data),
+          casaId: fb.casaId || 1,
+          usuarioId: usuarioId
         }
       })
     }
@@ -145,12 +150,10 @@ async function main() {
     for (const ganho of ganhos) {
       await prisma.ganho.create({
         data: {
-          valor: ganho.valor,
-          data: new Date(ganho.data),
-          casaId: ganho.casaId,
-          usuarioId: usuarioId,
-          createdAt: new Date(ganho.createdAt),
-          updatedAt: new Date(ganho.updatedAt)
+          valor: ganho.valor || 0,
+          data: parseDate(ganho.data),
+          casaId: ganho.casaId || 1,
+          usuarioId: usuarioId
         }
       })
     }
@@ -160,14 +163,12 @@ async function main() {
     for (const mov of movimentacoes) {
       await prisma.movimentacao.create({
         data: {
-          tipo: mov.tipo,
-          valor: mov.valor,
-          data: new Date(mov.data),
+          tipo: mov.tipo || 'deposito',
+          valor: mov.valor || 0,
+          data: parseDate(mov.data),
           observacao: mov.observacao || null,
-          casaId: mov.casaId,
-          usuarioId: usuarioId,
-          createdAt: new Date(mov.createdAt),
-          updatedAt: new Date(mov.updatedAt)
+          casaId: mov.casaId || 1,
+          usuarioId: usuarioId
         }
       })
     }
@@ -177,12 +178,10 @@ async function main() {
     for (const perca of percas) {
       await prisma.perca.create({
         data: {
-          valor: perca.valor,
-          data: new Date(perca.data),
-          casaId: perca.casaId,
-          usuarioId: usuarioId,
-          createdAt: new Date(perca.createdAt),
-          updatedAt: new Date(perca.updatedAt)
+          valor: perca.valor || 0,
+          data: parseDate(perca.data),
+          casaId: perca.casaId || 1,
+          usuarioId: usuarioId
         }
       })
     }
