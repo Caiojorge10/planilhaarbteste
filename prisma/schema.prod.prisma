@@ -1,0 +1,144 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id            Int            @id @default(autoincrement())
+  nome          String
+  email         String         @unique
+  senha         String
+  arbitragens   Arbitragem[]
+  casas         Casa[]
+  freeSpins     FreeSpin[]
+  freebets      Freebet[]
+  ganhos        Ganho[]
+  movimentacoes Movimentacao[]
+  percas        Perca[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+}
+
+model Casa {
+  id            Int            @id @default(autoincrement())
+  nome          String
+  usuarioId     Int
+  usuario       Usuario        @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  arbitragens1  Arbitragem[]   @relation("Casa1")
+  arbitragens2  Arbitragem[]   @relation("Casa2")
+  arbitragens3  Arbitragem[]   @relation("Casa3")
+  arbitragens4  Arbitragem[]   @relation("Casa4")
+  arbitragens5  Arbitragem[]   @relation("Casa5")
+  freeSpins     FreeSpin[]
+  freebets      Freebet[]
+  ganhos        Ganho[]
+  movimentacoes Movimentacao[]
+  percas        Perca[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+}
+
+model Arbitragem {
+  id                Int      @id @default(autoincrement())
+  tipo              String
+  status            String   @default("ativa")
+  data              DateTime @default(now())
+  casa1Id           Int?
+  casa1             Casa?    @relation("Casa1", fields: [casa1Id], references: [id])
+  casa2Id           Int?
+  casa2             Casa?    @relation("Casa2", fields: [casa2Id], references: [id])
+  casa3Id           Int?
+  casa3             Casa?    @relation("Casa3", fields: [casa3Id], references: [id])
+  casa4Id           Int?
+  casa4             Casa?    @relation("Casa4", fields: [casa4Id], references: [id])
+  casa5Id           Int?
+  casa5             Casa?    @relation("Casa5", fields: [casa5Id], references: [id])
+  odd1              Float?
+  odd2              Float?
+  odd3              Float?
+  odd4              Float?
+  odd5              Float?
+  stake1            Float?
+  stake2            Float?
+  stake3            Float?
+  stake4            Float?
+  stake5            Float?
+  freebet1          Boolean  @default(false)
+  freebet2          Boolean  @default(false)
+  freebet3          Boolean  @default(false)
+  freebet4          Boolean  @default(false)
+  freebet5          Boolean  @default(false)
+  ladoVencedor      String?
+  lucroReal         Float?
+  usuarioId         Int
+  usuario           Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model FreeSpin {
+  id        Int      @id @default(autoincrement())
+  valor     Float
+  data      DateTime @default(now())
+  casaId    Int
+  casa      Casa     @relation(fields: [casaId], references: [id], onDelete: Cascade)
+  usuarioId Int
+  usuario   Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Freebet {
+  id        Int      @id @default(autoincrement())
+  valor     Float
+  data      DateTime @default(now())
+  casaId    Int
+  casa      Casa     @relation(fields: [casaId], references: [id], onDelete: Cascade)
+  usuarioId Int
+  usuario   Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Ganho {
+  id        Int      @id @default(autoincrement())
+  valor     Float
+  data      DateTime @default(now())
+  casaId    Int
+  casa      Casa     @relation(fields: [casaId], references: [id], onDelete: Cascade)
+  usuarioId Int
+  usuario   Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Movimentacao {
+  id         Int      @id @default(autoincrement())
+  tipo       String
+  valor      Float
+  data       DateTime @default(now())
+  observacao String?
+  casaId     Int
+  casa       Casa     @relation(fields: [casaId], references: [id], onDelete: Cascade)
+  usuarioId  Int
+  usuario    Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Perca {
+  id        Int      @id @default(autoincrement())
+  valor     Float
+  data      DateTime @default(now())
+  casaId    Int
+  casa      Casa     @relation(fields: [casaId], references: [id], onDelete: Cascade)
+  usuarioId Int
+  usuario   Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "npx prisma generate --schema=./prisma/schema.prisma && node dist/index.js",
+    "start": "npx prisma generate --schema=./prisma/schema.prod.prisma && node dist/index.js",
     "dev": "ts-node src/index.ts",
     "seed": "ts-node src/seedWithData.ts",
-    "deploy": "npm install && npx prisma generate --schema=./prisma/schema.prisma && npx prisma db push --schema=./prisma/schema.prisma && npm run build && npm run seed"
+    "deploy": "npm install && npx prisma generate --schema=./prisma/schema.prod.prisma && npx prisma db push --schema=./prisma/schema.prod.prisma && npm run build && npm run seed"
   },
   "dependencies": {
     "@prisma/client": "^6.10.0",
