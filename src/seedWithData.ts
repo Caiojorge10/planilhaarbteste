@@ -34,7 +34,7 @@ async function seedWithData() {
     console.log('🧹 Limpando dados existentes...')
     await prisma.movimentacao.deleteMany()
     await prisma.arbitragem.deleteMany()
-    await prisma.freespin.deleteMany()
+    await prisma.freeSpin.deleteMany()
     await prisma.ganho.deleteMany()
     await prisma.perca.deleteMany()
     await prisma.casa.deleteMany()
@@ -60,7 +60,6 @@ async function seedWithData() {
       await prisma.casa.create({
         data: {
           nome: casa.nome,
-          pais: casa.pais,
           licenca: casa.licenca || null,
           avaliacao: casa.avaliacao || 0,
           status: casa.status || 'ativa',
@@ -84,7 +83,6 @@ async function seedWithData() {
     for (const arb of arbitragens) {
       await prisma.arbitragem.create({
         data: {
-          evento: arb.evento,
           esporte: arb.esporte,
           tipo: arb.tipo,
           casa1Id: arb.casa1Id || null,
@@ -132,7 +130,6 @@ async function seedWithData() {
         data: {
           tipo: mov.tipo,
           valor: mov.valor,
-          descricao: mov.descricao || null,
           data: new Date(mov.data),
           casaId: mov.casaId || null,
           usuarioId: mov.usuarioId,
@@ -145,7 +142,7 @@ async function seedWithData() {
     // Importar freespins
     console.log('🎰 Importando freespins...')
     for (const fs of freespins) {
-      await prisma.freespin.create({
+      await prisma.freeSpin.create({
         data: {
           valorGanho: fs.valorGanho,
           data: new Date(fs.data),
