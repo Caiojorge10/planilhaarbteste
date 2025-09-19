@@ -201,11 +201,13 @@ app.put('/api/arbitragens/:id', async (req, res) => {
 // Endpoint para finalizar arbitragem com lado vencedor
 app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
     try {
-        const { ladoVencedor } = req.body;
+        let { ladoVencedor } = req.body;
         const arbitragemId = parseInt(req.params.id);
-        if (!ladoVencedor || !['casa1', 'casa2', 'casa3', 'casa4', 'casa5'].includes(ladoVencedor)) {
-            return res.status(400).json({ error: 'Lado vencedor deve ser "casa1", "casa2", "casa3", "casa4" ou "casa5"' });
+        // Permitir múltiplos vencedores separados por vírgula
+        if (!ladoVencedor) {
+            return res.status(400).json({ error: 'Lado vencedor deve ser informado' });
         }
+        const lados = ladoVencedor.split(',').map((l) => l.trim()).filter(Boolean);
         // Buscar a arbitragem
         const arbitragem = await prisma.arbitragem.findUnique({
             where: { id: arbitragemId },
@@ -220,7 +222,7 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
         if (!arbitragem) {
             return res.status(404).json({ error: 'Arbitragem não encontrada' });
         }
-        // Verificar se o lado vencedor é válido para o tipo de arbitragem
+        // Verificar se os lados vencedores são válidos para o tipo de arbitragem
         const tipoArbitragem = arbitragem.tipo;
         const ladosValidos = {
             '2_resultados': ['casa1', 'casa2'],
@@ -228,10 +230,8 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
             '4_resultados': ['casa1', 'casa2', 'casa3', 'casa4'],
             '5_resultados': ['casa1', 'casa2', 'casa3', 'casa4', 'casa5']
         };
-        if (!ladosValidos[tipoArbitragem]?.includes(ladoVencedor)) {
-            return res.status(400).json({
-                error: `Lado vencedor inválido para arbitragem de ${tipoArbitragem}`
-            });
+        if (!lados.every(l => ladosValidos[tipoArbitragem]?.includes(l))) {
+            return res.status(400).json({ error: `Lado(s) vencedor(es) inválido(s) para arbitragem de ${tipoArbitragem}` });
         }
         // Calcule valorTotalInvestir como soma das stakes que NÃO são freebet
         const valorTotalInvestir = (arbitragem.stake1 && !arbitragem.freebet1 ? arbitragem.stake1 : 0) +
@@ -239,23 +239,36 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
             (arbitragem.stake3 && !arbitragem.freebet3 ? arbitragem.stake3 : 0) +
             (arbitragem.stake4 && !arbitragem.freebet4 ? arbitragem.stake4 : 0) +
             (arbitragem.stake5 && !arbitragem.freebet5 ? arbitragem.stake5 : 0);
-        // Calcule o lucro real do lado vencedor usando a soma das stakes não freebet
+        // Calcule o lucro real somando todos os lados vencedores
         let lucroReal = 0;
-        if (ladoVencedor === 'casa1' && arbitragem.stake1 && arbitragem.odd1)
-            lucroReal = (arbitragem.stake1 * arbitragem.odd1) - valorTotalInvestir;
-        else if (ladoVencedor === 'casa2' && arbitragem.stake2 && arbitragem.odd2)
-            lucroReal = (arbitragem.stake2 * arbitragem.odd2) - valorTotalInvestir;
-        else if (ladoVencedor === 'casa3' && arbitragem.stake3 && arbitragem.odd3)
-            lucroReal = (arbitragem.stake3 * arbitragem.odd3) - valorTotalInvestir;
-        else if (ladoVencedor === 'casa4' && arbitragem.stake4 && arbitragem.odd4)
-            lucroReal = (arbitragem.stake4 * arbitragem.odd4) - valorTotalInvestir;
-        else if (ladoVencedor === 'casa5' && arbitragem.stake5 && arbitragem.odd5)
-            lucroReal = (arbitragem.stake5 * arbitragem.odd5) - valorTotalInvestir;
-        // Atualizar arbitragem com lado vencedor, status, lucroEsperado e valorTotalInvestir
+        const premios = [];
+        lados.forEach(lado => {
+            if (lado === 'casa1' && arbitragem.stake1 && arbitragem.odd1 && arbitragem.casa1Id) {
+                lucroReal += (arbitragem.stake1 * arbitragem.odd1) - valorTotalInvestir;
+                premios.push({ casaId: arbitragem.casa1Id, valor: arbitragem.stake1 * arbitragem.odd1, lado });
+            }
+            if (lado === 'casa2' && arbitragem.stake2 && arbitragem.odd2 && arbitragem.casa2Id) {
+                lucroReal += (arbitragem.stake2 * arbitragem.odd2) - valorTotalInvestir;
+                premios.push({ casaId: arbitragem.casa2Id, valor: arbitragem.stake2 * arbitragem.odd2, lado });
+            }
+            if (lado === 'casa3' && arbitragem.stake3 && arbitragem.odd3 && arbitragem.casa3Id) {
+                lucroReal += (arbitragem.stake3 * arbitragem.odd3) - valorTotalInvestir;
+                premios.push({ casaId: arbitragem.casa3Id, valor: arbitragem.stake3 * arbitragem.odd3, lado });
+            }
+            if (lado === 'casa4' && arbitragem.stake4 && arbitragem.odd4 && arbitragem.casa4Id) {
+                lucroReal += (arbitragem.stake4 * arbitragem.odd4) - valorTotalInvestir;
+                premios.push({ casaId: arbitragem.casa4Id, valor: arbitragem.stake4 * arbitragem.odd4, lado });
+            }
+            if (lado === 'casa5' && arbitragem.stake5 && arbitragem.odd5 && arbitragem.casa5Id) {
+                lucroReal += (arbitragem.stake5 * arbitragem.odd5) - valorTotalInvestir;
+                premios.push({ casaId: arbitragem.casa5Id, valor: arbitragem.stake5 * arbitragem.odd5, lado });
+            }
+        });
+        // Atualizar arbitragem com lados vencedores, status, lucroEsperado e valorTotalInvestir
         const arbitragemAtualizada = await prisma.arbitragem.update({
             where: { id: arbitragemId },
             data: {
-                ladoVencedor,
+                ladoVencedor: lados.join(','),
                 status: 'executada',
                 lucroEsperado: lucroReal,
                 valorTotalInvestir
@@ -268,39 +281,19 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
                 casa5: true
             }
         });
-        // Criar movimentação de prêmio para a casa vencedora
-        let premio = 0;
-        let casaPremiadaId = null;
-        if (ladoVencedor === 'casa1' && arbitragem.casa1Id && arbitragem.stake1 && arbitragem.odd1) {
-            premio = arbitragem.stake1 * arbitragem.odd1;
-            casaPremiadaId = arbitragem.casa1Id;
-        }
-        if (ladoVencedor === 'casa2' && arbitragem.casa2Id && arbitragem.stake2 && arbitragem.odd2) {
-            premio = arbitragem.stake2 * arbitragem.odd2;
-            casaPremiadaId = arbitragem.casa2Id;
-        }
-        if (ladoVencedor === 'casa3' && arbitragem.casa3Id && arbitragem.stake3 && arbitragem.odd3) {
-            premio = arbitragem.stake3 * arbitragem.odd3;
-            casaPremiadaId = arbitragem.casa3Id;
-        }
-        if (ladoVencedor === 'casa4' && arbitragem.casa4Id && arbitragem.stake4 && arbitragem.odd4) {
-            premio = arbitragem.stake4 * arbitragem.odd4;
-            casaPremiadaId = arbitragem.casa4Id;
-        }
-        if (ladoVencedor === 'casa5' && arbitragem.casa5Id && arbitragem.stake5 && arbitragem.odd5) {
-            premio = arbitragem.stake5 * arbitragem.odd5;
-            casaPremiadaId = arbitragem.casa5Id;
-        }
-        if (casaPremiadaId && premio > 0) {
-            await prisma.movimentacao.create({
-                data: {
-                    casaId: casaPremiadaId,
-                    tipo: 'premio',
-                    valor: premio,
-                    observacao: `Prêmio arbitragem #${arbitragem.id} (${ladoVencedor})`,
-                    usuarioId: req.usuarioId
-                }
-            });
+        // Criar movimentação de prêmio para cada casa vencedora
+        for (const premio of premios) {
+            if (premio.casaId && premio.valor > 0) {
+                await prisma.movimentacao.create({
+                    data: {
+                        casaId: premio.casaId,
+                        tipo: 'premio',
+                        valor: premio.valor,
+                        observacao: `Prêmio arbitragem #${arbitragem.id} (${premio.lado})`,
+                        usuarioId: req.usuarioId
+                    }
+                });
+            }
         }
         res.json({
             arbitragem: arbitragemAtualizada
