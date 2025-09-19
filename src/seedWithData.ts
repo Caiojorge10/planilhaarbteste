@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '../generated/prisma'
 import sqlite3 from 'sqlite3'
 import { promisify } from 'util'
 

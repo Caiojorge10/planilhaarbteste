@@ -7,7 +7,7 @@ echo "📦 Gerando Prisma Client..."
 npx prisma generate --schema=./prisma/schema.prod.prisma
 
 # Verificar se foi gerado
-if [ -d "node_modules/.prisma/client" ]; then
+if [ -d "generated/prisma" ]; then
     echo "✅ Prisma Client gerado com sucesso!"
 else
     echo "❌ Erro ao gerar Prisma Client!"
