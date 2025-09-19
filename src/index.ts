@@ -27,6 +27,24 @@ app.use(cors({
 // Middleware
 app.use(express.json());
 
+// Endpoint temporário para atualizar senha
+app.post('/api/update-password', async (req, res) => {
+  try {
+    const { email, newPassword } = req.body;
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+    
+    const usuario = await prisma.usuario.update({
+      where: { email },
+      data: { senha: hashedPassword }
+    });
+    
+    res.json({ message: 'Senha atualizada com sucesso', usuario: { id: usuario.id, email: usuario.email } });
+  } catch (error) {
+    console.error('Erro ao atualizar senha:', error);
+    res.status(500).json({ error: 'Erro ao atualizar senha' });
+  }
+});
+
 // Proteger todas as rotas de dados
 app.use('/api/casas', authMiddleware);
 app.use('/api/arbitragens', authMiddleware);
