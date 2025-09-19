@@ -8,51 +8,27 @@ const prisma = new PrismaClient()
 const db = new sqlite3.Database('./dev.db')
 const dbAll = promisify(db.all.bind(db))
 
-async function seedWithData() {
+async function main() {
+  console.log('🌱 Iniciando importação de dados...')
+  
   try {
-    console.log('🔄 Iniciando seed com dados do SQLite...')
-    
-    // Importar dados do SQLite
+    // Buscar dados do SQLite
     const casas = await dbAll('SELECT * FROM Casa') as any[]
     const arbitragens = await dbAll('SELECT * FROM Arbitragem') as any[]
-    const movimentacoes = await dbAll('SELECT * FROM Movimentacao') as any[]
     const freespins = await dbAll('SELECT * FROM FreeSpin') as any[]
+    const freebets = await dbAll('SELECT * FROM Freebet') as any[]
     const ganhos = await dbAll('SELECT * FROM Ganho') as any[]
+    const movimentacoes = await dbAll('SELECT * FROM Movimentacao') as any[]
     const percas = await dbAll('SELECT * FROM Perca') as any[]
-    const usuarios = await dbAll('SELECT * FROM Usuario') as any[]
     
     console.log(`📊 Dados encontrados:`)
     console.log(`   - Casas: ${casas.length}`)
     console.log(`   - Arbitragens: ${arbitragens.length}`)
-    console.log(`   - Movimentações: ${movimentacoes.length}`)
     console.log(`   - Freespins: ${freespins.length}`)
+    console.log(`   - Freebets: ${freebets.length}`)
     console.log(`   - Ganhos: ${ganhos.length}`)
+    console.log(`   - Movimentações: ${movimentacoes.length}`)
     console.log(`   - Perdas: ${percas.length}`)
-    console.log(`   - Usuários: ${usuarios.length}`)
-    
-    // Limpar dados existentes
-    console.log('🧹 Limpando dados existentes...')
-    await prisma.movimentacao.deleteMany()
-    await prisma.arbitragem.deleteMany()
-    await prisma.freeSpin.deleteMany()
-    await prisma.ganho.deleteMany()
-    await prisma.perca.deleteMany()
-    await prisma.casa.deleteMany()
-    await prisma.usuario.deleteMany()
-    
-    // Importar usuários primeiro
-    console.log('👤 Importando usuários...')
-    for (const user of usuarios) {
-      await prisma.usuario.create({
-        data: {
-          nome: user.nome,
-          email: user.email,
-          senha: user.senha,
-          createdAt: new Date(user.createdAt),
-          updatedAt: new Date(user.updatedAt)
-        }
-      })
-    }
     
     // Importar casas
     console.log('🏠 Importando casas...')
@@ -60,15 +36,6 @@ async function seedWithData() {
       await prisma.casa.create({
         data: {
           nome: casa.nome,
-          status: casa.status || 'ativa',
-          bonusBoasVindas: casa.bonusBoasVindas || null,
-          bonusRecarga: casa.bonusRecarga || null,
-          tempoSaque: casa.tempoSaque || null,
-          metodosPagamento: casa.metodosPagamento || null,
-          telefone: casa.telefone || null,
-          email: casa.email || null,
-          site: casa.site || null,
-          observacoes: casa.observacoes || null,
           usuarioId: casa.usuarioId,
           createdAt: new Date(casa.createdAt),
           updatedAt: new Date(casa.updatedAt)
@@ -97,40 +64,16 @@ async function seedWithData() {
           stake3: arb.stake3 || null,
           stake4: arb.stake4 || null,
           stake5: arb.stake5 || null,
-          valorTotalInvestir: arb.valorTotalInvestir || null,
-          resultado1: arb.resultado1 || null,
-          resultado2: arb.resultado2 || null,
-          resultado3: arb.resultado3 || null,
-          resultado4: arb.resultado4 || null,
-          resultado5: arb.resultado5 || null,
+          freebet1: arb.freebet1 || false,
+          freebet2: arb.freebet2 || false,
+          freebet3: arb.freebet3 || false,
+          freebet4: arb.freebet4 || false,
+          freebet5: arb.freebet5 || false,
           ladoVencedor: arb.ladoVencedor || null,
           lucroReal: arb.lucroReal || null,
-          status: arb.status || 'pendente',
-          freebet1: arb.freebet1 || null,
-          freebet2: arb.freebet2 || null,
-          freebet3: arb.freebet3 || null,
-          freebet4: arb.freebet4 || null,
-          freebet5: arb.freebet5 || null,
-          data: new Date(arb.data),
           usuarioId: arb.usuarioId,
           createdAt: new Date(arb.createdAt),
           updatedAt: new Date(arb.updatedAt)
-        }
-      })
-    }
-    
-    // Importar movimentações
-    console.log('💰 Importando movimentações...')
-    for (const mov of movimentacoes) {
-      await prisma.movimentacao.create({
-        data: {
-          tipo: mov.tipo,
-          valor: mov.valor,
-          data: new Date(mov.data),
-          casaId: mov.casaId || null,
-          usuarioId: mov.usuarioId,
-          createdAt: new Date(mov.createdAt),
-          updatedAt: new Date(mov.updatedAt)
         }
       })
     }
@@ -140,9 +83,23 @@ async function seedWithData() {
     for (const fs of freespins) {
       await prisma.freeSpin.create({
         data: {
-          valor: fs.valorGanho,
+          valor: fs.valor,
           data: new Date(fs.data),
-          casaId: fs.casaId || null,
+          casaId: fs.casaId,
+          usuarioId: fs.usuarioId,
+          createdAt: new Date(fs.createdAt),
+          updatedAt: new Date(fs.updatedAt)
+        }
+      })
+      
+      // Criar movimentação de prêmio
+      await prisma.movimentacao.create({
+        data: {
+          casaId: fs.casaId,
+          tipo: 'premio',
+          valor: fs.valorGanho,
+          observacao: `Prêmio de rodada grátis #${fs.id}`,
+          data: new Date(fs.data),
           usuarioId: fs.usuarioId,
           createdAt: new Date(fs.createdAt),
           updatedAt: new Date(fs.updatedAt)
@@ -150,14 +107,29 @@ async function seedWithData() {
       })
     }
     
+    // Importar freebets
+    console.log('🎁 Importando freebets...')
+    for (const fb of freebets) {
+      await prisma.freebet.create({
+        data: {
+          valor: fb.valor,
+          data: new Date(fb.data),
+          casaId: fb.casaId,
+          usuarioId: fb.usuarioId,
+          createdAt: new Date(fb.createdAt),
+          updatedAt: new Date(fb.updatedAt)
+        }
+      })
+    }
+    
     // Importar ganhos
-    console.log('💚 Importando ganhos...')
+    console.log('💰 Importando ganhos...')
     for (const ganho of ganhos) {
       await prisma.ganho.create({
         data: {
           valor: ganho.valor,
           data: new Date(ganho.data),
-          casaId: ganho.casaId || null,
+          casaId: ganho.casaId,
           usuarioId: ganho.usuarioId,
           createdAt: new Date(ganho.createdAt),
           updatedAt: new Date(ganho.updatedAt)
@@ -165,14 +137,31 @@ async function seedWithData() {
       })
     }
     
+    // Importar movimentações
+    console.log('📊 Importando movimentações...')
+    for (const mov of movimentacoes) {
+      await prisma.movimentacao.create({
+        data: {
+          tipo: mov.tipo,
+          valor: mov.valor,
+          data: new Date(mov.data),
+          observacao: mov.observacao || null,
+          casaId: mov.casaId,
+          usuarioId: mov.usuarioId,
+          createdAt: new Date(mov.createdAt),
+          updatedAt: new Date(mov.updatedAt)
+        }
+      })
+    }
+    
     // Importar perdas
-    console.log('💔 Importando perdas...')
+    console.log('💸 Importando perdas...')
     for (const perca of percas) {
       await prisma.perca.create({
         data: {
           valor: perca.valor,
           data: new Date(perca.data),
-          casaId: perca.casaId || null,
+          casaId: perca.casaId,
           usuarioId: perca.usuarioId,
           createdAt: new Date(perca.createdAt),
           updatedAt: new Date(perca.updatedAt)
@@ -180,14 +169,19 @@ async function seedWithData() {
       })
     }
     
-    console.log('🎉 Seed concluído com sucesso!')
+    console.log('✅ Importação concluída com sucesso!')
     
   } catch (error) {
-    console.error('❌ Erro no seed:', error)
+    console.error('❌ Erro durante a importação:', error)
+    throw error
   } finally {
     await prisma.$disconnect()
     db.close()
   }
 }
 
-seedWithData()
+main()
+  .catch((e) => {
+    console.error(e)
+    process.exit(1)
+  })
