@@ -8,4 +8,4 @@ CREATE TABLE "Usuario" (
 );
 
 -- CreateIndex
-CREATE UNIQUE INDEX "Usuario_email_key" ON "Usuario"("email");
+CREATE UNIQUE INDEX "Usuario_email_key" ON "Usuario"("email"); 

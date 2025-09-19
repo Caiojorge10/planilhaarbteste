@@ -46,4 +46,4 @@ CREATE TABLE "Freebet" (
     "valorExtraido" REAL,
     "estrategia" TEXT,
     CONSTRAINT "Freebet_casaId_fkey" FOREIGN KEY ("casaId") REFERENCES "Casa" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
-);
+); 

@@ -27,25 +27,17 @@ app.use((0, cors_1.default)({
 }));
 // Middleware
 app.use(express_1.default.json());
-// Criar routers para rotas protegidas
-const casasRouter = express_1.default.Router();
-const arbitragensRouter = express_1.default.Router();
-const freebetsRouter = express_1.default.Router();
-const freespinsRouter = express_1.default.Router();
-const movimentacoesRouter = express_1.default.Router();
-// Usar os routers
-app.use('/api/casas', casasRouter);
-app.use('/api/arbitragens', arbitragensRouter);
-app.use('/api/freebets', freebetsRouter);
-app.use('/api/freespins', freespinsRouter);
-app.use('/api/movimentacoes', movimentacoesRouter);
+// Proteger todas as rotas de dados
+app.use('/api/casas', authMiddleware_1.default);
+app.use('/api/arbitragens', authMiddleware_1.default);
+app.use('/api/freebets', authMiddleware_1.default);
+app.use('/api/freespins', authMiddleware_1.default);
+app.use('/api/movimentacoes', authMiddleware_1.default);
+app.use('/api/percas', authMiddleware_1.default);
+app.use('/api/ganhos', authMiddleware_1.default);
 // Rotas para Casas
-casasRouter.get('/', authMiddleware_1.default, async (req, res) => {
+app.get('/api/casas', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const casas = await prisma.casa.findMany({ where: { usuarioId: req.usuarioId } });
         res.json(casas);
     }
@@ -53,12 +45,8 @@ casasRouter.get('/', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao buscar casas' });
     }
 });
-casasRouter.post('/', authMiddleware_1.default, async (req, res) => {
+app.post('/api/casas', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const casa = await prisma.casa.create({
             data: { ...req.body, usuarioId: req.usuarioId }
         });
@@ -68,7 +56,7 @@ casasRouter.post('/', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao criar casa' });
     }
 });
-casasRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
+app.put('/api/casas/:id', async (req, res) => {
     try {
         const casa = await prisma.casa.update({
             where: { id: parseInt(req.params.id) },
@@ -80,7 +68,7 @@ casasRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao atualizar casa' });
     }
 });
-casasRouter.delete('/:id', authMiddleware_1.default, async (req, res) => {
+app.delete('/api/casas/:id', async (req, res) => {
     try {
         await prisma.casa.delete({
             where: { id: parseInt(req.params.id) }
@@ -91,38 +79,17 @@ casasRouter.delete('/:id', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao deletar casa' });
     }
 });
-casasRouter.get('/:id/saldo', authMiddleware_1.default, async (req, res) => {
-    try {
-        const casaId = parseInt(req.params.id);
-        // Saldo apenas pelas movimentações
-        const movimentacoes = await prisma.movimentacao.findMany({ where: { casaId } });
-        const saldo = movimentacoes.reduce((acc, mov) => {
-            if (mov.tipo === 'deposito' || mov.tipo === 'premio')
-                return acc + mov.valor;
-            if (mov.tipo === 'saque' || mov.tipo === 'aposta')
-                return acc - mov.valor;
-            return acc;
-        }, 0);
-        res.json({ casaId, saldo });
-    }
-    catch (error) {
-        res.status(500).json({ error: 'Erro ao calcular saldo' });
-    }
-});
 // Rotas para Arbitragens
-arbitragensRouter.get('/', authMiddleware_1.default, async (req, res) => {
+app.get('/api/arbitragens', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const arbitragens = await prisma.arbitragem.findMany({
             where: { usuarioId: req.usuarioId },
             include: {
                 casa1: true,
                 casa2: true,
                 casa3: true,
-                casa4: true
+                casa4: true,
+                casa5: true
             }
         });
         res.json(arbitragens);
@@ -131,12 +98,8 @@ arbitragensRouter.get('/', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao buscar arbitragens' });
     }
 });
-arbitragensRouter.post('/', authMiddleware_1.default, async (req, res) => {
+app.post('/api/arbitragens', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const data = {
             ...req.body,
             data: new Date(),
@@ -148,12 +111,13 @@ arbitragensRouter.post('/', authMiddleware_1.default, async (req, res) => {
                 casa1: true,
                 casa2: true,
                 casa3: true,
-                casa4: true
+                casa4: true,
+                casa5: true
             }
         });
         // Criar movimentações de aposta para cada casa envolvida
         const movimentacoes = [];
-        if (arbitragem.casa1Id && arbitragem.stake1) {
+        if (arbitragem.casa1Id && arbitragem.stake1 && !arbitragem.freebet1) {
             movimentacoes.push(prisma.movimentacao.create({
                 data: {
                     casaId: arbitragem.casa1Id,
@@ -164,7 +128,7 @@ arbitragensRouter.post('/', authMiddleware_1.default, async (req, res) => {
                 }
             }));
         }
-        if (arbitragem.casa2Id && arbitragem.stake2) {
+        if (arbitragem.casa2Id && arbitragem.stake2 && !arbitragem.freebet2) {
             movimentacoes.push(prisma.movimentacao.create({
                 data: {
                     casaId: arbitragem.casa2Id,
@@ -175,7 +139,7 @@ arbitragensRouter.post('/', authMiddleware_1.default, async (req, res) => {
                 }
             }));
         }
-        if (arbitragem.casa3Id && arbitragem.stake3) {
+        if (arbitragem.casa3Id && arbitragem.stake3 && !arbitragem.freebet3) {
             movimentacoes.push(prisma.movimentacao.create({
                 data: {
                     casaId: arbitragem.casa3Id,
@@ -186,7 +150,7 @@ arbitragensRouter.post('/', authMiddleware_1.default, async (req, res) => {
                 }
             }));
         }
-        if (arbitragem.casa4Id && arbitragem.stake4) {
+        if (arbitragem.casa4Id && arbitragem.stake4 && !arbitragem.freebet4) {
             movimentacoes.push(prisma.movimentacao.create({
                 data: {
                     casaId: arbitragem.casa4Id,
@@ -197,15 +161,25 @@ arbitragensRouter.post('/', authMiddleware_1.default, async (req, res) => {
                 }
             }));
         }
+        if (arbitragem.casa5Id && arbitragem.stake5 && !arbitragem.freebet5) {
+            movimentacoes.push(prisma.movimentacao.create({
+                data: {
+                    casaId: arbitragem.casa5Id,
+                    tipo: 'aposta',
+                    valor: arbitragem.stake5,
+                    observacao: `Aposta arbitragem #${arbitragem.id} - Casa 5`,
+                    usuarioId: req.usuarioId
+                }
+            }));
+        }
         await Promise.all(movimentacoes);
         res.status(201).json(arbitragem);
     }
     catch (error) {
-        const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
-        res.status(500).json({ error: 'Erro ao criar arbitragem', details: errorMessage });
+        res.status(500).json({ error: 'Erro ao criar arbitragem', details: error.message });
     }
 });
-arbitragensRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
+app.put('/api/arbitragens/:id', async (req, res) => {
     try {
         const arbitragem = await prisma.arbitragem.update({
             where: { id: parseInt(req.params.id) },
@@ -214,7 +188,8 @@ arbitragensRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
                 casa1: true,
                 casa2: true,
                 casa3: true,
-                casa4: true
+                casa4: true,
+                casa5: true
             }
         });
         res.json(arbitragem);
@@ -224,17 +199,12 @@ arbitragensRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
     }
 });
 // Endpoint para finalizar arbitragem com lado vencedor
-arbitragensRouter.post('/:id/finalizar', authMiddleware_1.default, async (req, res) => {
+app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const { ladoVencedor } = req.body;
         const arbitragemId = parseInt(req.params.id);
-        if (!ladoVencedor || !['casa1', 'casa2', 'casa3', 'casa4'].includes(ladoVencedor)) {
-            res.status(400).json({ error: 'Lado vencedor deve ser "casa1", "casa2", "casa3" ou "casa4"' });
-            return;
+        if (!ladoVencedor || !['casa1', 'casa2', 'casa3', 'casa4', 'casa5'].includes(ladoVencedor)) {
+            return res.status(400).json({ error: 'Lado vencedor deve ser "casa1", "casa2", "casa3", "casa4" ou "casa5"' });
         }
         // Buscar a arbitragem
         const arbitragem = await prisma.arbitragem.findUnique({
@@ -243,32 +213,33 @@ arbitragensRouter.post('/:id/finalizar', authMiddleware_1.default, async (req, r
                 casa1: true,
                 casa2: true,
                 casa3: true,
-                casa4: true
+                casa4: true,
+                casa5: true
             }
         });
         if (!arbitragem) {
-            res.status(404).json({ error: 'Arbitragem não encontrada' });
-            return;
+            return res.status(404).json({ error: 'Arbitragem não encontrada' });
         }
         // Verificar se o lado vencedor é válido para o tipo de arbitragem
         const tipoArbitragem = arbitragem.tipo;
         const ladosValidos = {
             '2_resultados': ['casa1', 'casa2'],
             '3_resultados': ['casa1', 'casa2', 'casa3'],
-            '4_resultados': ['casa1', 'casa2', 'casa3', 'casa4']
+            '4_resultados': ['casa1', 'casa2', 'casa3', 'casa4'],
+            '5_resultados': ['casa1', 'casa2', 'casa3', 'casa4', 'casa5']
         };
         if (!ladosValidos[tipoArbitragem]?.includes(ladoVencedor)) {
-            res.status(400).json({
+            return res.status(400).json({
                 error: `Lado vencedor inválido para arbitragem de ${tipoArbitragem}`
             });
-            return;
         }
-        // Calcule valorTotalInvestir como soma das stakes
-        const valorTotalInvestir = (arbitragem.stake1 || 0) +
-            (arbitragem.stake2 || 0) +
-            (arbitragem.stake3 || 0) +
-            (arbitragem.stake4 || 0);
-        // Calcule o lucro real do lado vencedor usando a soma das stakes
+        // Calcule valorTotalInvestir como soma das stakes que NÃO são freebet
+        const valorTotalInvestir = (arbitragem.stake1 && !arbitragem.freebet1 ? arbitragem.stake1 : 0) +
+            (arbitragem.stake2 && !arbitragem.freebet2 ? arbitragem.stake2 : 0) +
+            (arbitragem.stake3 && !arbitragem.freebet3 ? arbitragem.stake3 : 0) +
+            (arbitragem.stake4 && !arbitragem.freebet4 ? arbitragem.stake4 : 0) +
+            (arbitragem.stake5 && !arbitragem.freebet5 ? arbitragem.stake5 : 0);
+        // Calcule o lucro real do lado vencedor usando a soma das stakes não freebet
         let lucroReal = 0;
         if (ladoVencedor === 'casa1' && arbitragem.stake1 && arbitragem.odd1)
             lucroReal = (arbitragem.stake1 * arbitragem.odd1) - valorTotalInvestir;
@@ -278,6 +249,8 @@ arbitragensRouter.post('/:id/finalizar', authMiddleware_1.default, async (req, r
             lucroReal = (arbitragem.stake3 * arbitragem.odd3) - valorTotalInvestir;
         else if (ladoVencedor === 'casa4' && arbitragem.stake4 && arbitragem.odd4)
             lucroReal = (arbitragem.stake4 * arbitragem.odd4) - valorTotalInvestir;
+        else if (ladoVencedor === 'casa5' && arbitragem.stake5 && arbitragem.odd5)
+            lucroReal = (arbitragem.stake5 * arbitragem.odd5) - valorTotalInvestir;
         // Atualizar arbitragem com lado vencedor, status, lucroEsperado e valorTotalInvestir
         const arbitragemAtualizada = await prisma.arbitragem.update({
             where: { id: arbitragemId },
@@ -291,7 +264,8 @@ arbitragensRouter.post('/:id/finalizar', authMiddleware_1.default, async (req, r
                 casa1: true,
                 casa2: true,
                 casa3: true,
-                casa4: true
+                casa4: true,
+                casa5: true
             }
         });
         // Criar movimentação de prêmio para a casa vencedora
@@ -313,6 +287,10 @@ arbitragensRouter.post('/:id/finalizar', authMiddleware_1.default, async (req, r
             premio = arbitragem.stake4 * arbitragem.odd4;
             casaPremiadaId = arbitragem.casa4Id;
         }
+        if (ladoVencedor === 'casa5' && arbitragem.casa5Id && arbitragem.stake5 && arbitragem.odd5) {
+            premio = arbitragem.stake5 * arbitragem.odd5;
+            casaPremiadaId = arbitragem.casa5Id;
+        }
         if (casaPremiadaId && premio > 0) {
             await prisma.movimentacao.create({
                 data: {
@@ -330,11 +308,10 @@ arbitragensRouter.post('/:id/finalizar', authMiddleware_1.default, async (req, r
     }
     catch (error) {
         console.error('Erro ao finalizar arbitragem:', error);
-        const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
-        res.status(500).json({ error: 'Erro ao finalizar arbitragem', details: errorMessage });
+        res.status(500).json({ error: 'Erro ao finalizar arbitragem', details: error.message });
     }
 });
-arbitragensRouter.delete('/:id', authMiddleware_1.default, async (req, res) => {
+app.delete('/api/arbitragens/:id', async (req, res) => {
     try {
         await prisma.arbitragem.delete({
             where: { id: parseInt(req.params.id) }
@@ -346,12 +323,8 @@ arbitragensRouter.delete('/:id', authMiddleware_1.default, async (req, res) => {
     }
 });
 // Rotas para Freebets
-freebetsRouter.get('/', authMiddleware_1.default, async (req, res) => {
+app.get('/api/freebets', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const freebets = await prisma.freebet.findMany({
             where: { usuarioId: req.usuarioId },
             include: { casa: true }
@@ -362,12 +335,8 @@ freebetsRouter.get('/', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao buscar freebets' });
     }
 });
-freebetsRouter.post('/', authMiddleware_1.default, async (req, res) => {
+app.post('/api/freebets', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const data = {
             ...req.body,
             dataObtencao: new Date(req.body.dataObtencao),
@@ -381,11 +350,10 @@ freebetsRouter.post('/', authMiddleware_1.default, async (req, res) => {
         res.status(201).json(freebet);
     }
     catch (error) {
-        const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
-        res.status(500).json({ error: 'Erro ao criar freebet', details: errorMessage });
+        res.status(500).json({ error: 'Erro ao criar freebet', details: error.message });
     }
 });
-freebetsRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
+app.put('/api/freebets/:id', async (req, res) => {
     try {
         const freebet = await prisma.freebet.update({
             where: { id: parseInt(req.params.id), usuarioId: req.usuarioId },
@@ -398,7 +366,7 @@ freebetsRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao atualizar freebet' });
     }
 });
-freebetsRouter.delete('/:id', authMiddleware_1.default, async (req, res) => {
+app.delete('/api/freebets/:id', async (req, res) => {
     try {
         await prisma.freebet.delete({
             where: { id: parseInt(req.params.id), usuarioId: req.usuarioId }
@@ -410,12 +378,8 @@ freebetsRouter.delete('/:id', authMiddleware_1.default, async (req, res) => {
     }
 });
 // Rotas para FreeSpins
-freespinsRouter.get('/', authMiddleware_1.default, async (req, res) => {
+app.get('/api/freespins', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const freespins = await prisma.freeSpin.findMany({
             where: { usuarioId: req.usuarioId },
             include: { casa: true }
@@ -426,12 +390,8 @@ freespinsRouter.get('/', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao buscar rodadas grátis' });
     }
 });
-freespinsRouter.post('/', authMiddleware_1.default, async (req, res) => {
+app.post('/api/freespins', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const { casaId, valorGanho } = req.body;
         const freespin = await prisma.freeSpin.create({
             data: {
@@ -453,11 +413,10 @@ freespinsRouter.post('/', authMiddleware_1.default, async (req, res) => {
         res.status(201).json(freespin);
     }
     catch (error) {
-        const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
-        res.status(500).json({ error: 'Erro ao criar rodada grátis', details: errorMessage });
+        res.status(500).json({ error: 'Erro ao criar rodada grátis', details: error.message });
     }
 });
-freespinsRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
+app.put('/api/freespins/:id', async (req, res) => {
     try {
         const freespin = await prisma.freeSpin.update({
             where: { id: parseInt(req.params.id), usuarioId: req.usuarioId },
@@ -470,7 +429,7 @@ freespinsRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao atualizar rodada grátis' });
     }
 });
-freespinsRouter.delete('/:id', authMiddleware_1.default, async (req, res) => {
+app.delete('/api/freespins/:id', async (req, res) => {
     try {
         await prisma.freeSpin.delete({
             where: { id: parseInt(req.params.id), usuarioId: req.usuarioId }
@@ -482,12 +441,8 @@ freespinsRouter.delete('/:id', authMiddleware_1.default, async (req, res) => {
     }
 });
 // Rotas para Movimentações
-movimentacoesRouter.get('/', authMiddleware_1.default, async (req, res) => {
+app.get('/api/movimentacoes', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const movimentacoes = await prisma.movimentacao.findMany({
             where: { usuarioId: req.usuarioId },
             include: { casa: true }
@@ -498,28 +453,22 @@ movimentacoesRouter.get('/', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao buscar movimentações' });
     }
 });
-movimentacoesRouter.get('/:id', authMiddleware_1.default, async (req, res) => {
+app.get('/api/movimentacoes/:id', async (req, res) => {
     try {
         const movimentacao = await prisma.movimentacao.findUnique({
             where: { id: parseInt(req.params.id), usuarioId: req.usuarioId },
             include: { casa: true }
         });
-        if (!movimentacao) {
-            res.status(404).json({ error: 'Movimentação não encontrada' });
-            return;
-        }
+        if (!movimentacao)
+            return res.status(404).json({ error: 'Movimentação não encontrada' });
         res.json(movimentacao);
     }
     catch (error) {
         res.status(500).json({ error: 'Erro ao buscar movimentação' });
     }
 });
-movimentacoesRouter.post('/', authMiddleware_1.default, async (req, res) => {
+app.post('/api/movimentacoes', async (req, res) => {
     try {
-        if (!req.usuarioId) {
-            res.status(401).json({ error: 'Usuário não autenticado' });
-            return;
-        }
         const data = {
             ...req.body,
             data: req.body.data ? new Date(req.body.data) : new Date(),
@@ -532,11 +481,10 @@ movimentacoesRouter.post('/', authMiddleware_1.default, async (req, res) => {
         res.status(201).json(movimentacao);
     }
     catch (error) {
-        const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
-        res.status(500).json({ error: 'Erro ao criar movimentação', details: errorMessage });
+        res.status(500).json({ error: 'Erro ao criar movimentação', details: error.message });
     }
 });
-movimentacoesRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
+app.put('/api/movimentacoes/:id', async (req, res) => {
     try {
         const movimentacao = await prisma.movimentacao.update({
             where: { id: parseInt(req.params.id) },
@@ -549,7 +497,7 @@ movimentacoesRouter.put('/:id', authMiddleware_1.default, async (req, res) => {
         res.status(500).json({ error: 'Erro ao atualizar movimentação' });
     }
 });
-movimentacoesRouter.delete('/:id', authMiddleware_1.default, async (req, res) => {
+app.delete('/api/movimentacoes/:id', async (req, res) => {
     try {
         await prisma.movimentacao.delete({
             where: { id: parseInt(req.params.id) }
@@ -560,13 +508,32 @@ movimentacoesRouter.delete('/:id', authMiddleware_1.default, async (req, res) =>
         res.status(500).json({ error: 'Erro ao deletar movimentação' });
     }
 });
-movimentacoesRouter.delete('/batch', authMiddleware_1.default, async (req, res) => {
+// Endpoint para consultar saldo de uma casa
+app.get('/api/casas/:id/saldo', async (req, res) => {
+    try {
+        const casaId = parseInt(req.params.id);
+        // Saldo apenas pelas movimentações
+        const movimentacoes = await prisma.movimentacao.findMany({ where: { casaId } });
+        const saldo = movimentacoes.reduce((acc, mov) => {
+            if (mov.tipo === 'deposito' || mov.tipo === 'premio' || mov.tipo === 'ganho')
+                return acc + mov.valor;
+            if (mov.tipo === 'saque' || mov.tipo === 'aposta' || mov.tipo === 'perda')
+                return acc - mov.valor;
+            return acc;
+        }, 0);
+        res.json({ casaId, saldo });
+    }
+    catch (error) {
+        res.status(500).json({ error: 'Erro ao calcular saldo' });
+    }
+});
+// Endpoint para exclusão múltipla de movimentações
+app.delete('/api/movimentacoes/batch', async (req, res) => {
     console.log('DELETE /api/movimentacoes/batch body:', req.body);
     try {
         const { ids } = req.body;
         if (!Array.isArray(ids) || ids.length === 0) {
-            res.status(400).json({ error: 'Envie um array de IDs para exclusão.' });
-            return;
+            return res.status(400).json({ error: 'Envie um array de IDs para exclusão.' });
         }
         await prisma.movimentacao.deleteMany({
             where: { id: { in: ids } }
@@ -585,14 +552,12 @@ app.get('/api/health', (req, res) => {
 app.post('/api/auth/register', async (req, res) => {
     const { nome, email, senha } = req.body;
     if (!nome || !email || !senha) {
-        res.status(400).json({ error: 'Nome, email e senha são obrigatórios.' });
-        return;
+        return res.status(400).json({ error: 'Nome, email e senha são obrigatórios.' });
     }
     try {
         const existing = await prisma.usuario.findUnique({ where: { email } });
         if (existing) {
-            res.status(409).json({ error: 'E-mail já cadastrado.' });
-            return;
+            return res.status(409).json({ error: 'E-mail já cadastrado.' });
         }
         const hash = await bcryptjs_1.default.hash(senha, 10);
         const usuario = await prisma.usuario.create({
@@ -608,19 +573,16 @@ app.post('/api/auth/register', async (req, res) => {
 app.post('/api/auth/login', async (req, res) => {
     const { email, senha } = req.body;
     if (!email || !senha) {
-        res.status(400).json({ error: 'E-mail e senha são obrigatórios.' });
-        return;
+        return res.status(400).json({ error: 'E-mail e senha são obrigatórios.' });
     }
     try {
         const usuario = await prisma.usuario.findUnique({ where: { email } });
         if (!usuario) {
-            res.status(401).json({ error: 'Usuário ou senha inválidos.' });
-            return;
+            return res.status(401).json({ error: 'Usuário ou senha inválidos.' });
         }
         const match = await bcryptjs_1.default.compare(senha, usuario.senha);
         if (!match) {
-            res.status(401).json({ error: 'Usuário ou senha inválidos.' });
-            return;
+            return res.status(401).json({ error: 'Usuário ou senha inválidos.' });
         }
         const token = jsonwebtoken_1.default.sign({ id: usuario.id, email: usuario.email }, process.env.JWT_SECRET || 'segredo', { expiresIn: '7d' });
         res.json({ token, usuario: { id: usuario.id, nome: usuario.nome, email: usuario.email } });
@@ -628,6 +590,114 @@ app.post('/api/auth/login', async (req, res) => {
     catch (error) {
         console.error('Erro no login:', error);
         res.status(500).json({ error: 'Erro ao fazer login.' });
+    }
+});
+// Rotas para Percas
+app.get('/api/percas', async (req, res) => {
+    try {
+        const percas = await prisma.perca.findMany({
+            where: { usuarioId: req.usuarioId },
+            include: { casa: true }
+        });
+        res.json(percas);
+    }
+    catch (error) {
+        res.status(500).json({ error: 'Erro ao buscar percas' });
+    }
+});
+app.post('/api/percas', async (req, res) => {
+    try {
+        const { casaId, valor } = req.body;
+        const perca = await prisma.perca.create({
+            data: {
+                casaId: Number(casaId),
+                valor: Number(valor),
+                usuarioId: req.usuarioId
+            },
+            include: { casa: true }
+        });
+        // Cria uma movimentação de 'perda'
+        await prisma.movimentacao.create({
+            data: {
+                casaId: Number(casaId),
+                tipo: 'perda',
+                valor: Number(valor),
+                observacao: `Registro de perda #${perca.id}`,
+                usuarioId: req.usuarioId
+            }
+        });
+        res.status(201).json(perca);
+    }
+    catch (error) {
+        res.status(500).json({ error: 'Erro ao criar perca', details: error.message });
+    }
+});
+app.delete('/api/percas/:id', async (req, res) => {
+    try {
+        const percaId = parseInt(req.params.id);
+        // Opcional: Encontrar a movimentação associada e removê-la também
+        // Isso depende se a perda deve ser "desfeita" no extrato da casa.
+        // Por simplicidade, vamos apenas remover o registro da perda.
+        // Se precisar remover a movimentação, adicione a lógica aqui.
+        await prisma.perca.delete({
+            where: { id: percaId, usuarioId: req.usuarioId }
+        });
+        res.status(204).send();
+    }
+    catch (error) {
+        res.status(500).json({ error: 'Erro ao deletar perca' });
+    }
+});
+// Rotas para Ganhos
+app.get('/api/ganhos', async (req, res) => {
+    try {
+        const ganhos = await prisma.ganho.findMany({
+            where: { usuarioId: req.usuarioId },
+            include: { casa: true }
+        });
+        res.json(ganhos);
+    }
+    catch (error) {
+        res.status(500).json({ error: 'Erro ao buscar ganhos' });
+    }
+});
+app.post('/api/ganhos', async (req, res) => {
+    try {
+        const { casaId, valor } = req.body;
+        const ganho = await prisma.ganho.create({
+            data: {
+                casaId: Number(casaId),
+                valor: Number(valor),
+                usuarioId: req.usuarioId
+            },
+            include: { casa: true }
+        });
+        // Cria uma movimentação de 'ganho'
+        await prisma.movimentacao.create({
+            data: {
+                casaId: Number(casaId),
+                tipo: 'ganho',
+                valor: Number(valor),
+                observacao: `Registro de ganho #${ganho.id}`,
+                usuarioId: req.usuarioId
+            }
+        });
+        res.status(201).json(ganho);
+    }
+    catch (error) {
+        res.status(500).json({ error: 'Erro ao criar ganho', details: error.message });
+    }
+});
+app.delete('/api/ganhos/:id', async (req, res) => {
+    try {
+        const ganhoId = parseInt(req.params.id);
+        await prisma.ganho.delete({
+            where: { id: ganhoId, usuarioId: req.usuarioId }
+        });
+        res.status(204).send();
+    }
+    catch (error) {
+        res.status(500).json({ error: 'Erro ao deletar ganho' });
     }
 });
 // Iniciar servidor

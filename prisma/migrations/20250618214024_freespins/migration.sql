@@ -11,4 +11,4 @@ CREATE TABLE "FreeSpin" (
     "estrategia" TEXT,
     "observacoes" TEXT,
     CONSTRAINT "FreeSpin_casaId_fkey" FOREIGN KEY ("casaId") REFERENCES "Casa" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
-);
+); 

@@ -1,2 +1,2 @@
 -- AlterTable
-ALTER TABLE "Arbitragem" ADD COLUMN "ladoVencedor" TEXT;
+ALTER TABLE "Arbitragem" ADD COLUMN "ladoVencedor" TEXT; 

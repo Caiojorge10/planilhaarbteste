@@ -124,4 +124,4 @@ DROP TABLE "Usuario";
 ALTER TABLE "new_Usuario" RENAME TO "Usuario";
 CREATE UNIQUE INDEX "Usuario_email_key" ON "Usuario"("email");
 PRAGMA foreign_keys=ON;
-PRAGMA defer_foreign_keys=OFF;
+PRAGMA defer_foreign_keys=OFF; 

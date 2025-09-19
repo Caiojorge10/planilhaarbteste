@@ -44,4 +44,4 @@ INSERT INTO "new_Arbitragem" ("casa1Id", "casa2Id", "casa3Id", "casa4Id", "data"
 DROP TABLE "Arbitragem";
 ALTER TABLE "new_Arbitragem" RENAME TO "Arbitragem";
 PRAGMA foreign_keys=ON;
-PRAGMA defer_foreign_keys=OFF;
+PRAGMA defer_foreign_keys=OFF; 

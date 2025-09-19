@@ -26,4 +26,4 @@ INSERT INTO "new_FreeSpin" ("casaId", "id") SELECT "casaId", "id" FROM "FreeSpin
 DROP TABLE "FreeSpin";
 ALTER TABLE "new_FreeSpin" RENAME TO "FreeSpin";
 PRAGMA foreign_keys=ON;
-PRAGMA defer_foreign_keys=OFF;
+PRAGMA defer_foreign_keys=OFF; 
