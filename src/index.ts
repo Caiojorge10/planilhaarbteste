@@ -233,7 +233,7 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
       '4_resultados': ['casa1', 'casa2', 'casa3', 'casa4'],
       '5_resultados': ['casa1', 'casa2', 'casa3', 'casa4', 'casa5']
     };
-    if (!lados.every(l => ladosValidos[tipoArbitragem]?.includes(l))) {
+    if (!lados.every((l: string) => ladosValidos[tipoArbitragem as keyof typeof ladosValidos]?.includes(l))) {
       return res.status(400).json({ error: `Lado(s) vencedor(es) inválido(s) para arbitragem de ${tipoArbitragem}` });
     }
     // Calcule valorTotalInvestir como soma das stakes que NÃO são freebet
@@ -246,7 +246,7 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
     // Calcule o lucro real somando todos os lados vencedores
     let lucroReal = 0;
     const premios: { casaId: number, valor: number, lado: string }[] = [];
-    lados.forEach(lado => {
+    lados.forEach((lado: string) => {
       if (lado === 'casa1' && arbitragem.stake1 && arbitragem.odd1 && arbitragem.casa1Id) {
         lucroReal += (arbitragem.stake1 * arbitragem.odd1) - valorTotalInvestir;
         premios.push({ casaId: arbitragem.casa1Id, valor: arbitragem.stake1 * arbitragem.odd1, lado });
@@ -303,7 +303,7 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
       arbitragem: arbitragemAtualizada
     });
   } catch (error) {
-    console.error('Erro ao finalizar arbitragem:', error);
+    console.error('Erro ao finalizar arbitragem:', error as Error);
     res.status(500).json({ error: 'Erro ao finalizar arbitragem', details: error.message });
   }
 });
@@ -582,7 +582,7 @@ app.post('/api/auth/login', async (req, res) => {
     const token = jwt.sign({ id: usuario.id, email: usuario.email }, process.env.JWT_SECRET || 'segredo', { expiresIn: '7d' });
     res.json({ token, usuario: { id: usuario.id, nome: usuario.nome, email: usuario.email } });
   } catch (error) {
-    console.error('Erro no login:', error);
+    console.error('Erro no login:', error as Error);
     res.status(500).json({ error: 'Erro ao fazer login.' });
   }
 });
