@@ -38,11 +38,11 @@ model Casa {
   site             String?
   observacoes      String?
   usuarioId        Int
-  arbitragens5     Arbitragem[]   @relation("Casa5")
-  arbitragens4     Arbitragem[]   @relation("Casa4")
-  arbitragens3     Arbitragem[]   @relation("Casa3")
-  arbitragens2     Arbitragem[]   @relation("Casa2")
   arbitragens1     Arbitragem[]   @relation("Casa1")
+  arbitragens2     Arbitragem[]   @relation("Casa2")
+  arbitragens3     Arbitragem[]   @relation("Casa3")
+  arbitragens4     Arbitragem[]   @relation("Casa4")
+  arbitragens5     Arbitragem[]   @relation("Casa5")
   usuario          Usuario        @relation(fields: [usuarioId], references: [id])
   freeSpins        FreeSpin[]
   freebets         Freebet[]
@@ -87,12 +87,12 @@ model Arbitragem {
   ladoVencedor       String?
   data               DateTime @default(now())
   usuarioId          Int
-  usuario            Usuario  @relation(fields: [usuarioId], references: [id])
-  casa5              Casa?    @relation("Casa5", fields: [casa5Id], references: [id])
-  casa4              Casa?    @relation("Casa4", fields: [casa4Id], references: [id])
-  casa3              Casa?    @relation("Casa3", fields: [casa3Id], references: [id])
-  casa2              Casa     @relation("Casa2", fields: [casa2Id], references: [id])
   casa1              Casa     @relation("Casa1", fields: [casa1Id], references: [id])
+  casa2              Casa     @relation("Casa2", fields: [casa2Id], references: [id])
+  casa3              Casa?    @relation("Casa3", fields: [casa3Id], references: [id])
+  casa4              Casa?    @relation("Casa4", fields: [casa4Id], references: [id])
+  casa5              Casa?    @relation("Casa5", fields: [casa5Id], references: [id])
+  usuario            Usuario  @relation(fields: [usuarioId], references: [id])
 }
 
 model Freebet {
@@ -120,9 +120,9 @@ model Movimentacao {
   usuarioId    Int
   percaId      Int?     @unique
   arbitragemId Int?
-  usuario      Usuario  @relation(fields: [usuarioId], references: [id])
-  casa         Casa     @relation(fields: [casaId], references: [id])
   perca        Perca?   @relation(fields: [percaId], references: [id], onDelete: Cascade)
+  casa         Casa     @relation(fields: [casaId], references: [id])
+  usuario      Usuario  @relation(fields: [usuarioId], references: [id])
 }
 
 model FreeSpin {
@@ -141,9 +141,9 @@ model Perca {
   valor        Float
   data         DateTime      @default(now())
   usuarioId    Int
+  movimentacao Movimentacao?
   usuario      Usuario       @relation(fields: [usuarioId], references: [id])
   casa         Casa          @relation(fields: [casaId], references: [id])
-  movimentacao Movimentacao?
 }
 
 model Ganho {

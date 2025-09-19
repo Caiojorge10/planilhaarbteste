@@ -1,0 +1,654 @@
+7|Inter Miami x Palmeiras|futebol|2_resultados|29|5.75|50.0|Inter|0|9|1.191|220.0|Lay inter|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|270.0|9.52000000000004|executada|casa1,casa2|1750749170825|1
+8|Inter Miami x Palmeiras|futebol|2_resultados|72|5.0|50.0|Inter|0|9|1.208|180.0|Lay inter|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|230.0|7.44|executada|casa2,casa1|1750749216274|1
+10|Flamengo x La galaxy|futebol|2_resultados|5|5.0|50.0|Empate + Ambas Marcam|0|6|1.208|180.0|Lay Empate + ambas|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|230.0|20.0|executada|casa1|1750769550893|1
+11|Bayer x Benfica|futebol|2_resultados|5|2.52|50.0|Empate|1|6|1.36|92.62|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|92.62|33.3432|executada|casa2|1750769772958|1
+12|Flamengo x La galaxy|futebol|2_resultados|5|2.5|70.0|Flamengo marcar primeiro tempo|0|37|1.917|91.29|Flamengo não marcar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|161.29|13.71293|executada|casa2|1750770574932|1
+13|Flamengo x La galaxy|futebol|2_resultados|34|1.52|25.0|Vitoria ou empate flamengo|0|11|4.5|8.44|La galaxy|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|33.44|4.56|executada|casa1|1750781644940|1
+14|Benfica x Bayer|futebol|2_resultados|16|2.1|50.0|Bayer|0|9|1.853|56.67|Lay bayer|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|106.67|-1.66049|executada|casa2|1750783121088|1
+15|Benfica X Bayer|futebol|2_resultados|61|2.1|50.0|Bayer|0|9|1.853|56.67|Lay bayer|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|106.67|-1.66049|executada|casa2|1750783445155|1
+16|Benfica x Bayer |futebol|2_resultados|60|2.1|50.0|Bayer|0|9|1.853|56.67|Lay bayer|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|106.67|-1.66049|executada|casa2|1750783693111|1
+17|Benfica X Bayer|futebol|2_resultados|62|2.0|50.0|Bayer|0|9|1.884|53.07|Lay bayer|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|103.07|-3.08611999999999|executada|casa2|1750783867810|1
+18|Flamengo x La Galaxy|futebol|2_resultados|76|7.25|100.0|Empate, +2,5, +0,5 la galaxy|0|6|1.129|642.13|Lay 1-1|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|742.13|-17.13|executada|casa1|1750803547052|1
+19|Inter x River plate|futebol|2_resultados|30|3.0|10.0|Lautaro tocar na bola|0|59|0.0|0.0|nada|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|10.0|20.0|executada|casa1|1750817314090|1
+20|Inter x River|futebol|3_resultados|5|2.5|70.0|Inter marca primeiro|0|37|2.63|66.54|River marca primeiro|0|9|11.505|15.21|0-0|0||0.0|0.0||0||0.0|0.0||0|151.75|23.25|executada|casa1|1750857594711|1
+21|Mamelodi x Fluminense|futebol|2_resultados|5|5.0|50.0|Flu + Ambas|0|9|1.212|160.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|210.0|-16.08|executada|casa2|1750868353325|1
+22|Mamelodi X Flu|futebol|2_resultados|34|1.6|25.0|Flu ou empate|0|28|3.7|10.81|Mamelodi|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|35.81|4.19|executada|casa1|1750873480479|1
+23|Fluminense x Mamelodi|futebol|2_resultados|76|6.5|100.0|Menos de 2,5,empate e mais de 0,5 mamelodi|0|9|1.149|565.6|Lay 1-1|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|665.6|-15.7256|executada|casa2|1750877877419|1
+24|Mamelodi x Fluminense|futebol|2_resultados|29|3.8|50.0|Mamelodi|0|9|1.289|100.0|Lay Mamelodi|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|150.0|-21.1|executada|casa2|1750878026357|1
+25|Inter x River|futebol|2_resultados|76|6.5|150.0|River e 2,5+|1|9|1.126|866.17|Lay river e 2,5+|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|866.17|109.13742|executada|casa2|1750894313827|1
+26|Inter x River|futebol|2_resultados|5|3.75|50.0|Inter + Ambas|1|34|1.212|154.68|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|154.68|32.79216|executada|casa2|1750895590599|1
+27|Juventus x City|futebol|2_resultados|76|7.25|100.0|Menos de 2,5, empate e mais de 0,5 juve|0|9|1.122|645.91|lay 1-1|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|745.91|-21.1989799999999|executada|casa2|1750956026732|1
+28|Real Madrid x Saulzburg|futebol|2_resultados|78|1.8|18.75|Vini chutar|0|11|3.38|10.0|Vini não chutar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|28.75|5.0|executada|casa1|1750957135491|1
+29|Real Madrid X Salzburg|futebol|2_resultados|34|1.4|25.0|Vitoria ou empate real|0|6|11.505|3.04|Salzburg|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|28.04|6.96|executada|casa1|1750964645791|1
+30|Palmeiras x Botafogo|futebol|2_resultados|5|8.5|50.0|Botafogo + Ambas|0|9|1.111|310.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|360.0|-15.59|executada|casa2|1751003681966|1
+31|Palmeiras x Botafogo|futebol|2_resultados|79|8.5|50.0|Botafogo + Ambas|0|9|1.111|310.0|Lay botafogo|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|360.0|-15.59|executada|casa2|1751003999690|1
+32|Flamengo x Bayer|futebol|2_resultados|78|10.0|5.0|Flamengo passar|0|34|1.382|36.18|Bayer passar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|41.18|8.82075999999999|executada|casa2|1751058000769|1
+33|Palmeiras x Botafogo|futebol|2_resultados|16|2.1|50.0|Palmeiras + 2,5 cantos 1 tempo|0|31|1.91|54.98|Palmeiras - 2,5 cantos 1 tempo|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|104.98|0.0200000000000102|executada|casa1|1751061406266|1
+34|Palmeiras x Botafogo|futebol|2_resultados|61|2.1|50.0|Palmeiras +2,5 cantos|0|31|1.91|54.98|Palmeiras -2,5 cantos|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|104.98|0.0200000000000102|executada|casa1|1751061783527|1
+35|Benfica x Chelsea|futebol|2_resultados|50|0.97|100.0|Mais de 2,5|1|9|1.92|51.63|Menos de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|51.63|47.4996|executada|casa2|1751062257996|1
+36|Benfica x Chelsea|futebol|2_resultados|51|0.97|100.0|Mais de 2,5|1|9|1.92|51.63|Menos de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|51.63|47.4996|executada|casa2|1751062523322|1
+37|Palmeiras x Botafogo|futebol|2_resultados|60|2.1|50.0|Palmeiras +2,5 cantos|0|31|1.91|54.98|Palmeiras -2,5 cantos|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|104.98|0.0200000000000102|executada|casa1|1751062813938|1
+38|Benfica X Chelsea|futebol|2_resultados|47|0.97|100.0|Mais de 2,5|1|9|1.92|51.63|Menos de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|51.63|47.4996|executada|casa2|1751063029218|1
+39|Benfica x Chelsea|futebol|2_resultados|52|0.97|100.0|Mais de 2,5|1|9|1.92|51.63|Menos de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|51.63|47.4996|executada|casa2|1751063421385|1
+40|Palmeiras x Botafogo|futebol|2_resultados|62|2.1|50.0|Palmeiras +2,5 cantos|0|31|1.91|54.98|Palmeiras -2,5 cantos|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|104.98|0.0200000000000102|executada|casa1|1751063509698|1
+41|Criciuma x Avai|futebol|2_resultados|81|1.75|200.0|Criciuma|1|9|1.549|225.97|Lay criciuma|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|225.97|124.05753|executada|casa2|1751071314293|1
+42|Criciuma x Avai|futebol|2_resultados|82|1.75|200.0|Criciuma|1|9|1.558|222.22|Lay criciuma|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|222.22|123.99876|executada|casa2|1751071394458|1
+43|Pacific vs Vancouver FC|futebol|2_resultados|83|2.1|200.0|empate|1|9|1.375|290.11|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|290.11|129.89|executada|casa1|1751078304520|1
+44|Flamengo x Bayer|futebol|2_resultados|70|6.5|10.0|Flamengo qualificar|0|34|1.334|48.71|Bayer qualificar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|58.71|6.26914|executada|casa2|1751210474937|1
+45|Flamengo x Bayer|futebol|2_resultados|15|2.0|3.0|Mais de 0,5 finalizações|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|3.0|3.0|executada|casa1|1751210593654|1
+46|Flamengo x Bayer|futebol|4_resultados|5|3.8|50.0|A|0|44|350.0|0.5|B|0|44|250.0|0.5|C|0|9|1.318|143.91|D|0||0.0|0.0||0|194.91|-5.23661999999999|executada|casa4|1751212839042|1
+47|Flamengo x Bayer|futebol|2_resultados|5|2.98|50.0|Empate|1|34|1.318|113.02|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.02|35.94036|executada|casa2|1751213562212|1
+48|Flamengo x Bayer|futebol|2_resultados|76|2.9|50.0|Empate|1|34|1.318|109.98|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.98|34.97364|executada|casa2|1751214118463|1
+49|Flamengo x Bayer|futebol|2_resultados|79|2.98|50.0|Empate|1|34|1.318|113.22|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.22|36.00396|executada|casa2|1751215139048|1
+50|Fluminense x Inter |futebol|2_resultados|5|12.0|50.0|Flu + Ambas|0|34|1.068|500.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|550.0|-16.0|executada|casa2|1751244459886|1
+51|Fluminense x Inter|futebol|2_resultados|79|12.0|50.0|Flu + Ambas|0|9|1.068|500.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|550.0|-16.0|executada|casa2|1751244654481|1
+52|Fluminense x Inter|futebol|3_resultados|78|4.6|15.0|Flu|1|5|3.66|18.85|Empate|0|44|1.76|39.21|Inter|0||0.0|0.0||0||0.0|0.0||0|58.06|10.94|executada|casa1|1751303128315|1
+53|City x Al hilal|futebol|2_resultados|5|5.8|75.0|Empate|1|9|1.149|378.5|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|378.5|56.5|executada|casa1|1751328371120|1
+54|City x Al Hilal|futebol|2_resultados|79|5.8|50.0|Empate|1|9|1.154|251.3|Lay empate |0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|251.3|38.7|executada|casa1|1751328693667|1
+55|Real madrid x Juventus|futebol|2_resultados|17|5.0|5.0|Qualificar Juventus|0|85|1.45|17.24|Qualificar real madrid|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|22.24|2.758|executada|casa2|1751387535933|1
+56|Real madrid x Juventus|futebol|2_resultados|18|5.0|5.0|Se qualificar juventus|0|85|1.45|17.24|Real madrid|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|22.24|2.758|executada|casa2|1751387564788|1
+57|Real madrid x Juventus|futebol|2_resultados|35|5.0|5.0|Vitoria real madrid|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|5.0|20.0|executada|casa1|1751387699589|1
+58|Real Madrid x Juventus|futebol|2_resultados|9|2.12|100.0|Mais de 9,5 escanteios|0|34|1.99|106.0|Menos de 9,5 escanteios|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|206.0|6.0|executada|casa1|1751388846262|1
+59|Real madrid x Juventus|futebol|2_resultados|5|3.0|25.0|Real madrid + 0,5 chutes gol vini|0|59|0.0|0.0|nada|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|25.0|50.0|executada|casa1|1751389182967|1
+60|Thiago Seyboth Wild vs Max Alcala Gurri|tenis|2_resultados|83|3.2|50.0|Max Alcala Gurri|0|34|1.353|119.07|Thiago Seyboth Wild|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|169.07|-7.96829|executada|casa2|1751390939867|1
+61|Bernard Tomic vs Kaylan Bigun|tenis|2_resultados|83|2.9|50.0|Kaylan Bigun|1|34|1.239|117.06|Bernard Tomic|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|117.06|27.94|executada|casa1|1751402892968|1
+62|Alex Knaff – Luca Staeheli|tenis|2_resultados|5|2.1|477.28|1|0|37|1.917|522.84|2|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1000.12|2.16428000000008|executada|casa2|1751428948052|1
+63|Naomi Osaka – Katerina Siniakova|tenis|2_resultados|37|2.04|323.28|1|0|79|2.0|329.74|2|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|653.02|6.47119999999995|executada|casa1|1751429746352|1
+64|Jack Draper – Marin Cilic|tenis|2_resultados|37|1.338|1498.69|1|0|5|4.0|501.31|2|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|2000.0|5.24000000000001|executada|casa2|1751497002220|1
+65|Jack Draper – Marin Cilic|tenis|2_resultados|79|4.0|507.0|2|0|37|1.346|1506.69|1|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|2013.69|14.31|executada|casa1|1751517743166|1
+66|Fluminense vs Al Hilal|futebol|2_resultados|36|5.0|5.0|Flu classificar|0|85|1.87|13.37|Bilal classificar |0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|18.37|6.63|executada|casa1|1751518758589|1
+67|Palmeiras vs Chelsea|futebol|2_resultados|36|5.0|5.0|Palmeiras classificar|0|85|1.56|16.02|Chelsea classificar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|21.02|3.9712|executada|casa2|1751518826950|1
+68|Fluminense FC vs Al-Hilal Riyadh|futebol|2_resultados|86|5.0|10.0|Vitoria flu|0|9|1.477|33.84|lay flu|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|43.84|6.16|executada|casa1|1751519241892|1
+69|Chegar na final|futebol|3_resultados|87|10.0|10.0|Flu + Palmeiras final|0|5|4.5|22.22|Bilal final|0|44|2.5|40.0|Chelsea Final|0||0.0|0.0||0||0.0|0.0||0|72.22|27.78|executada|casa3|1751520659875|1
+70|Palmeiras x Chelsea|futebol|2_resultados|88|10.0|1.0|Estevão tocar na bola|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.0|9.0|executada|casa1|1751562582783|1
+71|Palmeiras x Chelsea|futebol|2_resultados|5|8.5|50.0|Palmeiras + Ambas|0|9|1.101|330.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|380.0|-16.67|executada|casa2|1751588660041|1
+72|Palmeiras x Chelsea|futebol|2_resultados|79|8.5|50.0|Palmeiras + Ambas|0|9|1.101|330.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|380.0|-16.67|executada|casa2|1751588809691|1
+73|Yibing Wu – Michael Zheng|tenis|2_resultados|5|4.333|157.5|0:2|0|37|1.302|524.15|HA1(+1,5)|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|681.65|0.793300000000045|executada|casa2|1751638549960|1
+74|Elise Mertens - Elina Svitolina|tenis|2_resultados|5|2.625|300.0|0:2|0|37|1.617|487.01|HA1(+1,5)|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|787.01|0.485170000000039|executada|casa2|1751645891246|1
+76|Alexis Galarneau vs Patrick Kypson|tenis|2_resultados|81|2.75|50.0|1|0|9|1.449|94.9|2|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|144.9|-7.38989999999998|executada|casa2|1751646039826|1
+77|Elise Mertens - Elina Svitolina|tenis|2_resultados|79|2.625|611.69|0:2|0|37|1.606|993.0|HA1(+1,5)|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1604.69|-9.93200000000002|executada|casa2|1751646473805|1
+78|Chegar a final|futebol|3_resultados|29|4.0|10.0|Flu ou Pal|0|5|2.37|16.88|Chelsea|0|44|4.5|8.89|Al hilal|0||0.0|0.0||0||0.0|0.0||0|35.77|4.23560000000001|executada|casa2|1751647412608|1
+79|Palmeiras x Chelsea|futebol|2_resultados|15|2.0|3.0|Mais de 0,5 finalizações|0|59|0.0|0.0|b|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|3.0|3.0|executada|casa1|1751650859853|1
+80|Fluminense FC vs Al-Hilal Riyadh|futebol|2_resultados|81|5.0|50.0|Al-Hilal Riyadh + ambas|0|34|1.191|170.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|220.0|-17.53|executada|casa2|1751651878881|1
+81|Fluminense FC vs Al-Hilal Riyadh|futebol|2_resultados|83|5.0|50.0|Al-Hilal Riyadh + Ambas|0|34|1.184|170.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|220.0|-18.72|executada|casa2|1751652294701|1
+82|Palmeiras x Chelsea|futebol|2_resultados|16|2.0|50.0|Chelsea|0|34|1.936|51.65|Lay chelsea|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|101.65|-1.65000000000001|executada|casa1|1751675312951|1
+83|Palmeiras x Chelsea|futebol|2_resultados|60|2.0|50.0|Chelsea|0|34|1.936|51.65|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|101.65|-1.65000000000001|executada|casa1|1751675344130|1
+84|Palmeiras x Chelsea|futebol|2_resultados|61|2.0|50.0|Chelsea|0|34|1.936|51.65|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|101.65|-1.65000000000001|executada|casa1|1751675374413|1
+85|Palmeiras x Chelsea|futebol|2_resultados|62|2.0|50.0|Chelsea|0|34|1.936|51.65|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|101.65|-1.65000000000001|executada|casa1|1751675406035|1
+89|Psg x Bayer|futebol|2_resultados|15|2.0|3.0|Ter mais de 0,5 chutes no jogo|0|59|0.0|0.0|b|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|3.0|3.0|executada|casa1|1751679498159|1
+90|Psg x Bayer|futebol|5_resultados|5|3.625|280.0|Bayer|0|79|4.25|238.8|Empate|0|44|150.0|6.8|Multipla 1|0|44|150.0|6.8|Multipla 2|0|44|2.27|447.1|PSG|0|979.5|35.4170000000001|executada|casa5|1751681107119|1
+91|Psg x Bayer|futebol|2_resultados|81|2.6|50.0|Empate|1|9|1.347|96.5|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|96.5|33.4855|executada|casa2|1751696724650|1
+92|Clara Tauson vs Elena Rybakina|tenis|2_resultados|81|3.25|50.0|1|1|9|1.22|133.23|2|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|133.23|29.27|executada|casa1|1751697399823|1
+93|Jogo australia|futebol|2_resultados|5|1.05|50.0|a|1|59|0.0|0.0|b|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|0.0|52.5|executada|casa1|1751698116333|1
+94|Ben Shelton – Lorenzo Sonego|tenis|2_resultados|5|2.0|875.0|H1(-4,5 GAMES)|0|37|2.0|875.0|H2(+4,5 GAMES)|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1750.0|0.0|executada|casa1|1751891383036|1
+95|Fluminense x Chelsea|futebol|2_resultados|44|6.0|15.0|Flu|0|81|1.37|65.69|Flu não vencer |0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|80.69|9.3053|executada|casa2|1751985345303|1
+96|Fluminense x Chelsea|futebol|2_resultados|36|2.5|10.0|Pedro neto chutar|0|11|2.05|12.2|não chutar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|22.2|2.81|executada|casa2|1751985936919|1
+97|Fluminense x Chelsea|futebol|2_resultados|78|2.5|16.67|Ambas marcam|0|9|1.85|22.53|Ambas não marcam|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|39.2|2.4805|executada|casa2|1751985974246|1
+98|Fluminense x Chelsea|futebol|2_resultados|15|2.0|3.0|Ter mais de 0,5 finalizações|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|3.0|3.0|executada|casa1|1751986274298|1
+99|Fluminense x Chelsea|futebol|3_resultados|86|5.8|75.0|Flu|0|5|2.9|150.0|Empate|1|28|1.6|271.88|Chelsea|0||0.0|0.0||0||0.0|0.0||0|346.88|88.128|executada|casa3|1751993214311|1
+100|Fluminense x Chelsea|futebol|2_resultados|5|4.0|50.0|Chelsea + ambas|0|9|1.251|125.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|175.0|-18.625|executada|casa2|1751993791642|1
+101|Fluminense x Chelsea|futebol|3_resultados|86|6.0|71.5|Flu|0|79|2.86|150.0|Empate|1|28|1.6|268.12|Chelsea|0||0.0|0.0||0||0.0|0.0||0|339.62|89.372|executada|casa3|1751994604891|1
+102|Fluminense x Chelsea|futebol|2_resultados|79|4.0|50.0|Chelsea + Ambas|0|9|1.258|130.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|180.0|-16.46|executada|casa2|1751994642475|1
+103|Stan Wawrinka vs Edas Butvilas|tenis|2_resultados|81|2.85|50.0| Edas Butvilas|0|9|1.43|99.67|Stan Wawrinka|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|149.67|-7.14190000000002|executada|casa2|1751994931096|1
+104|Fluminense x Chelsea|futebol|2_resultados|60|3.85|50.0|Empate|0|9|1.318|146.01|lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.01|-3.56881999999999|executada|casa2|1751996036392|1
+105|Fluminense x Chelsea|futebol|2_resultados|16|3.85|50.0|Empate|0|9|1.318|146.01|lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.01|-3.56881999999999|executada|casa2|1751996134939|1
+106|Fluminense x Chelsea|futebol|2_resultados|61|3.85|50.0|Empate|0|9|1.318|146.01|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.01|-3.56881999999999|executada|casa2|1751996507206|1
+107|Fluminense x Chelsea|futebol|2_resultados|62|3.85|50.0|Empate|0|34|1.308|147.17|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|197.17|-4.67164|executada|casa2|1751997303920|1
+108|Jannik Sinner vs Ben Shelton|tenis|2_resultados|83|3.3|50.0|Ben Shelton|0|9|1.353|121.92|Jannik|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|171.92|-6.96224000000001|executada|casa2|1752019799007|1
+109|Martin Krumich – Daniel Siniakov|tenis|2_resultados|5|3.0|175.0|2|0|37|1.51|347.68|1|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|522.68|2.31999999999994|executada|casa1|1752036706122|1
+110|Mariano Navone – Diego Dedura|tenis|2_resultados|5|2.0|155.0|H1 -5,5|0|37|2.02|153.46|H2 + 5,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|308.46|1.53999999999996|executada|casa1|1752036739864|1
+111|San jose x Austin|futebol|2_resultados|5|1.25|50.0|Mais de 1,5|1|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|0.0|62.5|executada|casa1|1752037747053|1
+112|Jannik Sinner vs Ben Shelton|tenis|2_resultados|9|1.344|81.86|1|0|81|2.2|50.0|2|1||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|81.86|28.15984|executada|casa1|1752038484953|1
+113|Paris Saint-Germain vs Real Madrid|futebol|2_resultados|33|2.0|10.0|Mais de 0,5 gols 1 primeiro|0|9|3.769|5.3|Menos de 0,5 gols 1 primeiro|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|15.3|4.7|executada|casa1|1752067582048|1
+114|Paris Saint-Germain vs Real Madrid|futebol|2_resultados|17|3.0|10.0|Real qualificar|0|9|1.774|16.91|Psg se qualificar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|26.91|3.08834|executada|casa2|1752068273677|1
+115|Paris Saint-Germain vs Real Madrid|tenis|2_resultados|18|3.0|10.0|Real qualificar|0|9|1.774|16.91|Psg qualificar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|26.91|3.08834|executada|casa2|1752068305884|1
+116|Belinda Bencic vs Iga Swiatek|tenis|2_resultados|83|2.4|50.0|1|1|9|1.325|90.59|2|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|90.59|29.44175|executada|casa2|1752100898529|1
+117|França - Brasil|volei|2_resultados|5|2.0|70.0|Brasil 3 - 0|0|37|2.57|54.47|França +2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|124.47|15.5179|executada|casa2|1752125828267|1
+118|França - Brasil|tenis|2_resultados|79|2.0|70.0|Brasil 3 x 0 |0|37|2.57|54.47|França +2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|124.47|15.5179|executada|casa2|1752125861906|1
+119|Belinda Bencic – Iga Swiatek|tenis|2_resultados|5|3.2|240.0|1|0|37|1.46|526.03|2|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|766.03|1.97379999999998|executada|casa2|1752126699670|1
+120|Belinda Bencic – Iga Swiatek|tenis|2_resultados|79|3.2|1000.0|1|0|37|1.46|2191.78|2|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|3191.78|8.2188000000001|executada|casa2|1752127287593|1
+121|Chelsea x PSG|futebol|5_resultados|79|5.8|280.0|Aumentada 1|0|5|7.375|220.2|Aumentada 2|0|44|1500.0|1.08|Multipla 1|0|44|225.0|7.22|Multipla 2|0|44|1.62|1002.46|PSG|0|1510.96|113.015|executada|casa2|1752191778676|1
+122|Polônia vs Brasil|volei|2_resultados|5|2.25|70.0|Brasil|0|85|2.0|78.75|polonia|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.75|8.75|executada|casa1|1752191976487|1
+123|Polônia vs Brasil|volei|2_resultados|79|2.25|70.0|Brasil|0|85|2.0|78.75|Polonia|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.75|8.75|executada|casa1|1752192003478|1
+124|Flamengo x São paulo|futebol|3_resultados|29|4.2|30.0|Empate|0|81|1.46|74.0|Flamengo|0|79|9.0|12.0|São paulo|0||0.0|0.0||0||0.0|0.0||0|116.0|-7.96000000000001|executada|casa2|1752244295817|1
+125|Psg x Chelsea|futebol|3_resultados|78|4.1|50.0|Empate|0|28|5.25|30.17|Chelsea|0|79|1.6|99.0|PSG|0||0.0|0.0||0||0.0|0.0||0|179.17|-20.7775|executada|casa2|1752306134881|1
+126|Psg x Chelsea|futebol|3_resultados|80|4.1|50.0|Empate|0|86|5.25|30.17|Chelsea|0|79|1.6|99.0|Psg|0||0.0|0.0||0||0.0|0.0||0|179.17|-20.7775|executada|casa2|1752306949007|1
+127|Psg x Chelsea|tenis|2_resultados|89|4.2|30.0|Chelsea ou empate|0|34|1.195|83.0|Dupla chance psg|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.0|13.0|executada|casa1|1752307299122|1
+128|Psg x Chelsea|futebol|2_resultados|29|4.2|30.0|Chelsea ou empate|0|34|1.195|83.0|Chance Dupla PSG|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.0|13.0|executada|casa1|1752307589712|1
+129|Psg x Chelsea|futebol|2_resultados|72|4.2|30.0|Chelsea ou empate|0|34|1.204|82.0|Dupla chance PSG|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|112.0|14.0|executada|casa1|1752308168059|1
+130|PSG X CHELSEA|futebol|3_resultados|90|4.1|50.0|empate|0|5|1.6|98.0|Psg|0|28|5.4|29.04|Chelsea|0||0.0|0.0||0||0.0|0.0||0|177.04|-20.224|executada|casa3|1752334263152|1
+131|PSG X Chelsea|futebol|2_resultados|16|2.1|50.0|Psg mais de 2,5 cantos 1 tempo|0|11|1.74|60.35|Psg menos de 2,5 cantos 1 tempo|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|110.35|-5.34099999999999|executada|casa2|1752384339020|1
+132|Psg x Chelsea|futebol|2_resultados|60|2.1|50.0|Psg mais de 2,5 cantos 1 tempo|0|36|1.74|60.35|Psg Menos de 2,5 cantos 1 tempo|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|110.35|-5.34099999999999|executada|casa2|1752384580932|1
+133|Psg x Chelsea|futebol|2_resultados|61|2.1|50.0|Psg mais de 2,5 cantos 1 tempo|0|36|1.74|60.35|Psg Menos de 2,5 cantos 1 tempo|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|110.35|-5.34099999999999|executada|casa2|1752384835639|1
+134|Psg x Chelsea|futebol|2_resultados|62|2.1|50.0|Psg mais de 2,5 cantos 1 tempo|0|36|1.74|60.35|Psg Menos de 2,5 cantos 1 tempo|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|110.35|-5.34099999999999|executada|casa2|1752385117804|1
+135|Psg x Chelsea|futebol|2_resultados|47|2.23|150.0|Menos de 2,5|0|9|1.711|196.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|346.0|-10.644|executada|casa2|1752386597534|1
+136|Psg x Chelsea|futebol|2_resultados|51|2.23|150.0|Menos de 2,5|0|9|1.711|196.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|346.0|-10.644|executada|casa2|1752386961871|1
+137|psg x Chelsea|futebol|2_resultados|50|2.23|150.0|Menos de 2,5|0|9|1.702|196.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|346.0|-12.408|executada|casa2|1752387233314|1
+138|Jannik x Alcaraz|tenis|2_resultados|5|2.5|70.0|Alcaraz primeiro set|0|91|1.88|93.08|Sinner|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|163.08|11.92|executada|casa1|1752419089430|1
+139|Alcaraz x Sinner|tenis|2_resultados|79|2.5|70.0|Alcaraz|0|91|1.88|93.09|Sinner|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|163.09|11.91|executada|casa1|1752419114625|1
+140|Corinthians x Bragatino|futebol|2_resultados|5|2.0|70.0|Mais de 0,5|0|4|2.6|53.85|menos de 0,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|123.85|16.15|executada|casa1|1752419724742|1
+141|Corintians x Bragatino|futebol|2_resultados|79|2.0|70.0|Mais de 0,5|0|92|2.6|53.85|Menos de 0,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|123.85|16.15|executada|casa1|1752420027202|1
+142|Psg x Chelsea|futebol|2_resultados|78|5.0|15.0|Chelsea campeão |0|85|1.4|53.57|Psg Campeão|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|68.57|6.43000000000001|executada|casa1|1752421228841|1
+143|Psg x Chelsea|futebol|2_resultados|90|5.0|15.0|Chelsea campeão|0|85|1.4|53.57|Psg campeão|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|68.57|6.43000000000001|executada|casa1|1752421833960|1
+144|Psg x Chelsea|futebol|2_resultados|33|2.0|10.0|Vitoria psg|0|59|0.01|0.01|m|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|10.01|-10.0099|executada|casa2|1752426813799|1
+145|Psg x Chelsea|futebol|5_resultados|5|3.9|64.0|Multipla |0|44|350.0|0.8|Multipla 1|0|44|325.0|0.8|Multipla 2|0|44|5.0|50.0|Chelsea |0|39|1.7|146.87|Psg|0|262.47|-12.47|executada|casa4|1752428691801|1
+146|Psg x Chelsea|futebol|2_resultados|86|4.5|10.0|Psg e sem sofrer gols|0|59|0.01|0.01|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|10.01|-10.0099|executada|casa2|1752429428565|1
+147|Psg x Chelsea|futebol|2_resultados|94|5.0|30.0|Empate + ambas|0|9|1.184|127.28|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|157.28|-6.58047999999999|executada|casa2|1752430370622|1
+148|Psg x Chelsea|futebol|2_resultados|93|5.0|30.0|Empate + ambas|0|9|1.184|126.73|Lay |0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|156.73|-6.68168000000003|executada|casa2|1752430485759|1
+149|Fortaleza x Ceara|futebol|5_resultados|5|3.4|70.5|Ceara|0|5|3.0|80.0|Empate|0|44|800.0|0.5|Multipla 3|0|44|600.0|0.6|Multipla 4|0|36|2.39|100.3|Fortaleza|0|251.9|-12.2|executada|casa1|1752438978623|1
+150|Fortaleza x Ceara|futebol|5_resultados|79|3.4|70.5|Ceara|0|79|3.0|80.0|empate|0|44|800.0|0.5|multipla 1|0|44|600.0|0.6|Multipla 2|0|36|2.39|100.3|Fortaleza|0|251.9|-12.2|executada|casa1|1752439376838|1
+151|Corinthians x Bragatino|futebol|2_resultados|51|0.95|50.0|Vitoria braga|1|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|0.0|47.5|executada|casa1|1752460552923|1
+153|Plantese x Villa|futebol|2_resultados|50|0.95|50.0|Ambas marcam|1|5|4.0|10.0|Falhar penalti|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|10.0|37.5|executada|casa1|1752461306117|1
+154|Juventude x Sport|futebol|3_resultados|79|2.08|225.0|Empate|1|28|2.9|161.38|Sport|0|86|2.8|167.14|Juventude|0||0.0|0.0||0||0.0|0.0||0|328.52|139.472|executada|casa3|1752530293273|1
+155|Juventude X Sport|futebol|2_resultados|78|2.09|50.0|Empate|1|9|1.444|72.35|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|72.35|32.1234|executada|casa2|1752531525927|1
+156|Juventude x Sport|futebol|2_resultados|80|2.09|50.0|Empate|1|9|1.434|72.86|Lay |0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|72.86|31.62124|executada|casa2|1752533807950|1
+157|Juventude x Sport|futebol|2_resultados|90|2.09|50.0|Empate|1|9|1.434|72.86|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|72.86|31.62124|executada|casa2|1752533836417|1
+158|Fluminense x Cruzeiro|futebol|5_resultados|79|3.2|80.64|empate|0|79|3.4|75.9|cruzeiro|0|44|600.0|0.5|multipla|0|44|800.0|0.5|multipla|0|36|2.31|111.71|Fluminense|0|269.25|-11.19|executada|casa2|1752619202194|1
+159|Bragatino x São paulo|futebol|3_resultados|2|2.47|68.0|Bragatino|0|96|2.9|57.5|Empate|0|97|3.34|50.0|São paulo|0||0.0|0.0||0||0.0|0.0||0|175.5|-8.75|executada|casa2|1752711839148|1
+160|Atlético Bucaramanga vs Atlético Mineiro|futebol|2_resultados|44|1.92|30.0|Empate|1|9|1.487|38.73|lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|38.73|18.86151|executada|casa2|1752796805471|1
+161|Atlético Bucaramanga vs Atlético Mineiro|futebol|2_resultados|97|1.81|50.0|Empate|1|9|1.482|61.06|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|61.06|29.43092|executada|casa2|1752797004301|1
+162|Brasil x Japão|volei|2_resultados|79|2.0|70.0|Brasil|0|85|2.35|59.57|Japão|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|129.57|10.43|executada|casa1|1752797298687|1
+163|Flamengo x Fluminense|futebol|2_resultados|15|5.0|1.2|Menos de 10 gols no primeiro tempo|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.2|4.8|executada|casa1|1752939975538|1
+164|Catalans Dragons x Hull Kingston Rovers|mma|2_resultados|79|2.2|900.61|Mais de 13,5 time da casa|0|43|1.85|1071.0|Menos de 13,5 time da casa|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1971.61|9.74000000000001|executada|casa2|1752943103011|1
+165|Liam Draxl - Alexander Blockx|tenis|2_resultados|79|3.25|279.99|0;2|0|37|1.446|629.31|HA1(+1,5) |0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|909.3|0.682259999999928|executada|casa2|1752943230497|1
+166|Palmeiras x Atletico MG|futebol|5_resultados|79|6.25|54.4|Atletico|0|79|3.4|100.0|Empate|0|44|1200.0|0.5|Multipla 1|0|44|750.0|0.8|Multipla 2|0|28|1.7|200.0|Palmeiras|0|355.7|-15.7000000000001|executada|casa5|1753029294678|1
+167|Bahia x America Cali|futebol|2_resultados|36|5.0|10.0|Bahia passar|0|28|1.9|26.31|America passar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|36.31|13.679|executada|casa2|1753124575512|1
+168|Bahia x America Cali|futebol|2_resultados|98|5.0|10.0|Bahia|0|28|1.9|26.31|America|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|36.31|13.679|executada|casa2|1753124624040|1
+169|Fluminense x Palmeiras|futebol|3_resultados|11|3.2|200.0|Flu|0|99|2.95|216.95|Empate|0|40|2.9|220.69|Palmeiras|0||0.0|0.0||0||0.0|0.0||0|637.64|2.36099999999999|executada|casa3|1753300101876|1
+170|Cruzeiro x Corinthians|futebol|5_resultados|79|3.0|80.0|Cruzeiro|0|79|3.0|80.0|Empate|0|44|900.0|0.5|Multipla 1|0|44|50.0|5.5|Multipla 2|0|44|2.77|86.5|Corinthians|0|252.5|197.5|executada|casa2|1753301697985|1
+171|Flamengo X Bragatino|futebol|4_resultados|44|3.64|53.13|Multipla 1|0|44|4.1|47.17|Multipla 2|0|79|3.52|54.94|Empate |0|99|4.05|47.75|Bragatino|0||0.0|0.0||0|202.99|-9.5968|executada|casa1|1753302673489|1
+172|Cruzeiro x Corinthians|futebol|3_resultados|1|2.9|100.0|corinthians|0|95|2.85|101.75|Empate|0|73|2.8|103.57|Cruzeiro|0||0.0|0.0||0||0.0|0.0||0|305.32|-15.3325|executada|casa2|1753303747834|1
+173|Sport x Recife|futebol|2_resultados|11|2.62|150.0|Ambas marcam|0|9|1.672|235.0|Ambas não marcam|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|385.0|8.0|executada|casa1|1753314233660|1
+174|Fc Dallas x New york city|futebol|3_resultados|44|1.62|30.0|Dallas|1|79|3.74|13.0|Empate |0|28|2.63|18.48|New york|0||0.0|0.0||0||0.0|0.0||0|31.48|17.1224|executada|casa3|1753477963979|1
+175|Columbus crew x Orlando|futebol|3_resultados|79|1.9|275.0|Orlando|1|99|3.7|141.21|Empate|0|44|2.35|222.34|Colombus|0||0.0|0.0||0||0.0|0.0||0|363.55|158.95|executada|casa1|1753478834954|1
+176|Santos x Sport|futebol|2_resultados|81|2.0|13.0|Neymar chutar ao gol|0|59|0.0|0.01|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|13.01|0.0|executada|casa2|1753479050145|1
+177|Los Angeles FC - Portland Timbers |futebol|2_resultados|79|1.575|111.1|Mais de 2,5|0|30|3.5|50.0|Menos de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|161.1|13.9|executada|casa2|1753579474428|1
+178|Los Angeles FC - Portland Timbers |futebol|2_resultados|79|1.575|111.1|Mais de 2,5|0|77|3.5|50.0|Menos de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|161.1|13.9|executada|casa2|1753579498173|1
+179|Los Angeles FC - Portland Timbers |futebol|2_resultados|79|1.575|111.1|Mais de 2,5|0|100|3.5|50.0|Menos de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|161.1|13.9|executada|casa2|1753579524448|1
+180|Louisa Chirico – Jessica Bouzas Maneiro|tenis|2_resultados|79|3.2|477.27|Louisa|0|37|1.456|1048.93|Jessica|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1526.2|1.06400000000008|executada|casa1|1753635976398|1
+181|Flamengo – Atletico Mineiro|futebol|2_resultados|79|2.0|125.1|Mais de 5,5 cartões|0|44|1.97|127.0|Menos de 5,5 cartões|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|252.1|-1.90000000000001|executada|casa1|1753637035490|1
+182|Otelul Galati – Dinamo Bucharest|futebol|2_resultados|79|2.0|500.0|Mais de 9|0|37|2.0|500.0|Menos de 9|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1000.0|0.0|executada|casa1|1753637811121|1
+183|São paulo x Fluminense|futebol|5_resultados|79|4.1|66.0|Fluminense|0|79|3.2|84.5|Empate|0|44|900.0|0.5|Multipla 1|0|44|600.0|0.5|Multipla 2|0|44|2.12|128.0|São paulo|0|279.5|-8.13999999999999|executada|casa5|1753641297469|1
+184|São Paulo x Fluminense|futebol|2_resultados|79|2.0|70.0|Mais de 0,5 gols no primeiro tempo|0|9|2.326|60.0|Menos de 0,5 gols no primeiro tempo|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|130.0|10.0|executada|casa1|1753653466241|1
+186|Avai x Sei lá|futebol|4_resultados|30|5.5|150.0|a|0|99|2.72|303.32|correto|0|79|3.54|233.06|b|0|9|6.73|122.59|c|0||0.0|0.0||0|808.97|16.0604|executada|casa2|1753818835343|1
+187|La x Mazlatan|futebol|2_resultados|30|2.5|50.0|Menos de 2,5|0|79|1.8|69.45|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|119.45|5.55|executada|casa1|1753818958810|1
+188|La x Mazlatan|futebol|2_resultados|77|2.5|50.0|Menos de 2,5|0|79|1.8|69.45|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|119.45|5.55|executada|casa1|1753818988776|1
+189|La x Mazlatan|futebol|2_resultados|100|2.5|50.0|Menos de 2,5|0|79|1.75|71.43|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|121.43|3.56999999999999|executada|casa1|1753819012020|1
+190|Brasil F x Uruguai|futebol|2_resultados|79|3.0|70.0|Brasil ganhar os dois tempos|0|44|1.66|126.5|Brasil não ganhar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.5|13.5|executada|casa1|1753854909594|1
+191|Henrique Rocha  – Eliakim Coulibaly|tenis|2_resultados|79|4.0|500.0|Menos de 8,5 jogos primeiro set|0|37|1.349|1482.0|Mais de 8,5 jogos primeiro set|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1982.0|17.2180000000001|executada|casa2|1753855561216|1
+192|Henrique Rocha  – Eliakim Coulibaly|tenis|2_resultados|79|3.0|225.0|Menos de 8,5 games primeiro set|1|37|1.349|501.0|mais de 8,5 games primeiro set|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|501.0|174.849|executada|casa2|1753855722626|1
+193|Fluminense x Grêmio|futebol|2_resultados|101|2.04|300.0|Menos de 8,5 chutes ao gol|0|34|2.04|300.0|Mais de 8,5 chutes ao gol|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|600.0|12.0|executada|casa1|1754098877831|1
+194|The new Saints x Airbus|futebol|2_resultados|30|3.2|50.0|Menos de 3,5|0|79|1.6|100.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|150.0|10.0|executada|casa2|1754123770918|1
+195|The new Saints x Airbus|futebol|2_resultados|77|3.2|50.0|Menos de 3,5|0|79|1.6|100.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|150.0|10.0|executada|casa2|1754123790426|1
+196|The new Saints x Airbus|futebol|2_resultados|100|3.2|50.0|MENOS DE 3,5|0|79|1.6|100.0|MAIS DE 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|150.0|10.0|executada|casa2|1754123810920|1
+197|Internacional x São Paulo|futebol|2_resultados|1|10.0|1.0|Menos de 10,5 gols no primeiro tempo|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.0|9.0|executada|casa1|1754123947185|1
+199|Internacional x São Paulo|futebol|2_resultados|73|10.0|1.0|Menos de 10,5 primeiro tempo|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.0|9.0|executada|casa1|1754124806468|1
+200|Internacional x São Paulo|futebol|2_resultados|95|10.0|1.0|Menos de 10,5 no primeiro tempo|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.0|9.0|executada|casa1|1754125197525|1
+201|CF América x Minnesoto|futebol|2_resultados|30|2.9|50.0|Menos de 2,5|0|99|1.57|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|2.44|executada|casa2|1754155090745|1
+202|CF América (x) Minnesota|futebol|2_resultados|77|2.9|50.0|Menos de 2,5|0|99|1.57|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|2.44|executada|casa2|1754155115236|1
+203|CF América (x) Minnesota|futebol|2_resultados|100|2.9|50.0|Menos de 2,5|0|99|1.57|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|2.44|executada|casa2|1754155170438|1
+204|Real Salt Lake (x) Atlético São Luis|futebol|2_resultados|30|2.9|50.0|Menos de 2,5|0|99|1.6|91.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|141.0|4.59999999999999|executada|casa2|1754155272771|1
+205|Real Salt Lake (x) Atlético São Luis|futebol|2_resultados|77|2.9|50.0|Menos de 2,5|0|99|1.6|91.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|141.0|4.59999999999999|executada|casa2|1754155302400|1
+206|Real Salt Lake (x) Atlético São Luis|futebol|2_resultados|100|2.9|50.0|Menos de 2,5|0|99|1.6|91.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|141.0|4.59999999999999|executada|casa2|1754155347452|1
+208|SC Internacional vs São Paulo|futebol|2_resultados|101|2.04|200.0|Gol antes dos 33|0|34|2.04|200.0|Não gol antes dos 33|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|400.0|8.0|executada|casa2|1754179165055|1
+209|Corinthians x Fortaleza|futebol|5_resultados|79|4.2|70.0|Fortaleza|0|79|3.2|92.0|Empate|0|44|900.0|0.5|multipla 1|0|44|600.0|0.6|multipla 2|0|40|2.18|135.0|Corinthians|0|298.1|-3.69999999999999|executada|casa2|1754238905140|1
+210|Ceara x Flamengo|futebol|3_resultados|9|5.192|220.0|Ceara|0|79|3.54|323.0|Empate|0|99|1.9|602.0|Flamengo|0||0.0|0.0||0||0.0|0.0||0|1145.0|-1.57999999999993|executada|casa2|1754251801526|1
+211|Clara Tauson – Iga Swiatek|futebol|2_resultados|79|13.0|154.0|2:0|0|37|1.085|1846.0|Iga +1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|2000.0|2.0|executada|casa1|1754253166688|1
+212|Bragatino x Inter|futebol|3_resultados|11|2.56|126.0|Bragatino|0|103|3.28|100.0|Empate|0|102|2.93|109.0|Internacional|0||0.0|0.0||0||0.0|0.0||0|335.0|-15.63|executada|casa3|1754773114495|1
+213|Santos x Cruzeiro|futebol|2_resultados|95|10.0|1.0|Neymar tocar na bola|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.0|9.0|executada|casa1|1754773349585|1
+214|Cruzeiro x Santos|futebol|2_resultados|73|10.0|1.0|Neymar tocar na bola|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.0|9.0|executada|casa1|1754773667619|1
+215|Santos x Cruzeiro|futebol|2_resultados|1|10.0|1.0|neymar tocar na bola|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.0|9.0|executada|casa1|1754773863309|1
+217|Botafogo x Fortaleza|futebol|3_resultados|1|3.1|100.0|Botafogo|0|95|3.0|104.0|Empate|0|73|2.54|122.0|Fortaleza|0||0.0|0.0||0||0.0|0.0||0|326.0|-16.0|executada|casa1|1754774597789|1
+218|Internacional x Bragatino|futebol|2_resultados|34|2.04|150.0|Não gol antes dos 28|0|101|2.04|150.0|gol antes dos 28|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|300.0|6.0|executada|casa2|1754774846348|1
+219|EC Juventude vs Corinthians|futebol|2_resultados|34|2.04|150.0|Não gol antes dos 32|0|101|2.04|150.0|gol antes dos 32|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|300.0|6.0|executada|casa2|1754936230784|1
+220|Corinthians x Juventude |futebol|2_resultados|12|5.2|200.0|1:2|0|34|1.145|906.97|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1106.97|-68.4893500000001|executada|casa2|1755014733863|1
+221|São Paulo x Atletico Nacional|futebol|2_resultados|101|2.04|150.0|Sem gol antes dos 32|0|34|2.04|150.0|Gol antes dos 32|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|300.0|6.0|executada|casa1|1755014918914|1
+222|Psg x Tottenham|futebol|2_resultados|95|0.9|50.0|Menos de 6,5 escanteios psg|1|37|1.9|23.68|Mais de 6,5 escanteios psg|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|23.68|21.312|executada|casa2|1755102527418|1
+223| Universitario x Palmeiras|futebol|2_resultados|95|10.0|1.0|Mais de 0,5 escanteios|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.0|9.0|executada|casa1|1755102705359|1
+224|Universitario x Palmeiras|futebol|2_resultados|73|10.0|1.0|Mais de 0,5 escanteios |0|59|0.0|0.0|0|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1.0|9.0|executada|casa1|1755103308734|1
+225|Psg x Tottenham|futebol|2_resultados|73|0.9|50.0|Menos de 6,5 |1|37|1.9|23.68|mais de 6,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|23.68|21.312|executada|casa2|1755103621677|1
+226|Flamengo x Inter|futebol|2_resultados|34|2.04|150.0|Gol antes dos 29|0|101|2.04|150.0|Não gol antes dos 29|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|300.0|6.0|executada|casa1|1755122961553|1
+227|Flamengo x Inter|futebol|2_resultados|47|6.6|30.0|Inter|0|34|1.136|174.0|lay inter|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|204.0|-6.33600000000001|executada|casa2|1755126574887|1
+228|Flamengo x Inter|futebol|2_resultados|51|6.8|30.0|Inter|0|34|1.133|165.0|Lay inter|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|195.0|-8.05500000000001|executada|casa2|1755127030959|1
+229|Flamengo x Inter|futebol|2_resultados|105|6.8|30.0|Inter|0|34|1.133|165.0|Lay inter|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|195.0|-8.05500000000001|executada|casa2|1755127386886|1
+230|Flamengo x Inter|futebol|2_resultados|33|2.0|10.0|Mais de 0,5 chutes ao gol do flamengo|0|59|0.0|0.0|0|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|10.0|10.0|executada|casa1|1755128015925|1
+231|Flamengo x Inter|futebol|2_resultados|33|1.1|1001.0|Mais de 0,5 chutes ao gol do flamengo|0|59|0.0|0.0|0|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1001.0|100.1|executada|casa1|1755128591656|1
+232|Palmeiras x Deportes|futebol|2_resultados|34|2.04|150.0|gol antes dos 34|0|101|2.04|150.0|Não gol até os 34|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|300.0|6.0|executada|casa1|1755199689434|1
+233|Liverpool x bourne|futebol|2_resultados|34|2.04|150.0|Não gol antes dos 18|0|101|2.04|150.0|Gol antes dos 18|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|300.0|6.0|executada|casa1|1755199733410|1
+234|Vitoria x Juventude|futebol|3_resultados|11|2.51|200.0|Empate|1|34|1.858|270.0|Vitoria|0|44|4.8|105.0|Juventude|0||0.0|0.0||0||0.0|0.0||0|375.0|127.0|executada|casa1|1755358661510|1
+235|Fluminense x Fortaleza|futebol|3_resultados|34|1.813|287.0|Fluminense|0|12|2.61|200.0|Empate|1|99|5.1|102.0|Fortaleza|0||0.0|0.0||0||0.0|0.0||0|389.0|131.331|executada|casa1|1755359020579|1
+236|Vitoria x Juventude|futebol|2_resultados|11|1.82|100.0|Vitoria |0|34|2.073|110.0|Lay vitoria|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|210.0|-9.97|executada|casa1,casa2|1755359806401|1
+237|Wolverhampton x Manchester City|futebol|2_resultados|30|2.6|50.0|Menos de 2,5|0|99|1.78|73.0|mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|123.0|6.94|executada|casa2|1755360718950|1
+238|Wolverhampton X Manchester City|futebol|2_resultados|100|2.6|50.0|Menos de 2,5|0|99|1.78|73.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|123.0|6.94|executada|casa2|1755360752625|1
+239|Wolverhampton (x) Manchester City|futebol|2_resultados|77|2.6|50.0|Menos de 2,5|0|99|1.78|73.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|123.0|6.94|executada|casa2|1755360805636|1
+240|Vitoria x Juventude|futebol|2_resultados|103|1.82|100.0|Vitoria|0|34|2.073|111.19|Lay vitoria|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|211.19|-9.88312999999999|executada|casa1,casa2|1755362530654|1
+242|Fortaleza x Fluminense|futebol|3_resultados|44|1.78|289.0|Fluminense|0|103|2.57|200.0|Empate|1|99|5.0|103.0|Fortaleza|0||0.0|0.0||0||0.0|0.0||0|392.0|122.42|executada|casa1|1755363144654|1
+243| Vitoria x Juventude|futebol|2_resultados|102|1.81|100.0|Vitoria|0|34|2.061|110.0|Lay vitoria|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|210.0|-12.29|executada|casa1,casa2|1755363392738|1
+244|Tigres UANL - América|futebol|2_resultados|30|2.4|50.0|Menos de 2,5|0|28|1.96|61.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|111.0|8.56|executada|casa2|1755392132885|1
+245|Tigres UANL - América|futebol|2_resultados|77|2.4|50.0|Menos de 2,5|0|28|1.96|61.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|111.0|8.56|executada|casa2|1755392153276|1
+246|Tigres UANL - América|futebol|2_resultados|100|2.4|50.0|Menos de 2,5|0|28|1.96|61.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|111.0|8.56|executada|casa2|1755392172647|1
+247|Santos x Vasco|futebol|3_resultados|11|1.89|20.0|Santos|0|34|3.71|10.0|Empate|0|44|4.1|9.0|Vasco|0||0.0|0.0||0||0.0|0.0||0|39.0|-2.1|executada|casa3|1755453649554|1
+248|Santos x Vasco|futebol|3_resultados|102|1.87|20.0|Santos|0|34|3.71|10.0|Empate|0|44|4.1|9.0|Vasco|0||0.0|0.0||0||0.0|0.0||0|39.0|-2.1|executada|casa3|1755454367143|1
+249|Santos X Vasco|futebol|3_resultados|103|1.87|20.0|Santos|0|34|3.71|10.0|Empate|0|44|4.1|9.0|Vasco|0||0.0|0.0||0||0.0|0.0||0|39.0|-2.1|executada|casa3|1755454474342|1
+250|Flamengo x Inter|futebol|2_resultados|47|1.06|30.0|Fla|1|59|0.0|0.0|0|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|0.0|31.8|executada|casa1|1755493167755|1
+251|Flamengo x inter|futebol|2_resultados|51|1.06|30.0|fla|1|59|0.0|0.0|0|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|0.0|31.8|executada|casa1|1755493210265|1
+252|Fla x Inter|futebol|2_resultados|105|1.06|30.0|Fla|1|59|0.0|0.0|0|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|0.0|31.8|executada|casa1|1755493228117|1
+253|Mirassol x Cruzeiro|futebol|3_resultados|28|3.1|21.0|Mirassol|0|11|3.22|20.0|Empate|0|44|2.47|26.0|Cruzeiro|0||0.0|0.0||0||0.0|0.0||0|67.0|-2.59999999999999|executada|casa2|1755494188503|1
+254|Mirassol x Cruzeiro|futebol|3_resultados|28|3.1|21.0|Mirassol|0|103|3.22|20.0|Empate|0|44|2.47|26.0|Cruzeiro|0||0.0|0.0||0||0.0|0.0||0|67.0|-2.59999999999999|executada|casa2|1755494341992|1
+255|Mirassol x Cruzeiro|futebol|3_resultados|28|3.1|21.0|Mirassol|0|102|3.22|20.0|Empate|0|44|2.47|26.0|Cruzeiro|0||0.0|0.0||0||0.0|0.0||0|67.0|-2.59999999999999|executada|casa2|1755494491807|1
+256|Fluminense x America cali|futebol|2_resultados|30|3.4|50.0|Menos de 1,5|0|44|1.49|114.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|164.0|5.85999999999999|executada|casa2|1755648775716|1
+257|Fluminense x America Cali|futebol|2_resultados|100|3.4|50.0|Menos de 1,5|0|44|1.49|114.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|164.0|5.85999999999999|executada|casa2|1755649383991|1
+258|Fluminense x America Cali|futebol|2_resultados|77|3.4|50.0|Menos de 1,5|0|34|1.507|113.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|163.0|7.291|executada|casa2|1755649412424|1
+259|Fenerbahçe - Benfica|futebol|3_resultados|11|2.58|35.0|empate|1|28|2.75|33.0|benfica|0|44|2.62|35.0|fenerbache|0||0.0|0.0||0||0.0|0.0||0|68.0|22.3|executada|casa1|1755889442401|1
+260|Fenerbahçe - Benfica|futebol|3_resultados|28|2.75|33.0|1|0|102|2.59|35.0|empate|1|44|2.62|35.0|2|0||0.0|0.0||0||0.0|0.0||0|68.0|22.65|executada|casa2|1755889497429|1
+261|Fenerbahçe - Benfica|futebol|3_resultados|28|2.75|33.0|1|0|103|2.59|35.0|empate|1|44|2.62|35.0|2|0||0.0|0.0||0||0.0|0.0||0|68.0|22.65|executada|casa2|1755889543276|1
+262|Derby County x Bristol City|futebol|2_resultados|30|3.5|50.0|Menos de 1,5|0|34|1.565|112.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|162.0|13.28|executada|casa2|1755889599172|1
+263|Derby County x Bristol City|futebol|2_resultados|100|3.5|50.0|Menos de 1,5|0|34|1.565|112.0|mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|162.0|13.28|executada|casa2|1755889632841|1
+264|Derby County x Bristol City|futebol|2_resultados|77|3.5|50.0|Menos de 1,5|0|34|1.565|112.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|162.0|13.28|executada|casa2|1755889652694|1
+265|Cruzeiro x Inter|futebol|2_resultados|47|4.9|30.0|Inter|0|34|1.203|105.0|Lay inter|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|135.0|-8.68499999999999|executada|casa2|1755981839937|1
+266|Grêmio x Ceará|futebol|2_resultados|47|2.12|30.0|Grêmio|0|34|1.783|27.0|Lay grêmio|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|57.0|-8.859|executada|casa2|1755982117664|1
+267|Cruzeiro x Inter|futebol|2_resultados|105|4.7|30.0|Inter|0|34|1.212|99.99|Lay inter|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|129.99|-8.80212000000002|executada|casa2|1755983284025|1
+268|Grêmio x Ceara|futebol|2_resultados|105|3.05|30.0|Empate|0|34|1.424|50.0|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|80.0|11.5|executada|casa1|1755983694636|1
+269|Cruzeiro x inter|futebol|2_resultados|51|4.95|30.0|Inter|0|34|1.212|99.99|Lay inter|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|129.99|-8.80212000000002|executada|casa2|1755984001141|1
+270|Gremio x Ceara|futebol|2_resultados|51|2.17|30.0|Gremio|0|34|1.77|25.0|Lay gremio|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|55.0|-10.75|executada|casa2|1755984409573|1
+271|Cruzeiro X Galo|futebol|2_resultados|35|2.8|100.0|0:0 primeiro tempo|0|20|1.52|118.4|Mais de 0,5 gol primeiro tempo|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|218.4|61.6|executada|casa1|1756236325881|1
+274|Valencia x Getafe|futebol|3_resultados|81|2.1|56.0|Valencia|0|47|1.95|60.0|Empate|1|28|4.2|28.0|Getafe|0||0.0|0.0||0||0.0|0.0||0|84.0|33.6|executada|casa1|1756311567164|1
+275|Valencia x Getafe|futebol|3_resultados|81|2.1|56.0|Valencia|0|51|1.95|60.0|Empate|1|28|4.2|28.0|Getafe|0||0.0|0.0||0||0.0|0.0||0|84.0|33.6|executada|casa1|1756312469480|1
+276|Cruzeiro x Galo|futebol|3_resultados|81|2.6|21.0|Galo|0|105|1.8|30.0|Empate|1|28|3.15|17.0|Cruzeiro|0||0.0|0.0||0||0.0|0.0||0|38.0|15.55|executada|casa3|1756312843936|1
+277|Junior x Llaneros|futebol|2_resultados|30|3.4|50.0|Menos de 1,5|0|34|1.477|115.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|165.0|4.85500000000002|executada|casa2|1756508654740|1
+278|Junior x Llaneros|futebol|2_resultados|106|3.4|50.0|Menos de 1,5|0|34|1.477|115.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|165.0|4.85500000000002|executada|casa2|1756508679515|1
+279|Juarez FC X Mazatlan FC|futebol|2_resultados|30|4.4|50.0|Menos de 1,5|0|34|1.331|165.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|215.0|5.00000000000003|executada|casa1|1756516366276|1
+280|Juarez x Mazatlan FC|futebol|2_resultados|106|4.4|50.0|Menos de 1,5|0|34|1.331|165.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|215.0|5.00000000000003|executada|casa1|1756516396268|1
+281|FC Augsburgo x Bayern de Munique|futebol|2_resultados|30|3.7|50.0|Menos de 2,5|0|34|1.448|128.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|178.0|7.34399999999999|executada|casa2|1756575169765|1
+282|FC Augsburgo x Bayern de Munique|futebol|2_resultados|100|3.7|50.0|Menos de 2,5|0|34|1.439|128.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|178.0|6.19200000000001|executada|casa2|1756575203713|1
+283|FC Augsburgo x Bayern de Munique|futebol|2_resultados|106|3.7|50.0|Menos de 2,5|0|34|1.438|128.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|178.0|6.06399999999999|executada|casa2|1756575239798|1
+284|San Lorenzo X Huracan CA|futebol|2_resultados|30|2.3|50.0|Menos de 1,5|0|34|2.015|57.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|107.0|7.99999999999999|executada|casa1|1756575892760|1
+285|San Lorenzo X Huracan CA|futebol|2_resultados|106|2.3|50.0|Menos de 1,5|0|34|2.015|57.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|107.0|7.99999999999999|executada|casa1|1756575919084|1
+286|San Lorenzo X Huracan CA|futebol|2_resultados|100|2.3|50.0|Menos de 1,5|0|34|2.015|57.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|107.0|7.99999999999999|executada|casa1|1756575941235|1
+287|PSV Eindhoven (x) SC Telstar|futebol|2_resultados|30|3.3|50.0|Menos de 3,5|0|34|1.546|107.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|157.0|8.0|executada|casa1|1756577037732|1
+288|PSV Eindhoven (x) SC Telstar|futebol|2_resultados|106|3.3|50.0|Menos de 3,5|0|34|1.536|107.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|157.0|8.0|executada|casa1|1756577069148|1
+289|PSV Eindhoven (x) SC Telstar|futebol|2_resultados|100|3.3|50.0|Menos de 3,5|0|34|1.536|107.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|157.0|8.0|executada|casa1|1756577094429|1
+290|Napoli (x) Cagliari |futebol|2_resultados|30|4.3|50.0|Menos de 1,5|0|34|1.39|155.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|205.0|10.0|executada|casa1|1756577126435|1
+291|Napoli (x) Cagliari |futebol|2_resultados|100|4.3|50.0|Menos de 1,5|0|34|1.38|156.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|206.0|9.0|executada|casa1|1756577159280|1
+292|Napoli (x) Cagliari |futebol|2_resultados|106|4.3|50.0|Menos de 1,5|0|34|1.38|156.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|206.0|9.0|executada|casa1|1756577190532|1
+293|Club America x Pachuca|futebol|2_resultados|30|2.7|50.0|Menos de 2,5|0|34|1.793|75.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|125.0|10.0|executada|casa1|1756609863261|1
+294|Club america x Pachuca|futebol|2_resultados|100|2.7|50.0|Menos de 2,5|0|34|1.793|75.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|125.0|10.0|executada|casa1|1756609892396|1
+295|Club america x Pachuca|futebol|2_resultados|106|2.8|50.0|Menos de 2,5|0|34|1.793|75.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|125.0|15.0|executada|casa1|1756609919480|1
+296|Gangwon FC x Pohang Steelers|futebol|2_resultados|30|3.9|50.0|Menos de 1,5|0|34|1.518|129.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|179.0|16.0|executada|casa1|1756634732762|1
+297|Gangwon FC x Pohang Steelers|futebol|2_resultados|100|3.9|50.0|Menos de 1,5|0|34|1.518|129.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|179.0|16.0|executada|casa1|1756634775054|1
+298|Gangwon FC x Pohang Steelers|futebol|2_resultados|106|3.9|50.0|Menos de 1,5|0|34|1.518|129.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|179.0|16.0|executada|casa1|1756634810208|1
+299|City x Brighton|futebol|2_resultados|30|3.3|50.0|Menos de 2,5|0|34|1.643|100.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|150.0|14.3|executada|casa2|1756643946943|1
+300|City x Brighton|futebol|2_resultados|100|3.3|50.0|Menos de 2,5|0|34|1.643|100.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|150.0|14.3|executada|casa2|1756643983735|1
+301|City x Brighton|futebol|2_resultados|106|3.3|50.0|Menos de 2,5|0|34|1.643|100.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|150.0|14.3|executada|casa2|1756644025372|1
+302|Borussia x União Berlim |futebol|2_resultados|30|3.0|50.0|Menos de 2,5|0|34|1.672|90.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|140.0|10.48|executada|casa2|1756654035910|1
+303|Borussia x União Berlim|futebol|2_resultados|100|3.0|50.0|Menos de 2,5|0|34|1.672|90.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|140.0|10.48|executada|casa2|1756656532728|1
+304|Borussia x União Berlim|futebol|2_resultados|106|3.0|50.0|Menos de 2,5|0|34|1.672|90.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|140.0|10.48|executada|casa2|1756656561470|1
+305|Liverpool x Arsenal|futebol|2_resultados|30|2.5|50.0|Menos de 2,5|0|34|1.848|68.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.0|7.0|executada|casa1|1756656663891|1
+306|Liverpool x Arsenal|futebol|2_resultados|106|2.5|50.0|Menos de 2,5|0|34|1.848|68.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.0|7.0|executada|casa1|1756656700095|1
+307|Liverpool x Arsenal|futebol|2_resultados|100|2.5|50.0|Menos de 2,5|0|34|1.848|68.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.0|7.0|executada|casa1|1756656728436|1
+308|Alverca FC X Benfica|futebol|2_resultados|30|3.1|50.0|Menos de 2,5|0|34|1.614|96.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|146.0|8.94400000000002|executada|casa2|1756659463216|1
+309|Alverca FC X Benfica|futebol|2_resultados|100|3.1|50.0|Menos de 2,5|0|34|1.614|96.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|146.0|8.94400000000002|executada|casa2|1756659486179|1
+310|Alverca FC X Benfica|futebol|2_resultados|106|3.1|50.0|Menos de 2,5|0|34|1.614|96.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|146.0|8.94400000000002|executada|casa2|1756659505044|1
+311|La Equidad x Deportivo Pasto|futebol|2_resultados|30|3.0|50.0|Menos de 1,5|0|34|1.624|93.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.0|executada|casa1|1756696623285|1
+312|La Equidad x Deportivo Pasto|futebol|2_resultados|100|3.0|50.0|menos de 1,5|0|34|1.624|93.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.0|executada|casa1|1756696651874|1
+313|La Equidad x Deportivo Pasto|futebol|2_resultados|106|3.0|50.0|Menos de 1,5|0|34|1.624|93.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.0|executada|casa1|1756696684092|1
+314|LA Galaxy x Orlando City SC|futebol|2_resultados|30|3.5|50.0|Menos de 2,5|0|34|1.507|116.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|166.0|8.81199999999998|executada|casa2|1756696744350|1
+315|LA Galaxy x Orlando City SC|futebol|2_resultados|100|3.5|50.0|Menos de 2,5|0|34|1.507|116.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|166.0|8.81199999999998|executada|casa2|1756696772824|1
+316|LA Galaxy x Orlando City SC|futebol|2_resultados|106|3.5|50.0|Menos de 2,5|0|34|1.507|116.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|166.0|8.81199999999998|executada|casa2|1756696804821|1
+317|Vitoria x Atletico MG|futebol|2_resultados|30|3.6|50.0|Menos de 1,5|0|34|1.487|121.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|171.0|9.0|executada|casa1|1756696850384|1
+318|Vitoria x Atletico MG|futebol|2_resultados|100|3.6|50.0|Menos de 1,5|0|34|1.487|121.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|171.0|9.0|executada|casa1|1756696869637|1
+319|Vitoria x Atletico MG|futebol|2_resultados|106|3.6|50.0|Menos de 1,5|0|34|1.487|121.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|171.0|9.0|executada|casa1|1756696889070|1
+320|Los Angeles FC x San Diego FC|futebol|2_resultados|30|3.2|50.0|Menos de 2,5|0|34|1.575|101.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|151.0|8.07499999999999|executada|casa2|1756696948242|1
+321|Los Angeles FC x San Diego FC|futebol|2_resultados|100|3.2|50.0|Menos de 2,5|0|34|1.575|101.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|151.0|8.07499999999999|executada|casa2|1756696975559|1
+322|Los Angeles FC x San Diego FC|futebol|2_resultados|106|3.2|50.0|Menos de 2,5|0|34|1.575|101.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|151.0|8.07499999999999|executada|casa2|1756696996225|1
+323|Arabia saudita x Macedonia|futebol|2_resultados|30|3.1|50.0|Menos de 1,5|0|34|1.539|102.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.0|4.97799999999998|executada|casa2|1757083079286|1
+324|Irlanda x Hungria|futebol|2_resultados|30|3.4|50.0|Menos de 1,5|0|34|1.519|112.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|162.0|8.12799999999999|executada|casa2|1757208567323|1
+325|Irlanda x Hungria|futebol|2_resultados|100|3.3|50.0|Menos de 1,5|0|34|1.516|109.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.244|executada|casa2|1757208608912|1
+326|Irlanda x Hungria|futebol|2_resultados|106|3.3|50.0|Menos de 1,5|0|34|1.516|109.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.244|executada|casa2|1757208629701|1
+327|Estoril x Santa Clara|futebol|2_resultados|30|3.2|50.0|Menos de 1,5|0|34|1.578|101.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|151.0|9.0|executada|casa1|1757208768632|1
+328|Estoril x Santa Clara|futebol|2_resultados|100|3.2|50.0|Menos de 1,5|0|34|1.569|102.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.0|8.0|executada|casa1|1757208798193|1
+329|Estoril x Santa Clara|futebol|2_resultados|106|3.2|50.0|Menos de 1,5|0|34|1.578|101.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|151.0|9.0|executada|casa1|1757208828524|1
+330|Millonarios FC x Santa Fe Bogota|futebol|2_resultados|30|3.4|50.0|Menos de 1,5|0|34|1.48|115.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|165.0|5.0|executada|casa1|1757208876028|1
+331|Millonarios FC x Santa Fe Bogota|futebol|2_resultados|100|3.4|50.0|Menos de 1,5|0|34|1.477|115.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|165.0|5.0|executada|casa1|1757208912891|1
+332|Millonarios FC x Santa Fe Bogota|futebol|2_resultados|106|3.4|50.0|Menos de 1,5|0|34|1.49|114.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|164.0|6.0|executada|casa1|1757208944660|1
+333|Holanda x Lituania|futebol|2_resultados|30|4.1|50.0|Menos de 2,5|0|34|1.399|146.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.0|8.25399999999999|executada|casa2|1757260632656|1
+334|Carlos Alcaraz x Sinner|futebol|2_resultados|9|2.26|500.0|Alcaraz|0|81|1.83|618.0|Sinner|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|1118.0|12.0|executada|casa1|1757262140283|1
+335|Alcaraz X Sinner|futebol|2_resultados|44|2.02|25.0|Alcaraz |0|81|1.83|28.0|Sinner|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|53.0|-2.5|executada|casa1|1757265010904|1
+336|Turquia x Espanha|futebol|2_resultados|30|6.5|50.0|Espanha e mais de 3,5|0|34|1.375|236.0|Lay|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|286.0|39.0|executada|casa1|1757265411673|1
+337|Espanha x Turquia|futebol|2_resultados|117|2.0|20.5|Mais de 0,5 gols para espanha no primeiro tempo|0|59|0.0|0.0|a|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|20.5|20.5|executada|casa1|1757279288647|1
+338|America Mineiro x Operario |futebol|2_resultados|30|3.3|50.0|Menos de 1,5|0|34|1.516|110.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|160.0|6.75999999999999|executada|casa2|1757280357630|1
+339|America Mineiro x Operario |futebol|2_resultados|100|3.3|50.0|Menos de 1,5|0|34|1.516|109.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.244|executada|casa2|1757280415691|1
+340|America Mineiro x Operario |futebol|2_resultados|106|3.3|50.0|Menos de 1,5|0|34|1.516|109.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.244|executada|casa2|1757280440019|1
+341|Sporting Kansas City x Austin FC|futebol|2_resultados|30|3.2|50.0|Menos de 2,5|0|34|1.558|103.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|153.0|7.47400000000002|executada|casa2|1757284205980|1
+342|Sporting Kansas City x Austin FC|futebol|2_resultados|100|3.2|50.0|Menos de 2,5|0|34|1.563|103.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|153.0|7.989|executada|casa2|1757284230375|1
+343|Sporting Kansas City x Austin FC|futebol|2_resultados|106|3.2|50.0|Menos de 2,5|0|34|1.565|103.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|153.0|8.19499999999999|executada|casa2|1757284252557|1
+344|Bielorrúsia x Escócia |futebol|2_resultados|30|4.0|50.0|Menos de 1,5|0|34|1.39|144.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|194.0|6.16|executada|casa2|1757353680858|1
+345|Bielorrúsia x Escócia |futebol|2_resultados|106|4.0|50.0|Menos de 1,5|0|34|1.39|144.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|194.0|6.16|executada|casa2|1757353714992|1
+346|Gibraltar x Ilhas Faroé |futebol|2_resultados|30|3.4|50.0|Menos de 1,5|0|34|1.48|115.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|165.0|5.0|executada|casa1|1757353789770|1
+347|Gibraltar x Ilhas Faroé |futebol|2_resultados|106|3.4|50.0|Menos de 1,5|0|34|1.47|115.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|165.0|5.0|executada|casa1|1757353809867|1
+348|Gibraltar x Ilhas Faroé |futebol|2_resultados|100|3.7|50.0|Menos de 1,5|0|34|1.45|128.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|178.0|7.0|executada|casa1|1757356499154|1
+349|Sportivo Trinidense x Sportivo Ameliano|futebol|2_resultados|30|4.0|50.0|Menos de 1,5|0|34|1.38|145.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|195.0|5.0|executada|casa1|1757365436050|1
+350|Sportivo Trinidense x Sportivo Ameliano|futebol|2_resultados|100|4.0|50.0|Menos de 1,5|0|34|1.376|146.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.0|4.0|executada|casa1|1757365474886|1
+351|Sportivo Trinidense x Sportivo Ameliano|futebol|2_resultados|106|4.0|50.0|Menos de 1,5|0|34|1.37|146.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.0|4.0|executada|casa1|1757365499384|1
+352|Gremio Novorizontino SP vs AC Goianiense|futebol|2_resultados|30|3.1|50.0|Menos de 1,5|0|85|1.57|99.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|149.0|6.43000000000001|executada|casa2|1757370114349|1
+353|Gremio Novorizontino SP vs AC Goianiense|futebol|2_resultados|100|3.1|50.0|Menos de 1,5|0|85|1.57|99.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|149.0|6.43000000000001|executada|casa2|1757370132279|1
+354|Gremio Novorizontino SP vs AC Goianiense|futebol|2_resultados|106|3.1|50.0|Menos de 1,5|0|85|1.57|99.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|149.0|6.43000000000001|executada|casa2|1757370159449|1
+355|Argentinos Juniors x Lanus|futebol|2_resultados|30|3.0|50.0|Menos de 1,5|0|34|1.637|92.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|8.0|executada|casa1|1757375189033|1
+356|Argentinos Juniors x Lanus|futebol|2_resultados|100|3.0|50.0|Menos de 1,5|0|34|1.637|92.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|8.0|executada|casa1|1757375207232|1
+357|Argentinos Juniors x Lanus|futebol|2_resultados|106|3.0|50.0|Menos de 1,5|0|34|1.637|92.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|8.0|executada|casa1|1757375226171|1
+358|Panamá x Guatemala|futebol|2_resultados|30|2.5|50.0|Menos de 2,5|0|34|1.828|68.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.0|7.0|executada|casa1|1757378242983|1
+359|Panamá x Guatemala|futebol|2_resultados|100|2.5|50.0|Menos de 2,5|0|34|1.828|68.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.0|7.0|executada|casa1|1757378300799|1
+360|Panamá x Guatemala|futebol|2_resultados|106|2.5|50.0|Menos de 2,5|0|34|1.828|68.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.0|7.0|executada|casa1|1757378319694|1
+361|Zimbáube x Ruanda|futebol|2_resultados|30|2.6|50.0|Menos de 1,5|0|34|1.721|75.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|125.0|5.0|executada|casa1|1757424904538|1
+362|Zimbáube x Ruanda|futebol|2_resultados|100|2.6|50.0|Menos de 1,5|0|34|1.721|75.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|125.0|5.0|executada|casa1|1757424926402|1
+363|Zimbáube x Ruanda|futebol|2_resultados|106|2.6|50.0|Menos de 1,5|0|34|1.721|75.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|125.0|5.0|executada|casa1|1757424949853|1
+364|Armenia x Irlanda|futebol|2_resultados|30|2.2|50.0|Menos de 2,5|0|34|2.057|54.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|104.0|7.078|executada|casa2|1757432204014|1
+365|Armenia x Irlanda|futebol|2_resultados|100|2.2|50.0|Menos de 2,5|0|34|2.057|54.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|104.0|7.078|executada|casa2|1757432221860|1
+366|Armenia x Irlanda|futebol|2_resultados|106|2.2|50.0|Menos de 2,5|0|34|2.057|54.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|104.0|7.078|executada|casa2|1757432247340|1
+367|Noruega x Moldávia |futebol|2_resultados|30|3.0|50.0|Menos de 3,5|0|34|1.614|93.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.102|executada|casa2|1757441952362|1
+368|Noruega x Moldávia |futebol|2_resultados|100|3.0|50.0|Menos de 3,5|0|34|1.614|93.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.102|executada|casa2|1757441980289|1
+369|Noruega x Moldávia |futebol|2_resultados|106|3.0|50.0|Menos de 3,5|0|34|1.614|93.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.102|executada|casa2|1757441998670|1
+370|Sérvia X Inglaterra|futebol|2_resultados|30|4.0|50.0|menos de 1,5|0|34|1.431|140.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|190.0|10.34|executada|casa2|1757442290026|1
+371|Sérvia X Inglaterra|futebol|2_resultados|100|4.0|50.0|Menos de 1,5|0|34|1.431|140.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|190.0|10.34|executada|casa2|1757442312542|1
+372|Sérvia X Inglaterra|futebol|2_resultados|106|4.0|50.0|Menos de 1,5|0|34|1.431|140.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|190.0|10.34|executada|casa2|1757442329590|1
+373|Hungria x Portugal|futebol|2_resultados|30|3.0|50.0|Menos de 2,5|0|34|1.617|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.381|executada|casa2|1757442427414|1
+374|Hungria x Portugal|futebol|2_resultados|100|3.0|50.0|Menos de 2,5|0|34|1.617|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.381|executada|casa2|1757442447730|1
+375|Hungria x Portugal|futebol|2_resultados|106|3.0|50.0|Menos de 2,5|0|34|1.617|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.381|executada|casa2|1757442469559|1
+376|Brasil x Bolivia|futebol|2_resultados|44|2.25|25.0|Empate|1|34|1.406|40.0|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|40.0|16.24|executada|casa2|1757444382539|1
+377|Brasil x Bolivia|futebol|2_resultados|42|2.6|30.0|Gol brasil|0|20|2.37|33.0|Gol bolivia|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|63.0|15.21|executada|casa2|1757454337236|1
+378|Venezuela x Colombia|futebol|2_resultados|30|3.6|50.0|Menos de 1,5|0|34|1.441|125.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|175.0|5.125|executada|casa2|1757460479695|1
+379|Venezuela x Colombia|futebol|2_resultados|100|3.6|50.0|Menos de 1,5|0|34|1.441|125.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|175.0|5.125|executada|casa2|1757460510123|1
+380|Venezuela x Colombia|futebol|2_resultados|106|3.6|50.0|Menos de 1,5|0|34|1.441|125.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|175.0|5.125|executada|casa2|1757460529485|1
+381|KuPS x Jaro FF|futebol|2_resultados|30|3.6|50.0|Menos de 2,5|0|34|1.468|122.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|172.0|8.0|executada|casa1|1757526576716|1
+382|KuPS x Jaro FF|futebol|2_resultados|77|3.6|50.0|Menos de 2,5|0|34|1.468|122.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|172.0|8.0|executada|casa1|1757526594807|1
+383|KuPS x Jaro FF|futebol|2_resultados|100|3.6|50.0|Menos de 2,5|0|34|1.468|122.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|172.0|8.0|executada|casa1|1757526628410|1
+384|KuPS x Jaro FF|futebol|2_resultados|106|3.6|50.0|Menos de 2,5|0|34|1.468|122.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|172.0|8.0|executada|casa1|1757526646269|1
+385|Fluminense x Bahia|futebol|2_resultados|28|5.0|25.0|Flu 1x0|0|34|1.184|93.6|Lay 1x0|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.6|-7.77760000000001|executada|casa2|1757529049631|1
+386|Fluminense x Bahia|futebol|2_resultados|74|4.8|25.0|Flu 1x0|0|34|1.171|90.0|Lay 1 x 0|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|115.0|-9.61|executada|casa2|1757538444324|1
+387|Fluminense x Bahia|futebol|2_resultados|119|4.0|10.0|Flu passar|0|44|1.78|22.0|Bahia passar|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|32.0|8.0|executada|casa1|1757538840656|1
+388|Millonarios FC x Deportivo Pasto|futebol|2_resultados|30|3.7|50.0|Menos de 1,5|0|34|1.468|128.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|178.0|7.0|executada|casa1|1757554707514|1
+389|Millonarios FC x Deportivo Pasto|futebol|2_resultados|77|3.7|50.0|Menos de 1,5|0|34|1.468|128.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|178.0|7.0|executada|casa1|1757554737831|1
+390|Millonarios FC x Deportivo Pasto|futebol|2_resultados|100|3.7|50.0|Menos de 1,5|0|34|1.468|128.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|178.0|7.0|executada|casa1|1757554759700|1
+391|Millonarios FC x Deportivo Pasto|futebol|2_resultados|106|3.7|50.0|Menos de 1,5|0|34|1.468|128.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|178.0|7.0|executada|casa1|1757554793719|1
+392|Corinthians x Atletico Paranaense|futebol|2_resultados|30|3.5|50.0|Menos de 1,5|0|34|1.466|120.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|170.0|5.91999999999999|executada|casa2|1757554854018|1
+393|Corinthians x Atletico Paranaense|futebol|2_resultados|77|3.5|50.0|Menos de 1,5|0|34|1.468|120.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|170.0|6.16|executada|casa2|1757554879767|1
+394|Corinthians x Atletico Paranaense|futebol|2_resultados|100|3.5|50.0|Menos de 1,5|0|34|1.468|120.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|170.0|6.16|executada|casa2|1757554906698|1
+395|Corinthians x Atletico Paranaense|futebol|2_resultados|106|3.5|50.0|Menos de 1,5|0|34|1.46|120.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|170.0|5.19999999999999|executada|casa2|1757554933568|1
+396|Cartagines CS x Herediano CS|futebol|2_resultados|30|4.0|50.0|Menos de 1,5|0|34|1.37|146.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.0|4.02000000000001|executada|casa2|1757555111707|1
+397|Cartagines CS x Herediano CS|futebol|2_resultados|77|4.0|50.0|Menos de 1,5|0|34|1.37|146.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.0|4.02000000000001|executada|casa2|1757555134217|1
+398|Cartagines CS x Herediano CS|futebol|2_resultados|100|4.0|50.0|Menos de 1,5|0|34|1.37|146.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.0|4.02000000000001|executada|casa2|1757555152908|1
+399|Cartagines CS x Herediano CS|futebol|2_resultados|106|4.0|50.0|Menos de 1,5|0|34|1.37|146.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|196.0|4.02000000000001|executada|casa2|1757555172963|1
+400|Mashal Mubarek x Shurtan Guzar|futebol|2_resultados|30|4.5|50.0|Menos de 1,5|0|34|1.331|169.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|5.93899999999999|executada|casa2|1757605803771|1
+401|Mashal Mubarek x Shurtan Guzar|futebol|2_resultados|100|4.6|50.0|Menos de 1,5|0|34|1.316|176.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|226.0|5.61600000000001|executada|casa2|1757605899400|1
+402|Mashal Mubarek x Shurtan Guzar|futebol|2_resultados|106|4.6|50.0|Menos de 1,5|0|34|1.316|176.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|226.0|5.61600000000001|executada|casa2|1757605934037|1
+403|Hobro x Lyngby|futebol|2_resultados|30|3.0|50.0|Menos de 2,5|0|34|1.614|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.102|executada|casa2|1757608390053|1
+404|Hobro x Lyngby|futebol|2_resultados|77|3.0|50.0|Menos de 2,5|0|34|1.614|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.102|executada|casa2|1757608417150|1
+405|Hobro x Lyngby|futebol|2_resultados|100|3.0|50.0|Menos de 2,5|0|34|1.614|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.102|executada|casa2|1757608433961|1
+406|Hobro x Lyngby|futebol|2_resultados|106|3.0|50.0|Menos de 2,5|0|34|1.614|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|7.102|executada|casa2|1757608452666|1
+407|Al Arabi Unaizah x Al Anwar|futebol|2_resultados|30|4.2|50.0|Menos de 1,5|0|34|1.399|150.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|200.0|9.84999999999999|executada|casa2|1757611915110|1
+408|Al Arabi Unaizah x Al Anwar|futebol|2_resultados|77|4.2|50.0|Menos de 1,5|0|34|1.399|150.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|200.0|9.84999999999999|executada|casa2|1757611939484|1
+409|Al Arabi Unaizah x Al Anwar|futebol|2_resultados|100|4.2|50.0|Menos de 1,5|0|34|1.399|150.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|200.0|9.84999999999999|executada|casa2|1757611959189|1
+410|Al Arabi Unaizah x Al Anwar|futebol|2_resultados|106|4.2|50.0|Menos de 1,5|0|34|1.399|150.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|200.0|9.84999999999999|executada|casa2|1757611986144|1
+411|Guayaquil City x San Antonio Ibarra|futebol|2_resultados|30|4.5|50.0|Menos de 1,5|0|34|1.335|169.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|6.0|executada|casa1|1757623138001|1
+412|Guayaquil City x San Antonio Ibarra|futebol|2_resultados|77|4.5|50.0|Menos de 1,5|0|34|1.335|169.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|6.0|executada|casa1|1757623215899|1
+413|Guayaquil City x San Antonio Ibarra|futebol|2_resultados|100|4.5|50.0|Menos de 1,5|0|34|1.335|169.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|6.0|executada|casa1|1757623254947|1
+414|Guayaquil City x San Antonio Ibarra|futebol|2_resultados|106|4.5|50.0|Menos de 1,5|0|34|1.324|169.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|6.0|executada|casa1|1757623346968|1
+415|Botafogo x Vasco da Gama|futebol|2_resultados|30|4.4|50.0|Menos de 1,5|0|34|1.351|163.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|213.0|7.21299999999999|executada|casa2|1757634835168|1
+416|Botafogo x Vasco da Gama|futebol|2_resultados|77|4.4|50.0|Menos de 1,5|0|34|1.351|163.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|213.0|7.21299999999999|executada|casa2|1757634881345|1
+417|Botafogo x Vasco da Gama|futebol|2_resultados|100|4.4|50.0|Menos de 1,5|0|34|1.351|163.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|213.0|7.21299999999999|executada|casa2|1757634908083|1
+418|Botafogo x Vasco da Gama|futebol|2_resultados|106|4.4|50.0|Menos de 1,5|0|34|1.351|163.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|213.0|7.21299999999999|executada|casa2|1757634933078|1
+419|Botafogo x Vasco|futebol|2_resultados|28|2.9|25.0|Empate|1|34|1.335|54.0|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|54.0|18.5|executada|casa1|1757636298096|1
+421|Platense x Marathon|futebol|2_resultados|30|2.8|50.0|Menos de 2,5|0|78|1.72|81.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|131.0|9.0|executada|casa1|1757638294304|1
+422|Platense x Marathon|futebol|2_resultados|77|2.8|50.0|Menos de 2,5|0|78|1.72|81.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|131.0|9.0|executada|casa1|1757638310654|1
+424|Platense x Marathon|futebol|2_resultados|106|2.8|50.0|Menos de 2,5|0|78|1.72|81.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|131.0|9.0|executada|casa1|1757638349593|1
+425|Platense x Marathon|futebol|2_resultados|100|2.8|50.0|Menos de 2,5|0|78|1.72|81.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|131.0|9.0|executada|casa1|1757638396742|1
+426|Botafogo x Vasco|futebol|2_resultados|74|2.9|25.0|Empate|1|34|1.335|54.0|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|54.0|18.5|executada|casa1|1757649359440|1
+427|Machida Zelvia x Yokohama FC|futebol|2_resultados|30|4.1|50.0|Menos de 1,5|0|34|1.39|148.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|198.0|7.72|executada|casa2|1757650271531|1
+428|Machida Zelvia x Yokohama FC|futebol|2_resultados|77|4.1|50.0|Menos de 1,5|0|34|1.39|148.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|198.0|7.72|executada|casa2|1757650331099|1
+429|Machida Zelvia x Yokohama FC|futebol|2_resultados|100|4.1|50.0|Menos de 1,5|0|34|1.39|148.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|198.0|7.72|executada|casa2|1757650367616|1
+430|Machida Zelvia x Yokohama FC|futebol|2_resultados|106|4.1|50.0|Menos de 1,5|0|34|1.39|148.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|198.0|7.72|executada|casa2|1757650578439|1
+431|Ekenas IF x  SalPa Salo|futebol|2_resultados|30|3.9|50.0|Menos de 2,5|0|34|1.399|140.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|190.0|5.86000000000001|executada|casa2|1757696281866|1
+432|Ekenas IF x  SalPa Salo|futebol|2_resultados|77|3.9|50.0|Menos de 2,5|0|34|1.399|140.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|190.0|5.86000000000001|executada|casa2|1757696304532|1
+433|Ekenas IF x  SalPa Salo|futebol|2_resultados|100|3.9|50.0|Menos de 2,5|0|34|1.399|140.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|190.0|5.86000000000001|executada|casa2|1757696319932|1
+434|Ekenas IF x  SalPa Salo|futebol|2_resultados|106|3.9|50.0|Menos de 2,5|0|34|1.399|140.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|190.0|5.86000000000001|executada|casa2|1757696343514|1
+435|Al Gharafa SC x Al Sailiya|futebol|2_resultados|30|3.6|50.0|Menos de 2,5|0|34|1.455|124.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|174.0|6.0|executada|casa1|1757696408665|1
+436|Al Gharafa SC x Al Sailiya|futebol|2_resultados|77|3.6|50.0|Menos de 2,5|0|34|1.455|124.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|174.0|6.0|executada|casa1|1757696427467|1
+437|Al Gharafa SC x Al Sailiya|futebol|2_resultados|100|3.6|50.0|Menos de 2,5|0|34|1.455|124.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|174.0|6.0|executada|casa1|1757696446147|1
+438|Al Gharafa SC x Al Sailiya|futebol|2_resultados|106|3.6|50.0|Menos de 2,5|0|34|1.455|124.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|174.0|6.0|executada|casa1|1757696465315|1
+439|Bohemians x Derry City|futebol|2_resultados|30|3.8|50.0|Menos de 1,5|0|34|1.455|131.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|181.0|9.60500000000002|executada|casa2|1757705425202|1
+440|Bohemians x Derry City|futebol|2_resultados|77|3.8|50.0|Menos de 1,5|0|34|1.455|131.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|181.0|9.60500000000002|executada|casa2|1757705442602|1
+441|Bohemians x Derry City|futebol|2_resultados|100|3.8|50.0|Menos de 1,51|0|34|1.455|131.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|181.0|9.60500000000002|executada|casa2|1757705459728|1
+442|Bohemians x Derry City|futebol|2_resultados|106|3.8|50.0|Menos de 1,5|0|34|1.455|131.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|181.0|9.60500000000002|executada|casa2|1757705479058|1
+443|Benfica x Santa Clara|futebol|2_resultados|30|4.3|50.0|Menos de 1,5|0|34|1.353|159.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|209.0|6.12700000000001|executada|casa2|1757705686703|1
+444|Benfica x Santa Clara|futebol|2_resultados|77|4.3|50.0|Menos de 1,5|0|34|1.353|159.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|209.0|6.12700000000001|executada|casa2|1757705715133|1
+445|Benfica x Santa Clara|futebol|2_resultados|100|4.3|50.0|Menos de 1,5|0|34|1.353|159.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|209.0|6.12700000000001|executada|casa2|1757705743532|1
+446|Benfica x Santa Clara|futebol|2_resultados|106|4.3|50.0|Menos de 1,5|0|34|1.353|159.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|209.0|6.12700000000001|executada|casa2|1757705769315|1
+447|Sport Huancayo x Los Chankas|futebol|2_resultados|30|3.0|50.0|Menos de 2,5|0|34|1.629|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|8.49700000000001|executada|casa2|1757707252701|1
+448|Sport Huancayo x Los Chankas|futebol|2_resultados|77|3.0|50.0|Menos de 2,5|0|34|1.629|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|8.49700000000001|executada|casa2|1757707288553|1
+449|Sport Huancayo x Los Chankas|futebol|2_resultados|100|3.0|50.0|Menos de 2,5|0|34|1.629|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|8.49700000000001|executada|casa2|1757707303641|1
+450|Sport Huancayo x Los Chankas|futebol|2_resultados|106|3.0|50.0|Menos de 2,5|0|34|1.629|93.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|143.0|8.49700000000001|executada|casa2|1757707327560|1
+451|Volta Redonda x Criciuma EC |futebol|2_resultados|30|3.3|50.0|Menos de 1,5|0|34|1.516|109.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.0|executada|casa1|1757734012176|1
+452|Volta Redonda x Criciuma EC |futebol|2_resultados|77|3.3|50.0|Menos de 1,5|0|34|1.516|109.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.0|executada|casa1|1757734045739|1
+453|Volta Redonda x Criciuma EC |futebol|2_resultados|100|3.3|50.0|Menos de 1,5|0|34|1.516|109.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.0|executada|casa1|1757734063267|1
+454|Volta Redonda x Criciuma EC |futebol|2_resultados|106|3.3|50.0|Menos de 1,5|0|34|1.516|109.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.0|executada|casa1|1757734090519|1
+455|Coritiba x Goias|futebol|2_resultados|30|3.2|50.0|Menos de 1,5|0|34|1.565|102.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.0|8.0|executada|casa1|1757734169385|1
+456|Coritiba x Goias|futebol|2_resultados|77|3.2|50.0|Menos de 1,5|0|34|1.565|102.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.0|8.0|executada|casa1|1757734194140|1
+457|Coritiba x Goias|futebol|2_resultados|100|3.2|50.0|Menos de 1,5|0|34|1.565|102.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.0|8.0|executada|casa1|1757734240384|1
+458|Coritiba x Goias|futebol|2_resultados|106|3.2|50.0|Menos de 1,5|0|34|1.565|102.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.0|8.0|executada|casa1|1757734269144|1
+459|Olimpia x Genesis|futebol|2_resultados|30|3.2|50.0|Menos de 2,5|0|78|1.53|105.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|155.0|5.65000000000001|executada|casa2|1757734354438|1
+460|Olimpia x Genesis|futebol|2_resultados|77|3.2|50.0|Menos de 2,5|0|78|1.53|105.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|155.0|5.65000000000001|executada|casa2|1757734375350|1
+461|Olimpia x Genesis|futebol|2_resultados|100|3.2|50.0|Menos de 2,5|0|78|1.53|105.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|155.0|5.65000000000001|executada|casa2|1757734394823|1
+463|Olimpia x Genesis|futebol|2_resultados|106|3.2|50.0|Menos de 2,5|0|78|1.53|105.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|155.0|5.65000000000001|executada|casa2|1757734467466|1
+464|Mazatlan FC x Pumas UNAM|futebol|2_resultados|30|4.1|50.0|Menos de 1,5|0|34|1.36|151.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|201.0|4.36000000000001|executada|casa2|1757734825830|1
+465|Mazatlan FC x Pumas UNAM|futebol|2_resultados|77|4.1|50.0|Menos de 1,5|0|34|1.36|151.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|201.0|4.36000000000001|executada|casa2|1757734850694|1
+466|Mazatlan FC x Pumas UNAM|futebol|2_resultados|100|4.1|50.0|Menos de 1,5|0|34|1.36|151.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|201.0|4.36000000000001|executada|casa2|1757734873793|1
+467|Mazatlan FC x Pumas UNAM|futebol|2_resultados|106|4.1|50.0|Menos de 1,5|0|34|1.36|151.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|201.0|4.36000000000001|executada|casa2|1757734900411|1
+468|Crystal Palace x Sunderland |futebol|2_resultados|30|3.8|50.0|Menos de 1,5|0|34|1.41|135.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|185.0|5.0|executada|casa1|1757772214229|1
+469|Crystal Palace x Sunderland |futebol|2_resultados|77|3.8|50.0|Menos de 1,5|0|34|1.41|135.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|185.0|5.0|executada|casa1|1757772235847|1
+470|Crystal Palace x Sunderland |futebol|2_resultados|100|3.8|50.0|Menos de 1,5|0|34|1.41|135.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|185.0|5.0|executada|casa1|1757772268211|1
+471|Crystal Palace x Sunderland |futebol|2_resultados|106|3.8|50.0|Menos de 1,5|0|34|1.41|135.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|185.0|5.0|executada|casa1|1757772288025|1
+472|Bayern Munchen X Hamburger|futebol|2_resultados|30|3.6|50.0|Menos de 3,5|0|34|1.44|125.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|175.0|5.0|executada|casa2|1757779738649|1
+473|Bayern Munchen X Hamburger|futebol|2_resultados|77|3.6|50.0|Menos de 3,5|0|34|1.44|125.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|175.0|5.0|executada|casa2|1757779768563|1
+474|Bayern Munchen X Hamburger|futebol|2_resultados|100|3.6|50.0|Menos de 3,5|0|34|1.44|125.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|175.0|5.0|executada|casa2|1757779788316|1
+475|Bayern Munchen X Hamburger|futebol|2_resultados|106|3.6|50.0|Menos de 3,5|0|34|1.44|125.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|175.0|5.0|executada|casa2|1757779810702|1
+476|Porto x Nacional|futebol|2_resultados|30|2.9|50.0|Menos de 2,5|0|34|1.626|89.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|139.0|6.0|executada|casa1|1757786671792|1
+477|Porto x Nacional|futebol|2_resultados|77|2.9|50.0|Menos de 2,5|0|34|1.626|89.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|139.0|6.0|executada|casa1|1757786694054|1
+478|Porto x Nacional|futebol|2_resultados|100|2.9|50.0|Menos de 2,5|0|34|1.626|89.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|139.0|6.0|executada|casa1|1757786722479|1
+479|Porto x Nacional|futebol|2_resultados|106|2.9|50.0|Menos de 2,5|0|34|1.626|89.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|139.0|6.0|executada|casa1|1757786744347|1
+480|Al Hilal Riyadh x Al Qadisiya|futebol|2_resultados|30|3.5|50.0|Menos de 2,5|0|10|1.48|118.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|168.0|6.63999999999999|executada|casa2|1757786841365|1
+482|Al Hilal Riyadh x Al Qadisiya|futebol|2_resultados|100|3.5|50.0|Menos de 2,5|0|10|1.48|118.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|168.0|6.63999999999999|executada|casa2|1757786883129|1
+483|Al Hilal Riyadh x Al Qadisiya|futebol|2_resultados|77|3.5|50.0|Menos de 2,5|0|10|1.48|118.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|168.0|6.63999999999999|executada|casa2|1757786955684|1
+484|Al Hilal Riyadh x Al Qadisiya|futebol|2_resultados|106|3.5|50.0|Menos de 2,5|0|10|1.48|118.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|168.0|6.63999999999999|executada|casa2|1757787000618|1
+485|Famalicao FC X Sporting Lisbon|futebol|2_resultados|30|2.8|50.0|Menos de 2,5|0|34|1.672|84.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|134.0|6.44800000000001|executada|casa2|1757791420470|1
+486|Famalicao FC X Sporting Lisbon|futebol|2_resultados|77|2.8|50.0|Menos de 2,5|0|34|1.672|84.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|134.0|6.44800000000001|executada|casa2|1757791440387|1
+487|Famalicao FC X Sporting Lisbon|futebol|2_resultados|100|2.8|50.0|Menos de 2,5|0|34|1.672|84.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|134.0|6.44800000000001|executada|casa2|1757791457483|1
+488|Famalicao FC X Sporting Lisbon|futebol|2_resultados|106|2.8|50.0|Menos de 2,5|0|34|1.672|84.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|134.0|6.44800000000001|executada|casa2|1757791477570|1
+489|Vancouver Whitecaps FC II x The Town |futebol|2_resultados|30|4.7|50.0|Menos de 2,5|0|81|1.35|174.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|224.0|10.9|executada|casa2|1757804834328|1
+490|Vancouver Whitecaps FC II x The Town |futebol|2_resultados|77|4.7|50.0|Menos de 2,5|0|81|1.35|174.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|224.0|10.9|executada|casa2|1757804885003|1
+491|Vancouver Whitecaps FC II x The Town |futebol|2_resultados|100|4.7|50.0|Menos de 2,5|0|81|1.35|174.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|224.0|10.9|executada|casa2|1757804917107|1
+492|Vancouver Whitecaps FC II x The Town |futebol|2_resultados|106|4.7|50.0|Menos de 2,5|0|81|1.35|174.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|224.0|10.9|executada|casa2|1757804934224|1
+493|Estudiantes x River Plate|futebol|2_resultados|30|3.0|50.0|Menos de 1,5|0|34|1.604|94.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|144.0|6.77600000000001|executada|casa2|1757805203314|1
+494|Estudiantes x River Plate|futebol|2_resultados|77|3.0|50.0|Menos de 1,5|0|34|1.604|94.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|144.0|6.77600000000001|executada|casa2|1757805236409|1
+495|Estudiantes x River Plate|futebol|2_resultados|100|3.0|50.0|Menos de 1,5|0|34|1.604|94.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|144.0|6.77600000000001|executada|casa2|1757805254262|1
+496|Estudiantes x River Plate|futebol|2_resultados|106|3.0|50.0|Menos de 1,5|0|34|1.604|94.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|144.0|6.77600000000001|executada|casa2|1757805273522|1
+497|Fluminense X Corinthians|futebol|2_resultados|30|3.0|50.0|Menos de 1,5|0|34|1.643|91.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|141.0|9.0|executada|casa1|1757807025063|1
+498|Fluminense X Corinthians|futebol|2_resultados|77|3.0|50.0|Menos de 1,5|0|34|1.643|91.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|141.0|9.0|executada|casa1|1757807044847|1
+499|Fluminense X Corinthians|futebol|2_resultados|100|3.0|50.0|Menos de 1,5|0|34|1.643|91.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|141.0|9.0|executada|casa1|1757807061390|1
+500|Fluminense X Corinthians|futebol|2_resultados|106|3.0|50.0|Menos de 1,5|0|34|1.643|91.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|141.0|9.0|executada|casa1|1757807081452|1
+501|Portland Timbers X New York Red Bulls|futebol|2_resultados|30|2.6|50.0|Menos de 2,5|0|34|1.731|75.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|125.0|4.82500000000002|executada|casa2|1757815649587|1
+505|Portland Timbers X New York Red Bulls|futebol|2_resultados|77|2.7|50.0|Menos de 2,5|0|34|1.729|78.33|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|128.33|7.10257000000001|executada|casa2|1757817304379|1
+506|Portland Timbers X New York Red Bulls|futebol|2_resultados|100|2.7|50.0|Menos de 2,5|0|34|1.729|78.33|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|128.33|7.10257000000001|executada|casa2|1757817325004|1
+507|Portland Timbers X New York Red Bulls|futebol|2_resultados|106|2.7|50.0|Menos de 2,5|0|34|1.729|78.33|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|128.33|7.10257000000001|executada|casa2|1757817359929|1
+508|Club America x Chivas Guadalajara|futebol|2_resultados|30|2.3|50.0|Menos de 2,5|0|34|1.958|59.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.0|6.52199999999999|executada|casa2|1757817465837|1
+509|Club America x Chivas Guadalajara|futebol|2_resultados|77|2.3|50.0|Menos de 2,5|0|34|1.958|59.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.0|6.52199999999999|executada|casa2|1757817488364|1
+510|Club America x Chivas Guadalajara|futebol|2_resultados|100|2.3|50.0|Menos de 2,5|0|34|1.958|59.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.0|6.52199999999999|executada|casa2|1757817507669|1
+511|Club America x Chivas Guadalajara|futebol|2_resultados|106|2.3|50.0|Menos de 2,5|0|34|1.958|59.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.0|6.52199999999999|executada|casa2|1757817526654|1
+512|Roma x Torino|futebol|2_resultados|30|4.6|50.0|Menos de 1,5|0|34|1.342|171.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|221.0|8.99999999999997|executada|casa1|1757824800977|1
+513|Roma x Torino|futebol|2_resultados|77|4.6|50.0|Menos de 1,5|0|34|1.342|171.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|221.0|8.99999999999997|executada|casa1|1757824834511|1
+514|Roma x Torino|futebol|2_resultados|100|4.6|50.0|Menos de 1,5|0|34|1.342|171.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|221.0|8.99999999999997|executada|casa1|1757824859202|1
+515|Roma x Torino|futebol|2_resultados|106|4.6|50.0|Menos de 1,5|0|34|1.342|171.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|221.0|8.99999999999997|executada|casa1|1757824882143|1
+516|Burnley x Liverpool|futebol|2_resultados|30|3.3|50.0|Menos de 2,5|0|34|1.526|109.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.0|executada|casa1|1757855628024|1
+517|Burnley x Liverpool|futebol|2_resultados|77|3.3|50.0|Menos de 2,5|0|34|1.526|109.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.0|executada|casa1|1757855690346|1
+518|Burnley x Liverpool|futebol|2_resultados|100|3.3|50.0|Menos de 2,5|0|34|1.526|109.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.0|executada|casa1|1757855717517|1
+519|Burnley x Liverpool|futebol|2_resultados|106|3.3|50.0|Menos de 2,5|0|34|1.526|109.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.0|6.0|executada|casa1|1757855750476|1
+520|St. Pauli x Augsburg|futebol|2_resultados|30|4.1|50.0|Menos de 1,5|0|34|1.38|149.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|199.0|6.61999999999998|executada|casa2|1757855911854|1
+521|St. Pauli x Augsburg|futebol|2_resultados|77|4.1|50.0|Menos de 2,5|0|34|1.38|149.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|199.0|6.61999999999998|executada|casa2|1757855928259|1
+522|St. Pauli x Augsburg|futebol|2_resultados|100|4.1|50.0|Menos de 2,5|0|34|1.38|149.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|199.0|6.61999999999998|executada|casa2|1757855948389|1
+523|St. Pauli x Augsburg|futebol|2_resultados|106|4.1|50.0|Menos de 1,5|0|34|1.38|149.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|199.0|6.61999999999998|executada|casa2|1757855978778|1
+524|Paris Saint Germain x Lens|futebol|2_resultados|30|4.0|50.0|Menos de 2,5|0|34|1.383|145.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|195.0|5.0|executada|casa1|1757860550023|1
+525|Paris Saint Germain x Lens|futebol|2_resultados|77|4.0|50.0|Menos de 2,5|0|34|1.383|145.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|195.0|5.0|executada|casa1|1757860571750|1
+526|Paris Saint Germain x Lens|futebol|2_resultados|100|4.0|50.0|Menos de 2,5|0|34|1.383|145.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|195.0|5.0|executada|casa1|1757860592115|1
+527|Paris Saint Germain x Lens|futebol|2_resultados|106|4.0|50.0|Menos de 2,5|0|34|1.383|145.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|195.0|5.0|executada|casa1|1757860608084|1
+528|Manchester City x Manchester United|futebol|2_resultados|30|3.1|50.0|Menos de 2,5|0|34|1.591|98.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.0|7.91800000000001|executada|casa2|1757862826907|1
+529|Manchester City x Manchester United|futebol|2_resultados|77|3.1|50.0|Menos de 2,5|0|34|1.591|98.0|Mais de 2,|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.0|7.91800000000001|executada|casa2|1757865415618|1
+530|Manchester City x Manchester United|futebol|2_resultados|100|3.1|50.0|Menos de 2,5|0|34|1.591|98.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.0|7.91800000000001|executada|casa2|1757865436252|1
+531|Manchester City x Manchester United|futebol|2_resultados|106|3.1|50.0|Menos de 2,5|0|34|1.591|98.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.0|7.91800000000001|executada|casa2|1757865452353|1
+532|Al Nassr Riyadh X Al-Kholood |futebol|2_resultados|30|3.1|50.0|Menos de 3,5|0|34|1.601|98.17|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.17|6.82999999999998|executada|casa1|1757871306766|1
+533|Al Nassr Riyadh X Al-Kholood |futebol|2_resultados|77|3.1|50.0|Menos de 3,5|0|34|1.601|98.17|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.17|6.82999999999998|executada|casa1|1757871341125|1
+534|Al Nassr Riyadh X Al-Kholood |futebol|2_resultados|100|3.1|50.0|Menos de 3,5|0|34|1.601|98.17|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.17|6.82999999999998|executada|casa1|1757871360795|1
+535|Al Nassr Riyadh X Al-Kholood |futebol|2_resultados|106|3.1|50.0|Menos de 3,5|0|34|1.601|98.17|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|148.17|6.82999999999998|executada|casa1|1757871377157|1
+536|Atletico Mineiro x Santos|futebol|2_resultados|30|3.9|50.0|Menos de 1,5|0|34|1.383|141.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|191.0|4.00300000000001|executada|casa2|1757876633349|1
+537|Atletico Mineiro x Santos|futebol|2_resultados|77|3.9|50.0|Menos de 1,5|0|34|1.383|141.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|191.0|4.00300000000001|executada|casa2|1757876645925|1
+538|Atletico Mineiro x Santos|futebol|2_resultados|100|3.9|50.0|Menos de 1,5|0|34|1.383|141.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|191.0|4.00300000000001|executada|casa2|1757876664159|1
+539|Atletico Mineiro x Santos|futebol|2_resultados|106|3.9|50.0|Menos de 2,5|0|34|1.383|141.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|191.0|4.00300000000001|executada|casa2|1757876676138|1
+540|Athletic Club x Botafogo RP|futebol|2_resultados|30|3.2|50.0|Menos de 1,5|0|34|1.536|104.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|154.0|5.744|executada|casa2|1757883912113|1
+541|Athletic Club x Botafogo RP|futebol|2_resultados|77|3.2|50.0|Menos de 1,5|0|34|1.536|104.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|154.0|5.744|executada|casa2|1757883935183|1
+542|Athletic Club x Botafogo RP|futebol|2_resultados|100|3.2|50.0|Menos de 1,5|0|34|1.536|104.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|154.0|5.744|executada|casa2|1757883958771|1
+543|Athletic Club x Botafogo RP|futebol|2_resultados|106|3.2|50.0|Menos de 1,5|0|34|1.536|104.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|154.0|5.744|executada|casa2|1757883976815|1
+544|Vasco X Ceará|futebol|2_resultados|30|3.5|50.0|Menos de 1,5|0|34|1.459|120.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|170.0|5.08000000000001|executada|casa2|1757891664618|1
+545|Vasco X Ceará|futebol|2_resultados|77|3.5|50.0|Menos de 1,5|0|34|1.459|120.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|170.0|5.08000000000001|executada|casa2|1757891687825|1
+546|Vasco X Ceará|futebol|2_resultados|100|3.5|50.0|Menos de 1,5|0|34|1.459|120.0|Mais. de1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|170.0|5.08000000000001|executada|casa2|1757891745803|1
+547|Vasco X Ceará|futebol|2_resultados|106|3.5|50.0|Menos de 1,5|0|34|1.459|120.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|170.0|5.08000000000001|executada|casa2|1757891769916|1
+548|Tolima x Boiacá Chicó |futebol|2_resultados|30|3.8|50.0|Menos de 2,5|0|34|1.458|130.25|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|180.25|9.65449999999998|executada|casa2|1757894510322|1
+549|Tolima x Boiacá Chicó |futebol|2_resultados|77|3.8|50.0|Menos de 1,5|0|34|1.458|130.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|180.25|9.65449999999998|executada|casa2|1757894555942|1
+550|Tolima x Boiacá Chicó |futebol|2_resultados|100|3.8|50.0|Menos de 1,5|0|34|1.458|130.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|180.25|9.65449999999998|executada|casa2|1757894596628|1
+551|Tolima x Boiacá Chicó |futebol|2_resultados|106|3.8|50.0|Menos de 1,5|0|34|1.458|130.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|180.25|9.65449999999998|executada|casa2|1757894645500|1
+552|Atlético San Luis x Tijuana |futebol|2_resultados|30|3.0|50.0|Menos de 2,5|0|34|1.588|94.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|144.5|5.5|executada|casa1|1757895657485|1
+553|Atlético San Luis x Tijuana |futebol|2_resultados|77|3.0|50.0|Menos de 2,5|0|34|1.588|94.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|144.5|5.5|executada|casa1|1757895672996|1
+554|Atlético San Luis x Tijuana |futebol|2_resultados|100|3.0|50.0|Menos de 2,5|0|34|1.588|94.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|144.5|5.5|executada|casa1|1757895687709|1
+555|Atlético San Luis x Tijuana |futebol|2_resultados|106|3.0|50.0|Menos de 2,5|0|34|1.588|94.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|144.5|5.5|executada|casa1|1757895703379|1
+556|FC Tokyo X Tokyo Verdy |futebol|2_resultados|30|3.6|50.0|Menos de 1,5|0|37|1.476|122.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|172.0|8.0|executada|casa1|1757941392261|1
+557|FC Tokyo X Tokyo Verdy |futebol|2_resultados|77|3.6|50.0|Menos de 1,5|0|37|1.476|122.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|172.0|8.0|executada|casa1|1757941425276|1
+558|FC Tokyo X Tokyo Verdy |futebol|2_resultados|100|3.6|50.0|Menos de 1,5|0|37|1.476|122.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|172.0|8.0|executada|casa1|1757941447592|1
+559|FC Tokyo X Tokyo Verdy |futebol|2_resultados|106|3.6|50.0|Menos de 1,5|0|37|1.476|122.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|172.0|8.0|executada|casa1|1757941465020|1
+560| Houston X Tampa Bay|futebol|2_resultados|1|3.0|50.0|Menos de 45,5|0|10|1.58|95.0|Mais de 45,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|145.0|5.09999999999999|executada|casa2|1757941799319|1
+561|Houston x Tampa Bay|futebol|2_resultados|73|3.0|50.0|Menos de 45,5|0|10|1.58|95.0|Mais de 45,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|145.0|5.09999999999999|executada|casa2|1757941822915|1
+562|BFC Daugava x Grobinas SC |futebol|2_resultados|30|3.0|50.0|Menos de 2,5|0|34|1.629|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|7.86799999999999|executada|casa2|1757946217433|1
+563|BFC Daugava x Grobinas SC |futebol|2_resultados|77|3.0|50.0|Menos de 2,5|0|34|1.629|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|7.86799999999999|executada|casa2|1757946352992|1
+564|BFC Daugava x Grobinas SC|futebol|2_resultados|100|3.0|50.0|Menos de 2,5|0|34|1.629|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|7.86799999999999|executada|casa2|1757946376031|1
+565|BFC Daugava x Grobinas SC|futebol|2_resultados|106|3.0|50.0|Menos de 2,5|0|34|1.629|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|7.86799999999999|executada|casa2|1757946389953|1
+566|SJK Akatemia X JBK Pietarsaari|futebol|2_resultados|30|3.6|50.0|menos de 3,5|0|34|1.432|126.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|176.0|4.0|executada|casa1|1757953137302|1
+567|SJK Akatemia X JBK Pietarsaari|futebol|2_resultados|77|3.6|50.0|Menos de 3,5|0|34|1.432|126.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|176.0|4.0|executada|casa1|1757953158021|1
+568|SJK Akatemia X JBK Pietarsaari|futebol|2_resultados|100|3.6|50.0|Menos de 3,5|0|34|1.432|126.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|176.0|4.0|executada|casa1|1757953178644|1
+569|SJK Akatemia X JBK Pietarsaari|futebol|2_resultados|106|3.6|50.0|Menos de 3,5|0|34|1.432|126.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|176.0|4.0|executada|casa1|1757953194597|1
+570|Hellas Verona x Cremonese|futebol|2_resultados|30|3.5|50.0|Menos de 1,5|0|34|1.487|117.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|167.75|7.25|executada|casa1|1757953345470|1
+571|Hellas Verona x Cremonese|futebol|2_resultados|77|3.5|50.0|Menos de 1,5|0|34|1.487|117.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|167.75|7.25|executada|casa1|1757953363590|1
+572|Hellas Verona x Cremonese|futebol|2_resultados|100|3.5|50.0|Menos de 1,5|0|34|1.487|117.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|167.75|7.25|executada|casa1|1757953380553|1
+573|Hellas Verona x Cremonese|futebol|2_resultados|106|3.5|50.0|Menos de 1,5|0|34|1.487|117.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|167.75|7.25|executada|casa1|1757953397481|1
+574|Dordrecht x Jong Az |futebol|2_resultados|30|3.0|50.0|Menos de 2,5|0|34|1.633|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|8.0|executada|casa1|1757958423584|1
+575|Dordrecht x Jong Az |futebol|2_resultados|77|3.0|50.0|Menos de 2,5|0|34|1.633|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|8.0|executada|casa1|1757958436639|1
+576|Dordrecht x Jong Az |futebol|2_resultados|100|3.0|50.0|Menos de 2,5|0|34|1.633|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|8.0|executada|casa1|1757958448372|1
+577|Dordrecht x Jong Az |futebol|2_resultados|106|3.0|50.0|Menos de 2,5|0|34|1.633|92.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|8.0|executada|casa1|1757958460967|1
+578|Espanyol x Mallorca |futebol|2_resultados|30|3.3|50.0|Menos de 1,5|0|34|1.509|109.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.25|5.60825|executada|casa2|1757963355744|1
+579|Espanyol x Mallorca |futebol|2_resultados|77|3.3|50.0|Menos de 1,5|0|34|1.509|109.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.25|5.60825|executada|casa2|1757963386601|1
+580|Espanyol x Mallorca |futebol|2_resultados|100|3.3|50.0|Menos de 1,5|0|34|1.509|109.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.25|5.60825|executada|casa2|1757963411223|1
+581|Espanyol x Mallorca |futebol|2_resultados|106|3.3|50.0|Menos de 1,5|0|34|1.509|109.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|159.25|5.60825|executada|casa2|1757963423852|1
+582|Bahia x Cruzeiro|futebol|2_resultados|30|3.8|50.0|Menos de 1,5|0|34|1.429|133.75|Mais. de1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|183.75|7.37875|executada|casa2|1757976736644|1
+583|Bahia x Cruzeiro|futebol|2_resultados|77|3.8|50.0|Menos de 1,5|0|34|1.429|133.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|183.75|7.37875|executada|casa2|1757976767365|1
+584|Bahia x Cruzeiro|futebol|2_resultados|100|3.8|50.0|Menos de 1,5|0|34|1.429|133.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|183.75|7.37875|executada|casa2|1757976791117|1
+585|Bahia x Cruzeiro|futebol|2_resultados|106|3.8|50.0|Menos de 1,5|0|34|1.429|133.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|183.75|7.37875|executada|casa2|1757976816352|1
+586|CRB x Amazonas|futebol|2_resultados|30|3.8|50.0|Menos de 1,5|0|34|1.409|134.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|184.75|5.11275|executada|casa2|1757981996087|1
+587|CRB x Amazonas|futebol|2_resultados|77|3.8|50.0|Menos de 1,5|0|34|1.409|134.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|184.75|5.11275|executada|casa2|1757982018158|1
+588|CRB x Amazonas|futebol|2_resultados|100|3.8|50.0|Menos de 1,5|0|34|1.409|134.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|184.75|5.11275|executada|casa2|1757982049547|1
+589|CRB x Amazonas|futebol|2_resultados|106|3.8|50.0|Menos de 1,5|0|34|1.409|134.75|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|184.75|5.11275|executada|casa2|1757982068458|1
+590|Alianza FC Panama x San Francisco FC|futebol|2_resultados|30|2.5|50.0|Menos de 2,5|0|34|1.971|63.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.5|11.5|executada|casa1|1757985571022|1
+591|Alianza-PAN X San Francisco FC|futebol|2_resultados|77|2.5|50.0|Menos de 2,5|0|34|1.971|63.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.5|11.5|executada|casa1|1757985632124|1
+592|Alianza-PAN X San Francisco FC|futebol|2_resultados|100|2.5|50.0|Menos de 2,5|0|34|1.971|63.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.5|11.5|executada|casa1|1757985653930|1
+593|Alianza-PAN X San Francisco FC|futebol|2_resultados|106|2.5|50.0|Menos de 2,5|0|34|1.971|63.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.5|11.5|executada|casa1|1757985666716|1
+594|Machida x Seoul |futebol|2_resultados|30|2.5|50.0|Menos de 2,5|0|34|1.763|71.25|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|121.25|3.75|executada|casa1|1758026648465|1
+595|Machida x Seoul |futebol|2_resultados|77|2.5|50.0|Menos de 2,5|0|34|1.763|71.25|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|121.25|3.75|executada|casa1|1758026733522|1
+596|Machida x Seoul |futebol|2_resultados|100|2.5|50.0|Menos de 2,5|0|34|1.763|71.25|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|121.25|3.75|executada|casa1|1758026749963|1
+597|Machida x Seoul |futebol|2_resultados|106|2.5|50.0|Menos de 2,5|0|34|1.763|71.25|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|121.25|3.75|executada|casa1|1758026765251|1
+598|Buriram x Johor DT|futebol|2_resultados|30|2.6|50.0|Menos de 2,5|0|34|1.826|71.2|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|121.2|8.8112|executada|casa2|1758026814211|1
+599|Buriram x Johor DT|futebol|2_resultados|77|2.6|50.0|Menos de 2,5|0|34|1.826|71.2|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|121.2|8.8112|executada|casa2|1758026832650|1
+600|Buriram x Johor DT|futebol|2_resultados|100|2.6|50.0|Menos de 2,5|0|34|1.826|71.2|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|121.2|8.8112|executada|casa2|1758026845861|1
+601|Buriram x Johor DT|futebol|2_resultados|106|2.6|50.0|Menos de 2,5|0|34|1.826|71.2|Mais de 2m5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|121.2|8.8112|executada|casa2|1758026862278|1
+602|Arsenal x bilbal|futebol|3_resultados|93|1.76|99.0|Arsenal|0|27|3.5|50.0|Empate|0|86|5.2|33.0|BIlbal|0||0.0|0.0||0||0.0|0.0||0|182.0|-7.75999999999999|executada|casa1|1758027969834|1
+603|Lanzhot X Viktoria Plzen|futebol|2_resultados|59|4.9|200.0|a|0|10|1.28|765.0|B|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|965.0|14.2000000000001|executada|casa2|1758036288404|1
+604|Reichenau X Wolfsberger |futebol|2_resultados|30|4.2|50.0|Menos de 2,5|0|34|1.34|156.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|206.5|3.21000000000001|executada|casa2|1758036909033|1
+605|Reichenau X Wolfsberger |futebol|2_resultados|77|4.2|50.0|Menos de 2,5|0|34|1.34|156.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|206.5|3.21000000000001|executada|casa2|1758038077753|1
+606|Reichenau X Wolfsberger |futebol|2_resultados|100|4.2|50.0|Menos de 2,5|0|34|1.34|156.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|206.5|3.21000000000001|executada|casa2|1758038208379|1
+607|Reichenau X Wolfsberger |futebol|2_resultados|106|4.2|50.0|Menos de 2,5|0|34|1.34|156.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|206.5|3.21000000000001|executada|casa2|1758038234415|1
+608|Arsenal x Bilbao|futebol|2_resultados|30|3.6|50.0|Menos de 1,5|0|34|1.477|127.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|177.25|10.69825|executada|casa2|1758042739541|1
+609|Arsenal x Bilbao|futebol|2_resultados|77|3.6|50.0|Menos de 1,5|0|34|1.477|127.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|177.25|10.69825|executada|casa2|1758042756212|1
+610|Arsenal x Bilbao|futebol|2_resultados|100|3.6|50.0|Menos de 1,5|0|34|1.477|127.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|177.25|10.69825|executada|casa2|1758042774045|1
+611|Arsenal x Bilbao|futebol|2_resultados|106|3.6|50.0|Menos de 1,5|0|34|1.477|127.25|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|177.25|10.69825|executada|casa2|1758042788127|1
+612|Tottenham Hotspur x Villarreal|futebol|2_resultados|30|2.6|50.0|Menos de 2,5|0|34|1.77|73.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|123.5|6.5|executada|casa1|1758059302918|1
+613|Tottenham Hotspur x Villarreal|futebol|2_resultados|77|2.6|50.0|Menos de 2,5|0|34|1.77|73.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|123.5|6.5|executada|casa1|1758059319703|1
+614|Tottenham Hotspur x Villarreal|futebol|2_resultados|100|2.6|50.0|Menos de 2,5|0|34|1.77|73.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|123.5|6.5|executada|casa1|1758059334210|1
+615|Tottenham Hotspur x Villarreal|futebol|2_resultados|106|2.6|50.0|Menos de 2,5|0|34|1.77|73.5|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|123.5|6.5|executada|casa1|1758059355800|1
+616|Velez Sarsfield x Racing Club|futebol|2_resultados|30|2.7|50.0|Menos de 1,5|0|34|1.688|80.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|130.0|5.0|executada|casa1|1758059608644|1
+617|Velez Sarsfield x Racing Club|futebol|2_resultados|77|2.7|50.0|Menos de 2,5|0|34|1.688|80.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|130.0|5.0|executada|casa1|1758059635920|1
+618|Velez Sarsfield x Racing Club|futebol|2_resultados|100|2.7|50.0|Menos de 1,5|0|34|1.688|80.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|130.0|5.0|executada|casa1|1758059657843|1
+619|Velez Sarsfield x Racing Club|futebol|2_resultados|106|2.7|50.0|Menos de 1,5|0|34|1.688|80.0|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|130.0|5.0|executada|casa1|1758059680906|1
+620|Inter Miami CF x  Seattle Sounders FC |futebol|2_resultados|30|3.4|50.0|Menos de 2,5|0|34|1.502|110.0|mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|160.0|5.22|executada|casa2|1758071658326|1
+621|Inter Miami CF x  Seattle Sounders FC |futebol|2_resultados|100|3.4|50.0|Menos de 2,5|0|34|1.502|110.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|160.0|5.22|executada|casa2|1758071824510|1
+622|Inter Miami CF x  Seattle Sounders FC |futebol|2_resultados|59|0.0|0.0|a|0|34|1.502|220.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|220.0|110.44|executada|casa2|1758071841865|1
+623|Lanus x Fluminense|futebol|2_resultados|30|2.4|50.0|Menos de 1,5|0|34|1.897|63.27|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.27|6.72999999999999|executada|casa1|1758072156442|1
+624|Lanus x Fluminense|futebol|2_resultados|77|2.4|50.0|Menos de 1,5|0|34|1.897|63.27|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.27|6.72999999999999|executada|casa1|1758072207504|1
+625|Lanus x Fluminense|futebol|2_resultados|100|2.4|50.0|Menos de 1,5|0|34|1.897|63.27|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.27|6.72999999999999|executada|casa1|1758072295143|1
+626|Lanus x Fluminense|futebol|2_resultados|106|2.4|50.0|Menos de 1,5|0|34|1.897|63.27|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|113.27|6.72999999999999|executada|casa1|1758072330424|1
+627|Vancouver Whitecaps x Forge|futebol|2_resultados|30|4.0|50.0|Menos de 2,5|0|34|1.445|138.39|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|188.39|11.58355|executada|casa2|1758075885560|1
+628|Vancouver Whitecaps x Forge|futebol|2_resultados|77|4.0|50.0|Menos de 2,5|0|34|1.445|138.39|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|188.39|11.58355|executada|casa2|1758075904809|1
+629|Vancouver Whitecaps x Forge|futebol|2_resultados|100|4.0|50.0|Menos de 2,5|0|34|1.445|138.39|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|188.39|11.58355|executada|casa2|1758075929859|1
+630|Vancouver Whitecaps x Forge|futebol|2_resultados|106|4.0|50.0|Menos de 2,5|0|34|1.445|138.39|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|188.39|11.58355|executada|casa2|1758075943773|1
+631|Gamba Osaka X Eastern SC|futebol|2_resultados|30|3.3|50.0|Menos de 2,5|0|16|1.622|101.75|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|151.75|13.2885|executada|casa2|1758082344122|1
+632|Gamba Osaka X Eastern SC|futebol|2_resultados|77|3.3|50.0|Menos de 2,5|0|16|1.622|101.75|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|151.75|13.2885|executada|casa2|1758082411562|1
+633|Gamba Osaka X Eastern SC|futebol|2_resultados|100|3.3|50.0|Menos de 2,5|0|16|1.622|101.75|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|151.75|13.2885|executada|casa2|1758082438695|1
+634|Gamba Osaka X Eastern SC|futebol|2_resultados|106|3.3|50.0|Menos de 2,5|0|16|1.622|101.75|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|151.75|13.2885|executada|casa2|1758082455761|1
+635|Ulsan Hyundai x Chengdu Rongcheng|futebol|2_resultados|30|3.0|50.0|Menos de 2,5|0|34|1.667|90.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|140.0|10.03|executada|casa2|1758082537474|1
+636|Ulsan Hyundai x Chengdu Rongcheng|futebol|2_resultados|77|3.0|50.0|Menos de 2,5|0|34|1.667|90.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|140.0|10.03|executada|casa2|1758082560078|1
+637|Ulsan Hyundai x Chengdu Rongcheng|futebol|2_resultados|100|3.0|50.0|Menos de 2,5|0|34|1.667|90.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|140.0|10.03|executada|casa2|1758082576286|1
+638|Ulsan Hyundai x Chengdu Rongcheng|futebol|2_resultados|106|3.0|50.0|Menos de 2,5|0|34|1.667|90.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|140.0|10.03|executada|casa2|1758082596260|1
+639|Ulsan Hyundai FC x Chengdu Better City|futebol|2_resultados|68|3.0|50.0|Menos de 2,5|0|34|1.663|90.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|140.0|9.67000000000002|executada|casa2|1758085500859|1
+640|Gamba Osaka  x Eastern SC|futebol|2_resultados|68|3.3|50.0|Menos de 3,5|0|16|1.54|107.0|Mais de 3,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|157.0|7.78|executada|casa2|1758085954637|1
+641|Goa FC x Al Zawraa|futebol|2_resultados|30|2.3|50.0|Menos de 2,5|0|34|1.936|59.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.8|5.19999999999999|executada|casa1|1758116774164|1
+642|Goa FC x Al Zawraa|futebol|2_resultados|68|2.3|50.0|Menos de 2,5|0|34|1.936|59.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.8|5.19999999999999|executada|casa1|1758116800338|1
+643|Goa FC x Al Zawraa|futebol|2_resultados|77|2.3|50.0|Menos de 2,5|0|34|1.936|59.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.8|5.19999999999999|executada|casa1|1758116820842|1
+644|Goa FC x Al Zawraa|futebol|2_resultados|100|2.3|50.0|Menos de 2,5|0|34|1.936|59.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.8|5.19999999999999|executada|casa1|1758116836550|1
+645|Goa FC x Al Zawraa|futebol|2_resultados|106|2.3|50.0|Menos de 2,5|0|34|1.936|59.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|109.8|5.19999999999999|executada|casa1|1758116852387|1
+646|Inter x Ajax|futebol|2_resultados|6|1.694|2773.04|Inter|0|121|2.349|2000.0|Dupla chance Ajax|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|4773.04|-75.5102400000005|executada|casa1|1758142905706|1
+647|River x Palmeiras|futebol|2_resultados|30|2.5|50.0|Menos de 1,5|0|34|1.828|68.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.4|6.63520000000001|executada|casa2|1758153683627|1
+648|River x Palmeiras|futebol|2_resultados|68|2.5|50.0|Menos de 1,5|0|34|1.828|68.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.4|6.63520000000001|executada|casa2|1758153726407|1
+649|River x Palmeiras|futebol|2_resultados|77|2.5|50.0|Menos de 1,5|0|34|1.828|68.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.4|6.63520000000001|executada|casa2|1758153744966|1
+650|River x Palmeiras|futebol|2_resultados|100|2.5|50.0|Menos de 1,5|0|34|1.828|68.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.4|6.63520000000001|executada|casa2|1758153763028|1
+651|River x Palmeiras|futebol|2_resultados|106|2.5|50.0|Menos de 1,5|0|34|1.828|68.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|118.4|6.63520000000001|executada|casa2|1758153776904|1
+652|River x Palmeiras|futebol|2_resultados|110|2.85|50.0|Ambas marcam|0|34|1.547|92.0|Não marcam|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|142.0|0.5|executada|casa1|1758153819414|1
+653|Real Salt Lake x Los Angeles FC|futebol|2_resultados|30|2.9|50.0|Menos de 2,5|0|34|1.694|85.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|135.8|9.54519999999997|executada|casa2|1758159608068|1
+654|Real Salt Lake x Los Angeles FC|futebol|2_resultados|68|2.9|50.0|Menos de 2,5|0|34|1.694|85.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|135.8|9.54519999999997|executada|casa2|1758159763567|1
+655|Real Salt Lake x Los Angeles FC|futebol|2_resultados|77|2.9|50.0|Menos de 2,5|0|34|1.694|85.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|135.8|9.54519999999997|executada|casa2|1758159779058|1
+656|Real Salt Lake x Los Angeles FC|futebol|2_resultados|100|2.9|50.0|Menos de 2,5|0|34|1.694|85.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|135.8|9.54519999999997|executada|casa2|1758159801966|1
+657|Real Salt Lake x Los Angeles FC|futebol|2_resultados|106|2.9|50.0|Menos de 2,5|0|34|1.694|85.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|135.8|9.54519999999997|executada|casa2|1758159818553|1
+658|Tai Po x Macarthur|futebol|2_resultados|30|4.7|50.0|Menos de 2,5|0|34|1.39|169.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|15.91|executada|casa2|1758166677765|1
+659|Tai Po x Macarthur|futebol|2_resultados|68|4.7|50.0|Menos de 2,5|0|34|1.39|169.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|15.91|executada|casa2|1758166705455|1
+660|Tai Po x Macarthur|futebol|2_resultados|77|4.7|50.0|Menos de 2,5|0|34|1.39|169.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|15.91|executada|casa2|1758166910987|1
+661|Tai Po x Macarthur|futebol|2_resultados|100|4.7|50.0|Menos de 2,5|0|34|1.39|169.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|15.91|executada|casa2|1758166934475|1
+662|Tai Po x Macarthur|futebol|2_resultados|106|4.7|50.0|Menos de 2,5|0|34|1.39|169.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|219.0|15.91|executada|casa2|1758166948374|1
+663|Liepajas FK x riga|futebol|2_resultados|34|1.425|561.0|Mais de 2,5|0|10|3.1|258.0|menos de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|819.0|-19.5749999999999|executada|casa1|1758209875297|1
+664|Copenhagen FC x Bayer Leverkusen|futebol|2_resultados|6|2.13|2266.0|Mais de 2,5|0|121|1.848|2612.0|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|4878.0|-51.4200000000001|executada|casa1|1758212653886|1
+665|Club Brugge x Monaco|futebol|2_resultados|30|2.9|50.0|Menos de 2,5|0|34|1.635|88.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|138.8|6.38799999999998|executada|casa2|1758213321978|1
+666|Club Brugge X Monaco|futebol|2_resultados|68|2.9|50.0|Menos de 2,5|0|34|1.635|88.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|138.8|6.38799999999998|executada|casa2|1758213350225|1
+667|Club Brugge x Monaco|futebol|2_resultados|100|2.9|50.0|Menos de 2,5|0|34|1.635|88.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|138.8|6.38799999999998|executada|casa2|1758213370151|1
+668|Club Brugge x Monaco|futebol|2_resultados|77|2.9|50.0|Menos de 2,5|0|34|1.635|88.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|138.8|6.38799999999998|executada|casa2|1758213395555|1
+669|Club Brugge x Monaco|futebol|2_resultados|106|2.9|50.0|Menos de 2,5|0|34|1.635|88.8|Mais de 2,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|138.8|6.38799999999998|executada|casa2|1758213418210|1
+670|Barcelona x Newcastle|futebol|2_resultados|27|2.66|25.0|Empate|1|34|1.335|50.0|Lay empate|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|50.0|16.75|executada|casa2|1758217308026|1
+671|LDU Quito X Sao Paulo|futebol|2_resultados|30|2.8|50.0|Menos de 1,5|0|34|1.711|82.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|132.4|8.5864|executada|casa2|1758223273738|1
+672|LDU Quito X Sao Paulo|futebol|2_resultados|68|2.8|50.0|Menos de 1,5|0|34|1.711|82.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|132.4|8.5864|executada|casa2|1758223293558|1
+673|LDU Quito X Sao Paulo|futebol|2_resultados|77|2.8|50.0|Menos de 1,5|0|34|1.711|82.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|132.4|8.5864|executada|casa2|1758223311562|1
+674|LDU Quito X Sao Paulo|futebol|2_resultados|100|2.8|50.0|Menos de 1,5|0|34|1.711|82.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|132.4|8.5864|executada|casa2|1758223326106|1
+675|LDU Quito X Sao Paulo|futebol|2_resultados|106|2.8|50.0|Menos de 1,5|0|34|1.711|82.4|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|132.4|8.5864|executada|casa2|1758223340165|1
+676|Alianza Lima x Universidad de Chile|futebol|2_resultados|30|3.1|50.0|Menos de 1,5|0|34|1.516|102.2|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.2|2.8|identificada||1758238556984|1
+677|Alianza Lima x Universidad de Chile|futebol|2_resultados|68|3.1|50.0|Menos de 1,5|0|34|1.516|102.2|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.2|2.8|identificada||1758238578488|1
+678|Alianza Lima x Universidad de Chile|futebol|2_resultados|77|3.1|50.0|Menos de 1,5|0|34|1.516|102.2|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.2|2.8|identificada||1758238599489|1
+679|Alianza Lima x Universidad de Chile|futebol|2_resultados|100|3.1|50.0|Menos de 1,5|0|34|1.516|102.2|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.2|2.8|identificada||1758238619794|1
+680|Alianza Lima x Universidad de Chile|futebol|2_resultados|106|3.1|50.0|Menos de 1,5|0|34|1.516|102.2|Mais de 1,5|0||0.0|0.0||0||0.0|0.0||0||0.0|0.0||0|152.2|2.8|identificada||1758238646482|1
