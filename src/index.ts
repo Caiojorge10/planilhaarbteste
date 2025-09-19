@@ -236,8 +236,6 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
     if (!lados.every((l: string) => ladosValidos[tipoArbitragem as keyof typeof ladosValidos]?.includes(l))) {
       return res.status(400).json({ error: `Lado(s) vencedor(es) inválido(s) para arbitragem de ${tipoArbitragem}` });
     }
-    // Calcule valorTotalInvestir como soma das stakes que NÃO são freebet
-    const valorTotalInvestir =
       (arbitragem.stake1 && !arbitragem.freebet1 ? arbitragem.stake1 : 0) +
       (arbitragem.stake2 && !arbitragem.freebet2 ? arbitragem.stake2 : 0) +
       (arbitragem.stake3 && !arbitragem.freebet3 ? arbitragem.stake3 : 0) +
@@ -248,34 +246,27 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
     const premios: { casaId: number, valor: number, lado: string }[] = [];
     lados.forEach((lado: string) => {
       if (lado === 'casa1' && arbitragem.stake1 && arbitragem.odd1 && arbitragem.casa1Id) {
-        lucroReal += (arbitragem.stake1 * arbitragem.odd1) - valorTotalInvestir;
         premios.push({ casaId: arbitragem.casa1Id, valor: arbitragem.stake1 * arbitragem.odd1, lado });
       }
       if (lado === 'casa2' && arbitragem.stake2 && arbitragem.odd2 && arbitragem.casa2Id) {
-        lucroReal += (arbitragem.stake2 * arbitragem.odd2) - valorTotalInvestir;
         premios.push({ casaId: arbitragem.casa2Id, valor: arbitragem.stake2 * arbitragem.odd2, lado });
       }
       if (lado === 'casa3' && arbitragem.stake3 && arbitragem.odd3 && arbitragem.casa3Id) {
-        lucroReal += (arbitragem.stake3 * arbitragem.odd3) - valorTotalInvestir;
         premios.push({ casaId: arbitragem.casa3Id, valor: arbitragem.stake3 * arbitragem.odd3, lado });
       }
       if (lado === 'casa4' && arbitragem.stake4 && arbitragem.odd4 && arbitragem.casa4Id) {
-        lucroReal += (arbitragem.stake4 * arbitragem.odd4) - valorTotalInvestir;
         premios.push({ casaId: arbitragem.casa4Id, valor: arbitragem.stake4 * arbitragem.odd4, lado });
       }
       if (lado === 'casa5' && arbitragem.stake5 && arbitragem.odd5 && arbitragem.casa5Id) {
-        lucroReal += (arbitragem.stake5 * arbitragem.odd5) - valorTotalInvestir;
         premios.push({ casaId: arbitragem.casa5Id, valor: arbitragem.stake5 * arbitragem.odd5, lado });
       }
     });
-    // Atualizar arbitragem com lados vencedores, status, lucroReal e valorTotalInvestir
     const arbitragemAtualizada = await prisma.arbitragem.update({
       where: { id: arbitragemId },
       data: {
         ladoVencedor: lados.join(','),
         status: 'executada',
         
-        valorTotalInvestir
       },
       include: {
         casa1: true,
