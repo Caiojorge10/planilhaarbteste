@@ -8,18 +8,131 @@ const prisma = new PrismaClient()
 const db = new sqlite3.Database('./dev.db')
 const dbAll = promisify(db.all.bind(db))
 
+// Definir tipos para os dados do SQLite
+interface SQLiteCasa {
+  id: number
+  nome: string
+  pais: string
+  licenca: string | null
+  avaliacao: number | null
+  status: string
+  bonusBoasVindas: string | null
+  bonusRecarga: string | null
+  tempoSaque: string | null
+  metodosPagamento: string | null
+  telefone: string | null
+  email: string | null
+  site: string | null
+  observacoes: string | null
+  usuarioId: number
+  createdAt: string
+  updatedAt: string
+}
+
+interface SQLiteArbitragem {
+  id: number
+  evento: string
+  esporte: string
+  tipo: string
+  casa1Id: number | null
+  casa2Id: number | null
+  casa3Id: number | null
+  casa4Id: number | null
+  casa5Id: number | null
+  odd1: number | null
+  odd2: number | null
+  odd3: number | null
+  odd4: number | null
+  odd5: number | null
+  stake1: number | null
+  stake2: number | null
+  stake3: number | null
+  stake4: number | null
+  stake5: number | null
+  lucroEsperado: number | null
+  valorTotalInvestir: number | null
+  resultado1: string | null
+  resultado2: string | null
+  resultado3: string | null
+  resultado4: string | null
+  resultado5: string | null
+  ladoVencedor: string | null
+  lucroReal: number | null
+  status: string
+  freebet1: number | null
+  freebet2: number | null
+  freebet3: number | null
+  freebet4: number | null
+  freebet5: number | null
+  data: string
+  usuarioId: number
+  createdAt: string
+  updatedAt: string
+}
+
+interface SQLiteMovimentacao {
+  id: number
+  tipo: string
+  valor: number
+  descricao: string | null
+  data: string
+  casaId: number | null
+  usuarioId: number
+  createdAt: string
+  updatedAt: string
+}
+
+interface SQLiteFreespin {
+  id: number
+  valorGanho: number
+  data: string
+  casaId: number | null
+  usuarioId: number
+  createdAt: string
+  updatedAt: string
+}
+
+interface SQLiteGanho {
+  id: number
+  valor: number
+  data: string
+  casaId: number | null
+  usuarioId: number
+  createdAt: string
+  updatedAt: string
+}
+
+interface SQLitePerca {
+  id: number
+  valor: number
+  data: string
+  casaId: number | null
+  usuarioId: number
+  createdAt: string
+  updatedAt: string
+}
+
+interface SQLiteUsuario {
+  id: number
+  nome: string
+  email: string
+  senha: string
+  createdAt: string
+  updatedAt: string
+}
+
 async function seedWithData() {
   try {
     console.log('🔄 Iniciando seed com dados do SQLite...')
     
-    // Importar dados do SQLite
-    const casas = await dbAll('SELECT * FROM Casa')
-    const arbitragens = await dbAll('SELECT * FROM Arbitragem')
-    const movimentacoes = await dbAll('SELECT * FROM Movimentacao')
-    const freespins = await dbAll('SELECT * FROM FreeSpin')
-    const ganhos = await dbAll('SELECT * FROM Ganho')
-    const percas = await dbAll('SELECT * FROM Perca')
-    const usuarios = await dbAll('SELECT * FROM Usuario')
+    // Importar dados do SQLite com tipos explícitos
+    const casas = await dbAll('SELECT * FROM Casa') as SQLiteCasa[]
+    const arbitragens = await dbAll('SELECT * FROM Arbitragem') as SQLiteArbitragem[]
+    const movimentacoes = await dbAll('SELECT * FROM Movimentacao') as SQLiteMovimentacao[]
+    const freespins = await dbAll('SELECT * FROM FreeSpin') as SQLiteFreespin[]
+    const ganhos = await dbAll('SELECT * FROM Ganho') as SQLiteGanho[]
+    const percas = await dbAll('SELECT * FROM Perca') as SQLitePerca[]
+    const usuarios = await dbAll('SELECT * FROM Usuario') as SQLiteUsuario[]
     
     console.log(`📊 Dados encontrados:`)
     console.log(`   - Casas: ${casas.length}`)
