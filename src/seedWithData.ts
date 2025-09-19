@@ -12,6 +12,24 @@ async function main() {
   console.log('🌱 Iniciando importação de dados...')
   
   try {
+    // Criar usuário padrão se não existir
+    let usuarioId = 1
+    const usuarioExistente = await prisma.usuario.findFirst()
+    if (!usuarioExistente) {
+      const novoUsuario = await prisma.usuario.create({
+        data: {
+          nome: 'Usuário Padrão',
+          email: 'usuario@exemplo.com',
+          senha: 'senha123'
+        }
+      })
+      usuarioId = novoUsuario.id
+      console.log(`👤 Usuário padrão criado com ID: ${usuarioId}`)
+    } else {
+      usuarioId = usuarioExistente.id
+      console.log(`👤 Usando usuário existente com ID: ${usuarioId}`)
+    }
+    
     // Buscar dados do SQLite
     const casas = await dbAll('SELECT * FROM Casa') as any[]
     const arbitragens = await dbAll('SELECT * FROM Arbitragem') as any[]
@@ -36,7 +54,7 @@ async function main() {
       await prisma.casa.create({
         data: {
           nome: casa.nome,
-          usuarioId: casa.usuarioId,
+          usuarioId: usuarioId,
           createdAt: new Date(casa.createdAt),
           updatedAt: new Date(casa.updatedAt)
         }
@@ -71,7 +89,7 @@ async function main() {
           freebet5: arb.freebet5 || false,
           ladoVencedor: arb.ladoVencedor || null,
           lucroReal: arb.lucroReal || null,
-          usuarioId: arb.usuarioId,
+          usuarioId: usuarioId,
           createdAt: new Date(arb.createdAt),
           updatedAt: new Date(arb.updatedAt)
         }
@@ -86,7 +104,7 @@ async function main() {
           valor: fs.valor,
           data: new Date(fs.data),
           casaId: fs.casaId,
-          usuarioId: fs.usuarioId,
+          usuarioId: usuarioId,
           createdAt: new Date(fs.createdAt),
           updatedAt: new Date(fs.updatedAt)
         }
@@ -100,7 +118,7 @@ async function main() {
           valor: fs.valorGanho,
           observacao: `Prêmio de rodada grátis #${fs.id}`,
           data: new Date(fs.data),
-          usuarioId: fs.usuarioId,
+          usuarioId: usuarioId,
           createdAt: new Date(fs.createdAt),
           updatedAt: new Date(fs.updatedAt)
         }
@@ -115,7 +133,7 @@ async function main() {
           valor: fb.valor,
           data: new Date(fb.data),
           casaId: fb.casaId,
-          usuarioId: fb.usuarioId,
+          usuarioId: usuarioId,
           createdAt: new Date(fb.createdAt),
           updatedAt: new Date(fb.updatedAt)
         }
@@ -130,7 +148,7 @@ async function main() {
           valor: ganho.valor,
           data: new Date(ganho.data),
           casaId: ganho.casaId,
-          usuarioId: ganho.usuarioId,
+          usuarioId: usuarioId,
           createdAt: new Date(ganho.createdAt),
           updatedAt: new Date(ganho.updatedAt)
         }
@@ -147,7 +165,7 @@ async function main() {
           data: new Date(mov.data),
           observacao: mov.observacao || null,
           casaId: mov.casaId,
-          usuarioId: mov.usuarioId,
+          usuarioId: usuarioId,
           createdAt: new Date(mov.createdAt),
           updatedAt: new Date(mov.updatedAt)
         }
@@ -162,7 +180,7 @@ async function main() {
           valor: perca.valor,
           data: new Date(perca.data),
           casaId: perca.casaId,
-          usuarioId: perca.usuarioId,
+          usuarioId: usuarioId,
           createdAt: new Date(perca.createdAt),
           updatedAt: new Date(perca.updatedAt)
         }
