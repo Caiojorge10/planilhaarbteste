@@ -39,7 +39,7 @@ app.use('/api/ganhos', authMiddleware);
 // Rotas para Casas
 app.get('/api/casas', async (req, res) => {
   try {
-    const casas = await prisma.casa.findMany({ where: { usuarioId: req.usuarioId } });
+    const casas = await prisma.casa.findMany({ where: { usuarioId: req.usuarioId! } });
     res.json(casas);
   } catch (error) {
     res.status(500).json({ error: 'Erro ao buscar casas' });
@@ -49,7 +49,7 @@ app.get('/api/casas', async (req, res) => {
 app.post('/api/casas', async (req, res) => {
   try {
     const casa = await prisma.casa.create({
-      data: { ...req.body, usuarioId: req.usuarioId }
+      data: { ...req.body, usuarioId: req.usuarioId! }
     });
     res.status(201).json(casa);
   } catch (error) {
@@ -84,7 +84,7 @@ app.delete('/api/casas/:id', async (req, res) => {
 app.get('/api/arbitragens', async (req, res) => {
   try {
     const arbitragens = await prisma.arbitragem.findMany({
-      where: { usuarioId: req.usuarioId },
+      where: { usuarioId: req.usuarioId! },
       include: {
         casa1: true,
         casa2: true,
@@ -104,7 +104,7 @@ app.post('/api/arbitragens', async (req, res) => {
     const data = {
       ...req.body,
       data: new Date(),
-      usuarioId: req.usuarioId
+      usuarioId: req.usuarioId!
     };
     const arbitragem = await prisma.arbitragem.create({
       data: data,
@@ -126,7 +126,7 @@ app.post('/api/arbitragens', async (req, res) => {
           tipo: 'aposta',
           valor: arbitragem.stake1,
           observacao: `Aposta arbitragem #${arbitragem.id} - Casa 1`,
-          usuarioId: req.usuarioId
+          usuarioId: req.usuarioId!
         }
       }));
     }
@@ -137,7 +137,7 @@ app.post('/api/arbitragens', async (req, res) => {
           tipo: 'aposta',
           valor: arbitragem.stake2,
           observacao: `Aposta arbitragem #${arbitragem.id} - Casa 2`,
-          usuarioId: req.usuarioId
+          usuarioId: req.usuarioId!
         }
       }));
     }
@@ -148,7 +148,7 @@ app.post('/api/arbitragens', async (req, res) => {
           tipo: 'aposta',
           valor: arbitragem.stake3,
           observacao: `Aposta arbitragem #${arbitragem.id} - Casa 3`,
-          usuarioId: req.usuarioId
+          usuarioId: req.usuarioId!
         }
       }));
     }
@@ -159,7 +159,7 @@ app.post('/api/arbitragens', async (req, res) => {
           tipo: 'aposta',
           valor: arbitragem.stake4,
           observacao: `Aposta arbitragem #${arbitragem.id} - Casa 4`,
-          usuarioId: req.usuarioId
+          usuarioId: req.usuarioId!
         }
       }));
     }
@@ -170,7 +170,7 @@ app.post('/api/arbitragens', async (req, res) => {
           tipo: 'aposta',
           valor: arbitragem.stake5,
           observacao: `Aposta arbitragem #${arbitragem.id} - Casa 5`,
-          usuarioId: req.usuarioId
+          usuarioId: req.usuarioId!
         }
       }));
     }
@@ -294,7 +294,7 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
           tipo: 'premio',
             valor: premio.valor,
             observacao: `Prêmio arbitragem #${arbitragem.id} (${premio.lado})`,
-          usuarioId: req.usuarioId
+          usuarioId: req.usuarioId!
         }
       });
     }
@@ -323,7 +323,7 @@ app.delete('/api/arbitragens/:id', async (req, res) => {
 app.get('/api/freebets', async (req, res) => {
   try {
     const freebets = await prisma.freebet.findMany({
-      where: { usuarioId: req.usuarioId },
+      where: { usuarioId: req.usuarioId! },
       include: { casa: true }
     });
     res.json(freebets);
@@ -338,7 +338,7 @@ app.post('/api/freebets', async (req, res) => {
       ...req.body,
       dataObtencao: new Date(req.body.dataObtencao),
       dataExpiracao: new Date(req.body.dataExpiracao),
-      usuarioId: req.usuarioId
+      usuarioId: req.usuarioId!
     };
     const freebet = await prisma.freebet.create({
       data: data,
@@ -353,7 +353,7 @@ app.post('/api/freebets', async (req, res) => {
 app.put('/api/freebets/:id', async (req, res) => {
   try {
     const freebet = await prisma.freebet.update({
-      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId },
+      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId! },
       data: req.body,
       include: { casa: true }
     });
@@ -366,7 +366,7 @@ app.put('/api/freebets/:id', async (req, res) => {
 app.delete('/api/freebets/:id', async (req, res) => {
   try {
     await prisma.freebet.delete({
-      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId }
+      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId! }
     });
     res.status(204).send();
   } catch (error) {
@@ -378,7 +378,7 @@ app.delete('/api/freebets/:id', async (req, res) => {
 app.get('/api/freespins', async (req, res) => {
   try {
     const freespins = await prisma.freeSpin.findMany({
-      where: { usuarioId: req.usuarioId },
+      where: { usuarioId: req.usuarioId! },
       include: { casa: true }
     });
     res.json(freespins);
@@ -394,7 +394,7 @@ app.post('/api/freespins', async (req, res) => {
       data: {
         casaId: Number(casaId),
         valorGanho: Number(valorGanho),
-        usuarioId: req.usuarioId
+        usuarioId: req.usuarioId!
       },
       include: { casa: true }
     });
@@ -404,7 +404,7 @@ app.post('/api/freespins', async (req, res) => {
         tipo: 'premio',
         valor: Number(valorGanho),
         observacao: `Prêmio de rodada grátis #${freespin.id}`,
-        usuarioId: req.usuarioId
+        usuarioId: req.usuarioId!
       }
     });
     res.status(201).json(freespin);
@@ -416,7 +416,7 @@ app.post('/api/freespins', async (req, res) => {
 app.put('/api/freespins/:id', async (req, res) => {
   try {
     const freespin = await prisma.freeSpin.update({
-      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId },
+      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId! },
       data: req.body,
       include: { casa: true }
     });
@@ -429,7 +429,7 @@ app.put('/api/freespins/:id', async (req, res) => {
 app.delete('/api/freespins/:id', async (req, res) => {
   try {
     await prisma.freeSpin.delete({
-      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId }
+      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId! }
     });
     res.status(204).send();
   } catch (error) {
@@ -441,7 +441,7 @@ app.delete('/api/freespins/:id', async (req, res) => {
 app.get('/api/movimentacoes', async (req, res) => {
   try {
     const movimentacoes = await prisma.movimentacao.findMany({
-      where: { usuarioId: req.usuarioId },
+      where: { usuarioId: req.usuarioId! },
       include: { casa: true }
     });
     res.json(movimentacoes);
@@ -453,7 +453,7 @@ app.get('/api/movimentacoes', async (req, res) => {
 app.get('/api/movimentacoes/:id', async (req, res) => {
   try {
     const movimentacao = await prisma.movimentacao.findUnique({
-      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId },
+      where: { id: parseInt(req.params.id), usuarioId: req.usuarioId! },
       include: { casa: true }
     });
     if (!movimentacao) return res.status(404).json({ error: 'Movimentação não encontrada' });
@@ -468,7 +468,7 @@ app.post('/api/movimentacoes', async (req, res) => {
     const data = {
       ...req.body,
       data: req.body.data ? new Date(req.body.data) : new Date(),
-      usuarioId: req.usuarioId
+      usuarioId: req.usuarioId!
     };
     const movimentacao = await prisma.movimentacao.create({
       data,
@@ -591,7 +591,7 @@ app.post('/api/auth/login', async (req, res) => {
 app.get('/api/percas', async (req, res) => {
   try {
     const percas = await prisma.perca.findMany({
-      where: { usuarioId: req.usuarioId },
+      where: { usuarioId: req.usuarioId! },
       include: { casa: true }
     });
     res.json(percas);
@@ -607,7 +607,7 @@ app.post('/api/percas', async (req, res) => {
       data: {
         casaId: Number(casaId),
         valor: Number(valor),
-        usuarioId: req.usuarioId
+        usuarioId: req.usuarioId!
       },
       include: { casa: true }
     });
@@ -618,7 +618,7 @@ app.post('/api/percas', async (req, res) => {
         tipo: 'perda',
         valor: Number(valor),
         observacao: `Registro de perda #${perca.id}`,
-        usuarioId: req.usuarioId
+        usuarioId: req.usuarioId!
       }
     });
     res.status(201).json(perca);
@@ -637,7 +637,7 @@ app.delete('/api/percas/:id', async (req, res) => {
     // Se precisar remover a movimentação, adicione a lógica aqui.
 
     await prisma.perca.delete({
-      where: { id: percaId, usuarioId: req.usuarioId }
+      where: { id: percaId, usuarioId: req.usuarioId! }
     });
     res.status(204).send();
   } catch (error) {
@@ -649,7 +649,7 @@ app.delete('/api/percas/:id', async (req, res) => {
 app.get('/api/ganhos', async (req, res) => {
   try {
     const ganhos = await prisma.ganho.findMany({
-      where: { usuarioId: req.usuarioId },
+      where: { usuarioId: req.usuarioId! },
       include: { casa: true }
     });
     res.json(ganhos);
@@ -665,7 +665,7 @@ app.post('/api/ganhos', async (req, res) => {
       data: {
         casaId: Number(casaId),
         valor: Number(valor),
-        usuarioId: req.usuarioId
+        usuarioId: req.usuarioId!
       },
       include: { casa: true }
     });
@@ -676,7 +676,7 @@ app.post('/api/ganhos', async (req, res) => {
         tipo: 'ganho',
         valor: Number(valor),
         observacao: `Registro de ganho #${ganho.id}`,
-        usuarioId: req.usuarioId
+        usuarioId: req.usuarioId!
       }
     });
     res.status(201).json(ganho);
@@ -690,7 +690,7 @@ app.delete('/api/ganhos/:id', async (req, res) => {
     const ganhoId = parseInt(req.params.id);
 
     await prisma.ganho.delete({
-      where: { id: ganhoId, usuarioId: req.usuarioId }
+      where: { id: ganhoId, usuarioId: req.usuarioId! }
     });
     res.status(204).send();
   } catch (error) {
