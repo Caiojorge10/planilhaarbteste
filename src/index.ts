@@ -1,3 +1,5 @@
+import "./types";
+
 import express from 'express';
 import cors from 'cors';
 import { PrismaClient } from '../generated/prisma';
