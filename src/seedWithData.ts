@@ -60,7 +60,6 @@ async function seedWithData() {
       await prisma.casa.create({
         data: {
           nome: casa.nome,
-          avaliacao: casa.avaliacao || 0,
           status: casa.status || 'ativa',
           bonusBoasVindas: casa.bonusBoasVindas || null,
           bonusRecarga: casa.bonusRecarga || null,
@@ -98,7 +97,6 @@ async function seedWithData() {
           stake3: arb.stake3 || null,
           stake4: arb.stake4 || null,
           stake5: arb.stake5 || null,
-          lucroEsperado: arb.lucroEsperado || null,
           valorTotalInvestir: arb.valorTotalInvestir || null,
           resultado1: arb.resultado1 || null,
           resultado2: arb.resultado2 || null,
