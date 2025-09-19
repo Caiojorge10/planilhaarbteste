@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "npx prisma generate --schema=./prisma/schema.prod.prisma && node dist/index.js",
     "dev": "ts-node src/index.ts",
-    "seed": "ts-node src/seedWithData.ts",
+    "seed": "node dist/seedWithData.js",
     "deploy": "npm install && npx prisma generate --schema=./prisma/schema.prod.prisma && npx prisma db push --schema=./prisma/schema.prod.prisma && npm run build && npm run seed"
   },
   "dependencies": {
