@@ -178,7 +178,7 @@ app.post('/api/arbitragens', async (req, res) => {
 
     res.status(201).json(arbitragem);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao criar arbitragem', details: error.message });
+    res.status(500).json({ error: 'Erro ao criar arbitragem', details: (error as Error).message });
   }
 });
 
@@ -304,7 +304,7 @@ app.post('/api/arbitragens/:id/finalizar', async (req, res) => {
     });
   } catch (error) {
     console.error('Erro ao finalizar arbitragem:', error as Error);
-    res.status(500).json({ error: 'Erro ao finalizar arbitragem', details: error.message });
+    res.status(500).json({ error: 'Erro ao finalizar arbitragem', details: (error as Error).message });
   }
 });
 
@@ -346,7 +346,7 @@ app.post('/api/freebets', async (req, res) => {
     });
     res.status(201).json(freebet);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao criar freebet', details: error.message });
+    res.status(500).json({ error: 'Erro ao criar freebet', details: (error as Error).message });
   }
 });
 
@@ -409,7 +409,7 @@ app.post('/api/freespins', async (req, res) => {
     });
     res.status(201).json(freespin);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao criar rodada grátis', details: error.message });
+    res.status(500).json({ error: 'Erro ao criar rodada grátis', details: (error as Error).message });
   }
 });
 
@@ -476,7 +476,7 @@ app.post('/api/movimentacoes', async (req, res) => {
     });
     res.status(201).json(movimentacao);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao criar movimentação', details: error.message });
+    res.status(500).json({ error: 'Erro ao criar movimentação', details: (error as Error).message });
   }
 });
 
@@ -623,7 +623,7 @@ app.post('/api/percas', async (req, res) => {
     });
     res.status(201).json(perca);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao criar perca', details: error.message });
+    res.status(500).json({ error: 'Erro ao criar perca', details: (error as Error).message });
   }
 });
 
@@ -681,7 +681,7 @@ app.post('/api/ganhos', async (req, res) => {
     });
     res.status(201).json(ganho);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao criar ganho', details: error.message });
+    res.status(500).json({ error: 'Erro ao criar ganho', details: (error as Error).message });
   }
 });
 
